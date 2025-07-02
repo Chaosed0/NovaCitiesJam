@@ -1,0 +1,22 @@
+[gd_scene load_steps=4 format=3 uid="uid://l8fr2ijwelce"]
+
+[ext_resource type="Script" uid="uid://ds1qsgykr7ayr" path="res://Assets/Scripts/FadeOverTimeTextEffect.gd" id="1_73ljl"]
+[ext_resource type="Script" uid="uid://b8ly3m0yorllf" path="res://Assets/Scripts/StoryText.gd" id="1_wmrym"]
+
+[sub_resource type="RichTextEffect" id="RichTextEffect_bwt3n"]
+script = ExtResource("1_73ljl")
+metadata/_custom_type_script = "uid://ds1qsgykr7ayr"
+
+[node name="StoryText" type="RichTextLabel"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+bbcode_enabled = true
+text = "This is some story text. This is some story text. This is some story text. This is some story text. This is some story text. This is some story text. This is some story text. This is some story text. This is some story text. "
+fit_content = true
+custom_effects = [SubResource("RichTextEffect_bwt3n")]
+visible_characters_behavior = 1
+script = ExtResource("1_wmrym")
