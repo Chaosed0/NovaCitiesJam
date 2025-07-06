@@ -1,4 +1,12 @@
 INCLUDE Functions.ink
+INCLUDE Intro.ink
+INCLUDE Faisal.ink
+INCLUDE Yousef.ink
+INCLUDE LiYan.ink
+
+
+
+
 
 -> Main
 
@@ -18,6 +26,6 @@ INCLUDE Functions.ink
 
 === FullGame ===
 
-Stub!
+-> Intro ->
 
 -> END

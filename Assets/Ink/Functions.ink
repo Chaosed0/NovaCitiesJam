@@ -1,5 +1,7 @@
 
 VAR debug=true
+VAR finished_intro=false
+VAR next_visit=->Faisal
 
 EXTERNAL shuffle_next_choices()
 === function shuffle_next_choices() ===
