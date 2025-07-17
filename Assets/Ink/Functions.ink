@@ -8,7 +8,8 @@ VAR Yousef_Count=1
 VAR LiYan_Count=1
 
 
-VAR LiYan_Guess_1=None
+VAR LiYan_Guess_1="none"
+VAR LiYan_Translate=true
 
 EXTERNAL shuffle_next_choices()
 === function shuffle_next_choices() ===

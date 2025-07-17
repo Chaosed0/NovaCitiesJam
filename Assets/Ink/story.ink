@@ -20,6 +20,11 @@ INCLUDE LiYan.ink
 - (top)
 
  + [Full] -> FullGame ->
+ + [LiYan]
+ ++ [LiYan_Full] -> LiYan ->
+ ++ [LiYan_1] -> LiYan.First ->
+ ++ [LiYan_2] -> LiYan.Second ->
+ ++ [LiYan_3] -> LiYan.Third ->
 
 - -> top
 
@@ -27,5 +32,6 @@ INCLUDE LiYan.ink
 === FullGame ===
 
 -> Intro ->
+-> LiYan ->
 
 -> END
