@@ -86,6 +86,8 @@ You step back a bit. Sorry, you say, you don't know them that well.
 
 - "And you have already met Banias." She gestures to the empty space behind Yousef. "What - Banias!?" Banias has already run and joined the queue for food.
 
+// Insert one more reference to Falas, which Yousef shushes.
+
 Yousef sighs and walks over to her. He puts his large hands around her waist and picks her up, yelping, before settling her in his arms. Youmna gives a despairing laugh. "Please, join us for food."
 
 You grab a tray and join them in the line for food. You're offered a choice of a couple of entrees.
@@ -200,24 +202,137 @@ You suppose a little time without Banias interrupting might be a good idea.
 
 -> package
 
-* ->
-
--
-
 * [Agree. You'll meet Yousef to send the package.]
 
-- "Thank you, my friend. I'll send you the coordinates soon. And I am sorry, again, to cut this short. But Youmna, well..." He smiles a little lopsidedly. "She is strong, but even strong things may break, sometimes."
+- "Thank you, my friend. I'll send you the coordinates soon."
+
+And I am sorry, again, to cut this short. But Youmna, well..." He smiles a little lopsidedly. "She is strong, but even strong things may break, sometimes."
 
 * [Leave.]
-
-
 
 ->->
 
 
+
+
+
+
 = Second
 
-Stub!
+"Satna market." The PA echoes through the train. You step out into the maglev station.
+
+Not many people know how old Nova Station actually is. Of course, most of the history can be found on the 'net, but much of it is poorly translated, from the days before the universal translator existed. One thing is for sure: the station is _old_. It's been built up by a mismash of races, some new to the galactic scene, some who have disappeared altogether.
+
+Satna Market Station looks like it could have been built a millenia ago. The walls are dirty, built of chipped plasteel tiles in a style that has long fallen out of use, layered with graffiti and gum and who knows what else.
+
+The elevator appears to be broken, so you take the stairs out of the station. Aluminum railings - _aluminum_? In this age? - guide you up and outwards, out into Satna Market.
+
+- (market)
+
+* (inspect) [Inspect the market.]
+
+The first thing you notice is that the market is dark. There is no artificial sky; the ceiling above simply displays the emptiness of space. Instead, lanterns, candles, lamps, and floodlights illuminate the space, individually placed by the owners of each stall.
+
+And what stalls there are; you're currently standing at the corner of an intersection, and just from here, you can see clothing, notepads, toys, alcohol, power tools, transmitter chips, bioinic enhancements... the list goes on.
+
+You wonder, briefly, whether the ceiling faces anti-starwards by chance or purpose. Did the builders of this place plan for this dark atmosphere? Or did a seedy market develop as a result of the darkness?
+
+You're broken out of your reverie by a smell, and a more important question enters your mind: Is that fried {First.doula: doula | motato}?
+
+-> market
+
+* (food) {inspect} [Get some of whatever that is.]
+
+You follow the strong scent and end up at a stall selling delicious-smelling fried spheres. You're not sure what species the seller is; they gesture at you with their tentacles. "Five chits." A gruff voice emits from a beak.
+
+You pay, and the seller ladles some spheres into a container for you. "First time at the market?" they ask.
+
+You nod. "Some advice," they say. "Don't look so lost. Less chance you'll get taken advantage of."
+
+They hand you the box of food, and you thank them.
+
+-> market
+
+* [Look for Yousef.]
+
+{inspect and not food: Best to stay on task. You ignore the smell.}
+
+You set out, walking along the multifarious stalls, {food: munching on the spheres,} keeping your eyes peeled for Yousef. It's a maze in here; the streets wind back and forth, curving this way and that. Eventually, you find the Falasi at a street corner at a bizzare seven-way intersection.
+
+"Ah, hello friend!" He greets you. {First.hug or First.hug_quick: He offers you a hug, and you take it.} {no_hug: He starts to offer you a hug, but then remembers that you'd rather not, and gives you a handshake instead.} "Thank you for joining me. It's a great comfort that you're here."
+
+He starts leading the way, and you follow. "It's not much further from here. I just have to drop this off - " he shrugs his shoulders, showing the large backpack he's carrying - "to send to my relatives, back in Falas." He shakes his head. "Familiar with Falas?"
+
+* [Nod your head. You heard about it in school.]
+
+You nod. You've heard about the complicated conflict in school. The Yisuans and the Falasi can't decide how to partition the planet.
+
+* [Shake your head. You only know what you've heard in school.]
+
+You shake your head. You've heard about the conflict between the Falasi and the Yisuans over partitioning the planet, but you know that the conflict is more complicated than that.
+
+- "Yes, well." Yousef looks somewhat discomfited by this description of the conflict. "That is true. The situation is... difficult. And as you heard, I left some family back in Falas."
+
+"The Yisuans are starving them," he says matter-of-factly. "There is no food, barely any water. When I can get a communication through to my family, they are always complaining about how hungry they are. And still, they are being bombed. Every day there is a siren, and -"
+
+Yousef stops. "Anyway." He looks back at you, and smiles lopsidedly. "That is why I must send them some food." He indicates the large backpack he's wearing. "I must."
+
+- (questions)
+
+* (got_out) [Ask about how they got out.]
+
+Ask about how they left Falas-Yisua.
+
+"Luck," Yousef says. "Not everyone can read or speak as well as I can. We don't have these." He indicates the translator. "Yisua keeps them from us.
+
+I was educated well, and have good connections from the translator job I held for many years. And so, when the call went out at the Barakhunian aid organization for the next round of refugees, I was able to sign up."
+
+"And even so, the process was labyrinthian. First, I had to gather a large sum of money. Then I had to take this money to a broker. Then that broker, he says, wait. Your name will appear on a list. So we waited, and waited. Then, our names appeared on the list, and it said we had to leave the very next day for the spaceport. So in a rush, we gathered our things, said goodbye to our relatives, and left."
+
+He is silent for a moment. "The swiftness of that leavetaking... it took a toll on us. I wish that I could have gathered enough money for us all to leave."
+
+-> questions
+
+* (conflict) [Ask about his thoughts on the conflict.]
+
+You note that, earlier, he seemed a little discomfited by your description of the conflict. What does he think of it?
+
+"I am not sure you want to hear it." Yousef smiles lopsidedly again. "Plus, I am a happy man, who enjoys describing happy things."
+
+** (hear_it) [You do want to hear it.]
+
+You say that you really would be interested to hear it. Not much of it is reported on anymore. It seems like the news cycle has long since moved on.
+
+"Well." Yousef sighs. "Let us start with this: these words you used earlier... 'Complicated' and 'conflict'. This is not how I would describe it."
+
+"Simple is how I would describe it. The Yisuans want our land, so they come in their ships, and make Falas unlivable for us. They bomb us, and starve us, and move us around until we can't take it anymore. We, the Falasi people, who were living there for a thousand years. There was no Yisua until three years ago. There is no Falas-Yisua, there is only Falas."
+
+"And it is not a conflict. We have not the allies nor the technology to fight back. The Yisuans, they have ships and bombs aplenty to drop on us. A conflict is a fight. This is not a fight. It is an occupation, a massacre."
+
+"The Yisuans see not a people in Falas. They see land, and an inconvenient problem to be solved. And so, the Falasi suffer."
+
+Yousef falls silent.
+
+** [Drop it.]
+
+You decide to drop the topic.
+
+- -> questions
+
+* {got_out} [Ask about how Banias is coping.]
+
+You ask about how Banias is coping with this.
+
+* {got_out} [Ask about how Youmna is coping.]
+
+* {got_out} [Ask about how he is coping.]
+
+* ->
+
+-
+
+* [Wait a second, where are we?]
+
 
 ->->
 
@@ -227,3 +342,51 @@ Stub!
 Stub!
 
 ->->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
