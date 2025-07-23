@@ -1,6 +1,8 @@
 
 ==== Intro ====
 
+/// Start with a musing on how traveling a distance is different when you're on foot. Segue into news where you learn about each of the conflicts, then flip to your relationship with your father and how you're volunteering.
+
 You listen to the rhythmic _badunk, badunk, badunk_ of the rail.
 
 - (choices)
@@ -101,11 +103,11 @@ The message describes three residents of the refugee housing block. You idly rea
 
 - (bios)
 
-*** [Read Faisal's bio.]
+*** [Read Fanias' bio.]
 
-You read through Faisal's bio.
+You read through Fanias' bio.
 
-"Faisal is a member of the royal family of the Khas, from the world Nidaroen, administered by the Urun. The Markir, the Khas' ancestral enemies, recently conquered the Khalimar, and Faisal has been on the run. The Urun granted him safe haven (against the galactic community's better judgement) and he has just arrived in the housing block.
+"Fanias is a member of the royal family of the Khas, from the world Nidaroen, administered by the Urun. The Khas empire has recently been toppled, and Fanias has been on the run. The Urun granted him safe haven (against the galactic community's better judgement) and he has just arrived in the housing block.
 
 -> bios
 
@@ -113,7 +115,7 @@ You read through Faisal's bio.
 
 You read through Yousef's bio.
 
-"Yousef is a refugee from the well-known Yisua-Falas conflict. He managed to escape Falas through unknown means, and the Barakhun have recognized his status as a refugee. Although he, his wife, and his two children managed to escape, his two sisters still remain behind in Falas, whose borders have been completely closed by the Yisuan."
+"Yousef is a refugee from the well-known Yisua-Falas conflict. He managed to escape Falas through unknown means, and the Barakhun have recognized his status as a refugee. He, his wife, and his daughter have been in the housing block for several months, but have been granted permanent resettlement. His two sisters still remain behind in Falas, where starvation and disease rage through the population."
 
 -> bios
 
@@ -121,7 +123,7 @@ You read through Yousef's bio.
 
 You read through LiYan's bio.
 
-"LiYan from the planet Calaneth. We believe they are Calanethi (the Calanethi being the repressed majority of the planet), but we're unsure, as they seem to speak some dialect of Calanethi that the universal translator can't quite pick up. Not much is known about them, other than they've been bounced around a bunch of temporary refugee housing, and the Barakhunian is only the latest."
+"LiYan from the planet Calaneth. We believe they are Calanethi (the Calanethi being the repressed majority of the planet), but we're unsure, as they seem to speak some dialect of Calanethi that our translator can't quite pick up. Not much is known about them, other than they've been moving between many different temporary refugee camps. The Barakhunian is the seventh one they've been sent to."
 
 -> bios
 

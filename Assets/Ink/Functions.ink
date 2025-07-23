@@ -1,9 +1,9 @@
 
 VAR debug=true
 VAR finished_intro=false
-VAR next_visit=->Faisal
+VAR next_visit=->Fanias
 
-VAR Faisal_Count=1
+VAR Fanias_Count=1
 VAR Yousef_Count=1
 VAR LiYan_Count=1
 

@@ -1,14 +1,14 @@
 
-=== Faisal ===
+=== Fanias ===
 
-{ Faisal_Count:
+{ Fanias_Count:
   - 1: -> First ->
   - 2: -> Second ->
   - 3: -> Third ->
-  - else: PROBLEM IN FAISAL! -> DONE
+  - else: PROBLEM IN Fanias! -> DONE
 }
 
-~ Faisal_Count += 1
+~ Fanias_Count += 1
 
 ->->
 

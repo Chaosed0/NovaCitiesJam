@@ -277,6 +277,8 @@ You shake your head. You've heard about the conflict between the Falasi and the 
 
 Yousef stops. "Anyway." He looks back at you, and smiles lopsidedly. "That is why I must send them some food." He indicates the large backpack he's wearing. "I must."
 
+He falls silent for a little while.
+
 - (questions)
 
 * (got_out) [Ask about how they got out.]
@@ -319,13 +321,41 @@ You decide to drop the topic.
 
 - -> questions
 
-* {got_out} [Ask about how Banias is coping.]
+* {got_out and conflict} [Ask about how Banias is coping.]
 
-You ask about how Banias is coping with this.
+You ask about how Banias is coping with leaving Falas.
 
-* {got_out} [Ask about how Youmna is coping.]
+Yousef shrugs. "Mostly by asking us when she can go back. She misses our relatives dearly. But she is young. When we find stable ground, she will learn easily to accept peace."
 
-* {got_out} [Ask about how he is coping.]
+-> questions
+
+* {got_out and conflict} [Ask about how Youmna is coping.]
+
+You ask about how Youmna is coping with leaving Falas.
+
+"Youmna..." He falls silent for a moment. "It has been difficult for her."
+
+"For a while, when we arrived at Nova Station, she stopped talking, you know." He looks away, and his shoulders tighten up. "It took her two months to say anything other than a yes or a no. And even now, well... You saw. She still cannot talk about Falas, or our relatives that have been left behind."
+
+-> questions.
+
+* {got_out and conflict} [Ask about how he is coping.]
+
+You ask you Yousef is coping with leaving Falas.
+
+"As I can." He gives the lopsided smile, the one you have come to identify as a blend of ruefulness, melancholy, and the weight of the world.
+
+"I still get messages, you know. From my relatives in Falas. 'We had nothing to eat today,' they say. 'Inshallah, you will,' I say. 'There is no aid,' they say. 'Do not worry, all will be well,' I message back."
+
+The smile has dropped away, replaced by a grim expression. "What can I say? _What can I say?_ Nothing I say can make it better."
+
+"To tell you the truth... I do not think I should have left. I should have stayed, and helped."
+
+* {got_out and conflict} [No more questions. Pay attention to where you're going.]
+
+You stop asking questions and pay attention to where you're going.
+
+-> wait
 
 * ->
 
@@ -333,15 +363,556 @@ You ask about how Banias is coping with this.
 
 * [Wait a second, where are we?]
 
+- (wait)
+
+Wait a second. You stop. The hustle and bustle of the market has fallen away without you noticing, so absorbed you were in asking questions. You're on a dimly-lit alley between two big buildings. A flickering lamp overhead provides the only source of illumination. Somewhere, water is dripping from a pipe.
+
+You didn't even know places like this existed in Nova Station. Where the hell has Yousef taken you?
+
+You're about to ask Yousef this, when two blobs detach themselves from _the wall_ nearby.
+
+* [Continue]
+
+- They plop down onto the street with a wet sound, and from there, rise up, forming a vague pillar of what looks like goop.
+
+Are those... Norberians? What are they doing on Ring Six? You didn't know there were any here. This has gone from shady to ultra-shady.
+
+The one on the left starts vibrating rhythmically, and though no sound emits from it, words start appearing on your vision from your translator anyway. "Payment, please."
+
+* [Ask Yousef what the hell is going on.]
+
+Yousef, you say. What the hell is going on?
+
+"I told you, I am sending a package to my relatives. Now please, treat our guests with respect." He smiles at the Norberians.
+
+* (cool) [Keep cool.]
+
+Whatever is happening here, it probably won't be helped by you panicking. You fold your hands in front of you and try to look like you know what you're doing.
+
+-
+
+"Ahem, about payment," Yousef says to the pillars of goo. "I, well, did not bring quite the amount we agreed on. Couldn't quite find all the money, you see. Will two thousand chits do?"
+
+{cool: You keep it cool, but internally you think: two _thousand_ chits? | You choke a little bit. Two _thousand_ chits? } That is way too much money to ship a package.
+
+The Norberian on the left vibrates, a little anxiously, you think. "We agreed on three thousand. Two thousand is not acceptable."
+
+"Well, I'm sure I could search my pockets for a little more..." He fishes around in his pockets, and holds out a large amount of money. "I have Two thousand and two hundred, right here, ready for you to take."
+
+More vibration. "Not acceptable. I remind you that what is happening here is not legal and we assume all risk. Two thousand seven hundred."
+
+* [Continue.]
+
+"Well," Yousef says, "I only brought two thousand two hundred. And fifty." He finds a little bit more and holds it out. "And I will make sure to refer some friends to you."
+
+They go on like this for a little while, with you {cool: pretending to keep your cool behind Yousef | nervously observing from behind Yousef}.
+
+You suddenly notice... Does the right Norberian have a _gun_ inside them? And... is the gun slowly exiting its body?
+
+* (you) [Fish some money out.]
+
+You jump in. You fish out what money you have, holding out two hundred chits more. Will this do?
+
+Yousef shoots you a look, a mixture of exasperation and pain. Seems like he wanted to handle this negotation his own. But he looks back, and says, "There you are. Two thousand six hundred and fifty. Final offer."
+
+* [Stay silent.]
+
+You stay silent. Clearly Yousef knows what he's doing with negotiations. And maybe that Norberian isn't getting ready to shoot you.
+
+-
+
+"Final offer," Yousef shouts. "Two-thousand four hundred and fifty! Or I go and find some other smugglers to take my package. There are plenty on the station."
+
+The Norberians merge together for a moment. Minute vibrations ensue, but your translator can't pick it up. Must be how they "whisper". You nervously watch the gun, getting ready to jump at any moment {cool:, but still try to keep your cool}.
+
+* [Continue]
+
+Then they separate, and the one on the right vibrates. "Very well. That is enough."
+
+A pile of goo emits from its body. It waits, seemingly expectantly. Yousef hesitantly places his backpack and his money in the pile {you:, and you follow suit with your two hundred}.
+
+It seems that this was the right thing to do, as the Norberians deflate both themselves and the backpack at the same time. The backpack looks like it's been vacuum-compressed, somehow. They begin slithering away.
+
+"Expect delivery in two weeks," one of them says as it leaves. "A pleasure doing business. Remember to refer your friends."
+
+They leave behind a quickly-disappearing trail of ooze.
+
+* [Okay, what the hell was that?]
+
+- You turn to Yousef and demand an explanation. What the hell just happened? You saw that they had a weapon.
+
+Yousef shakes his head and looks away. "Do you think it is easy to deliver a package to an active warzone? Through a blockade that Yisua says is for safety, but is, in truth, a mechanism to starve our people? Do you think I could do that at a post office, perhaps?"
+
+"I will do anything to help my relatives. Gather a large amount of money, meet some possibly-dangerous smugglers in a dark alley..." He shrugs. "Deceive a friend into ensuring my safety."
+
+He looks at you. "Truth be told, it seems I would have been fine if I had come alone. But I wasn't sure if it was safe, and I was not about to ask Youmna or Banias to come with me. I hope you can forgive me."
+
+- (forgive)
+
+* (just_tell) [Why didn't he just tell you?]
+
+You ask him: why not just tell you that you were meeting some smugglers from the start?
+
+"Well," he looks at you. "Truth be told, I was not sure if I could trust you."
+
+-> forgive
+
+* (lie) {just_tell} [The fact remains that he lied to you.]
+
+He lied to you, and you feel that your trust has been betrayed.
+
+"I never lied to you. I said I was delivering a package, and I was." Yousef looks apologetic. "Perhaps I omitted some things. But I do not believe you would have come if I had told you. If I was wrong about that, then I am sorry."
+
+-> forgive
+
+* (law) [He's breaking the law.]
+
+He's breaking the law, and that is inherently wrong. No one is above the law.
+
+"No one? _No one?" Yousef looks furious. "How about the Yisuans? Are they not above the law? Should they not be brought to justice for starving my people, my sisters and brothers? Should -"
+
+He breaks off, pauses. "... There is no good in talking about this."
+
+-> forgive
+
+* (opportunists) [He's allowing opportunists to make money off him, and the war.]
+
+Those Norberians are profiting off the war, and he's facilitating it.
+
+"I told you. I will do _anything_ for my sisters. They are starving. Their children are starving. I feel it every day they message me. I must do something to help them, even if it means that I line the pockets of those who do not deserve it." Yousef's face is grim.
+
+-> forgive
+
+* [You forgive him. You would do anything for your family too.]
+
+If your family were starving, you go to any length to help them out too.
+
+Yousef nods. "I'm glad you understand, my friend. That is exactly how I feel."
+
+"Well then," he says, clapping you on the shoulder. "No use in staying here any longer. Let us get back to the station."
+
+* [You forgive him. You would feel guilty for leaving your family behind too.]
+
+If you left your family behind like that, and they were starving, you would do anything to relieve your guilt.
+
+Yousef nods. "I'm glad you understand, my friend. The guilt... It truly is crushing. I wish I could be there to help them. I wish I had stayed."
+
+"Well then," he says, clapping you on the shoulder. "No use in staying here any longer. Let us get back to the station."
+
+* (no_forgive) {just_tell or law or opportunists} [You're still not sure you forgive him.]
+
+You don't think his explanations are good enough. You're not sure if you forgive him.
+
+Yousef nods. "Very well. If your trust is the cost of relieving my family of their starvation, then so be it."
+
+"Let us at least head back to the station together. If you do not wish to see my face after that, then we will part ways afterward."
+
+-
+
+* [Leave.]
+
+
+
 
 ->->
 
 
 = Third
 
-Stub!
+You stand before a plain plasteel door. The door has the numbers "345" embossed on the surface. A small doorbell is to the right.
+
+* [Ring on the doorbell.]
+
+You ring the doorbell.<>
+
+* [Knock on the door.]
+
+You ignore the doorbell and knock on the door.<>
+
+- Immediately, you hear small foosteps running on the other side of the door.
+
+Something fiddles with the doorhandle on the other side. After a few moments, you hear Banias shout, "Mommy, help!" It's a few more moments before the door opens and Youmna stands on the other side, smiling.
+
+"Ah, hello!" She says. "Please, come in."
+
+"Yes, please come in!" Banias repeats, standing just behind her.
+
+* [Step inside.]
+
+You step inside the apartment in that Yousef, Youmna, and Banias share.
+
+The first thing you note is that it is quite well-kept. Surfaces and floors are clean. The couch, which faces a window, has only pillows and folded blankets on it. Toys are stored in a large bin kept alongside the wall. Even the few boxes that are packed, in preparation for the closing of the housing block, are tucked in a corner and taped shut.
+
+Banias bounces around excitedly. "Welcome to my house!" She exclaims. "Can I show you around?"
+
+Youmna looks on indulgently.
+
+- (tour)
+
+* [Accept the tour.]
+
+"Okay!" She throws her arms wide excitedly. "Here is our living room, where I play. And sometimes where mommy reads me books."
+
+She walks to the left of the living room and opens the door. "This is our bathroom. It is where we get clean. I love taking baths, especially when I get to bring my favorite toys with me."
+
+She walks over to the right side and opens the door. "This is our bedroom. Mommy and daddy and I sleep in there! Sometimes it gets too hot with all of us, and daddy sleeps there on the couch."
+
+She throws up her hands. "And that is our house! Thank you for taking my tour."
+
+** [Thank Banias for the tour.]
+
+You thank Banias for the lovely tour.
+
+"Of course! It was my pleasure," she says with a big smile.
+
+* [Decline.]
+
+"Pleaaase?" Banias says. "It will be a short one, I promise."
+
+-> tour
+
+* (no_tour) {tour} [You really have to talk to her mom.]
+
+Sorry, you say, you don't really have time for the tour. You need to talk to Banias' mom.
+
+Banias just pouts and looks away, ignoring you.
+
+- You look back at Youmna, who is smiling. {no_tour: She shrugs. "All the apartments are the same, Banias. Our friend here has probably seen them many times." Banias keeps pouting and flops down on the couch. | "Thank you for showing our guest around, Banias." }
+
+"Please, sit," Youmna says, addressing you. You take a seat on the couch. "Is there anything I can get you? A tea, perhaps? Or some melon? We brought some up from the cafeteria the other day. It's not much, I'm sure you've had both before, but still.." She trails off.
+
+* [A tea would be lovely.]
+
+A tea would be lovely, you say.
+
+Youmna brightens up. She goes over to big jug and pours some tea out of it into a cup. She offers it to you, and you thank her.
+
+It is indeed bog-standard cafeteria tea, but you sip it politely.
+
+"And for you too, my love," Youmna says, offering Banias a cup with a very small amount of tea so she doesn't spill it. She - rather uncharacteristically - blows it and waits for it to cool. Seems she's burned her tongue before.
+
+* [The melon sounds nice.]
+
+Youmna brightens up. She goes over a small refridgerator and places some melon slices on a plate. She places the plate on the side table nearby, and you take a slice.
+
+It is indeed a completely normal cafeteria melon slice, but you eat it politely. Banias takes one too, eating it with great gusto.
+
+* [Nothing for you, thanks.]
+
+No thank you, you say politely. You don't need anything right now.
+
+Youmna nods, a little hesitantly. Banias jumps in: "Well, I would like a tea, please!"
+
+Youmna brightens up. She goes over to big jug and pours a very small amount of tea into a cup. She offers it to Banias, who - surprisingly patiently - blows it and waits for it to cool. Seems she's burned her tongue before.
+
+- "I'm afraid Yousef is out right now," Youmna says. "Were you looking for him for anything in particular?"
+
+* [Nothing in particular.]
+
+- Nothing in particular, you say. And you're not here to look for Yousef specifically. You're here to check in with the family.
+
+"Ah, well, we are doing just fine. All is well. We go to the cafeteria to eat, and we go to the park to walk once in a while. Banias loves watching the fishes."
+
+"Yesterday we saw a bird!" Banias says excitedly. Youmna smiles at her.
+
+"Ah, and as you can see, we are preparing for the move to New Tarnaeum." She gestures to the boxes.
+
+- (move)
+
+* (packing_1) [Ask her about how packing is going.]
+
+You ask Youmna about how packing for their move to New Tarnaeum is going.
+
+"Well, it is hard work. But we do not have many things, so we are almost done. And it is a blessing that we will have somewhere to settle. Especially after..." She stops {move > 1: again | for a moment. Then she seems to change her mind about what she was about to say}. "It is a blessing. And we are almost all the way through. We do not have many things to pack, after all."
+
+-> move
+
+* (tarnaeum_1) [Ask her about what New Tarnaeum is like.]
+
+You ask Youmna what New Tarnaeum is like.
+
+She thinks for a moment. "Well, we have not been there, of course. But from what I have heard, it is quite rainy. Not at all like..." She stops {move > 1: again | for a moment. Then she seems to change her mind about what she was about to say}. "We have not been there. But it is a blessing to have been accepted for permanent resettlement at all. Inshallah, all others who still wait may be blessed so as well."
+
+-> move
+
+* {tarnaeum_1} [Ask her about how she's feeling about permanent resettlement.]
+
+You ask Youmna how she's feeling about permanent resettlement. Will she miss Falas?
+
+"I will miss Falas." Not Youmna - Banias. She says, with a small voice, "When will we see aunt and uncle again?"
+
+For a few moments, the room is silent. Youmna is breathing slowly. You can tell she is controlling it. Banias seems to realize that she has done something, and sits quietly on the couch, eyes down.
+
+Youmna breathes. In, and out. She closes her eyes. Then - she seems to make a decision.
+
+* [Continue]
+
+- "Banias, my heart," Youmna says. "Is it alright if you leave the room? Go to the bedroom, for a little while. Take your toys with you."
+
+Banias looks sad. "Are you going to have a cry, mommy?"
+
+"I - no, my love." Youmna breathes in and out. "I simply want to have a chat with our friend here."
+
+Banias nods, and selects a couple of toys to take with her. "Have a good chat." She closes the door.
+
+Youmna breathes out.
+
+* (alright) [Is Youmna alright?]
+
+You are concerned. You ask if Youmna is feeling alright.
+
+* [Stay silent.]
+
+You stay silent, and wait for Youmna to speak.
+
+-
+
+She breathes in and out a few more times, then begins speaking.
+
+"I don't know if Yousef told you. About me, not speaking for several months after we got here, from Falas." She breathes. "It wasn't that I couldn't, you know. It's not like I was hysterical. I was very rational.
+
+"No, the reason was... I didn't want to speak. What would I speak of?"
+
+"The houses - _our_ house - reduced to rubble?
+
+"My friends who were sick and could not receive medical attention, because the hospitals had all been bombed?
+
+"The children I saw, bleeding in the street, shot by snipers?"
+
+Her face is cold, a mask. "I did not speak, because I had nothing good to say. Nothing would come from my mouth, but rage. It seems there is still rage there. I bury it deep. For Yousef, and for Banias, most of all."
+
+"For you, if you wish, you may ask your questions again, and I will answer. If you wish."
+
+- (rage_questions)
+
+* [Ask her about how packing is going.]
+
+You ask her {packing_1: again} how packing is going.
+
+"In a way, it is good. It reminds me that we will be safe. Our last move. We will not have to return to that war-torn hellscape that we once called home."
+
+Youmna sets her jaw. "And it is bad. Because it reminds me that we will never return home."
+
+-> rage_questions
+
+* [Ask her about what New Tarnaeum is like.]
+
+You ask her about her thoughts on New Tarnaeum {tarnaeum_1: again}.
+
+"New Tarnaeum." She shakes her head slowly. "Sometimes I wonder, whether it was right to leave. Did we truly give in that easily to the oppresor? Roll over, and expose our weak, soft belly? They have our land now. We will never return to that house, to that land."
+
+"Instead, we left. The Yisuans won, and they have our home."
+
+"But -" she looks at the door to the bedroom, where Banias is playing. "We lived. We lived."
+
+-> rage_questions
+
+* [Ask her about how she's feeling about permanent resettlement.]
+
+You ask her about how she's feeling about permanent resettlement.
+
+She's silent. "Yousef told you about our relatives." She says it almost like an accusation. "His sisters, my brothers. Our family. All left on Falas."
+
+"Why were we chosen? Why were we lucky? I just feel an overwhelming sense of guilt. That is all I feel. Guilt, and rage. Rage at the Yisuans. Surely, they must be sub-sentient. To do such a thing to us, to put us through this, they are scum, they are lower than the lowest bacterium or fungus. How could they. How can they feel no empathy."
+
+Youmna stops. You look at her. She is not crying.
+
+-> rage_questions
+
+* [You have no {rage_questions: more} questions.]
+
+You have no {rage_questions: more} questions.
+
+- She sighs, deeply. "It does help, I tell you. It does help, sometimes, to express this rage. Express it, like one lances a boil. But it helps me, and no one else."
+
+She looks at you sharply. "I ask you: what did we do to deserve this? What did we do to deserve losing our home? What did I do to deserve this rage?"
+
+It sounds rhetorical, but she waits for a reply.
+
+* [They do not deserve this. The Yisuans should be stopped.]
+
+They do not deserve this. The Yisuans are not in the right here, and Yousef, and Youmna, and Banias, and the Falasi, all deserve their home back.
+
+Youmna snorts. "Who will give it to us? You? The Barakhunians, who have their own homeland to return to? I think not. We will never return home, and the Falasi who remain will likely die, and we must make our peace with that, deserve or not."
+
+* [They may not deserve this, but they deserve the chance to start over on New Tarnaeum.]
+
+They do not deserve to be removed from their home. But they have a chance to start over, on New Tarnaeum. Surely they deserve that.
+
+Youmna snorts. "We deserve to start over. Yes, I suppose we do. We shall forget all our family left on Falas. Banias is young. She will outgrow missing her aunts and uncles. And we will simply go on, living with their memory."
+
+* [You don't know what to say. You're so sorry.]
+
+You feel this woman's hurt in the depths of your soul. You're sorry. You don't have anything to say, but that - you're so sorry.
+
+She sighs, a quiet scream. "I am sorry too."
+
+-
+
+You sit in silence for a minute, maybe two. It seems that she's run out of words, out of rage.
+
+* [Excuse yourself.]
+
+- You decide it's time to leave. You say goodbye to Youmna. She holds up a hand, stands up. She opens the bedroom door.
+
+As she does, she is smiling. "Banias, my love. It's time to say goodbye to our guest."
+
+Banias runs up to you and gives you a small hug. "Thank you for coming to visit! I had fun and I hope you had a good chat with mommy."
+
+* [Leave.]
 
 ->->
+
+
+
+
+
+= Farewell
+
+Yousef is staring at a departures board intently, boring holes into it with his eyes, as you walk up to him.
+
+He turns his head slightly and notices you. "Ah, my friend, hello. Please, sit."
+
+* [Sit.]
+
+You sit next to Yousef. {Second.no_forgive: You're still not quite sure how things stand between you after Satna market, but you might as well.}
+
+* [Stand.]
+
+You choose to stand nearby. {Second.no_forgive: You're still not quite sure how things stand between you after Satna market.}
+
+- Yousef pays you no mind, instead returning his attention to the departures board. "Look. Do you see what I see?"
+
+You take a look. It's a list of departures from the spaceport, arranged in neat orderly rows. You spot the one departing from Nova Station to New Tarnaeum, in just fifteen minutes, from the nearby gate.
+
+* [It's just a departures board.]
+
+It's just a departures board, you say. There doesn't seem to be anything out of the ordinary.
+
+Yousef sighs. "Perhaps you're right. Nothing at all out of the ordinary."
+
+* [Look more closely.]
+
+You look a little closer, reading each of the rows in turn.
+
+Ah, perhaps it's the flight to Yisua-Falas that he's staring at? It's likely got him thinking of home.
+
+"Yes, home, indeed." Yousef shakes his head. "Home. My sisters. My aunts and uncles. All in trouble."
+
+- "In any case..." Yousef looks back at you. "I see you have come to wish me farewell. I appreciate that."
+
+* [It's the least you could do.]
+
+It's the least you could do, you say. He's been through so much suffering. You're glad to see him go to a place where he can finally settle down.
+
+"Yes, a place where we can finally settle down..." He thinks for a moment.<>
+
+* [It's your job.]
+
+It's your job, you say. Not much to it. But you're glad he'll finally have a safe place to stay.
+
+"Yes, a safe place to stay..." He thinks for a moment.<>
+
+* {Second.no_forgive} [You weren't sure if you would, after Satna market.]
+
+You weren't sure if you would come, you say, after what happened at Satna market. But you thought you might as well, seeing as this will be the last time you see him.
+
+He hears it, but doesn't really respond. He seems to be thinking about something.
+
+- "Tell me, my friend. Pretend you were me. If you had a chance to go home, a slim chance, but a chance nonetheless, would you take it?"
+
+His face is elsewhere. "You could help your family find food, or at least suffer justly with them. You could hold your sisters again, see their children. And you would be home again! Home! Finally, where I never thought I would return..."
+
+"If you could, would you?"
+
+* [Yes. You'd go back to help your starving family.]
+
+You think about it, and say - yes, it would be worth it. Your family is starving, and feel a deep guilt, a bone-deep obligation, to help them.
+
+* [Yes. You'd go back to take vengeance on the Yisuans.]
+
+You think about it, and say - yes, you would go back. You would join the Falasi resistance, and wreak havoc on the Yisuans that made you and your family suffer so.
+
+* [No. It's too dangerous. The Yisuans aren't about to let any Falasi back.]
+
+No, you say. It's too dangerous. You wouldn't even make it back. The Yisuans wouldn't let you in, and your effort would be wasted.
+
+* [No. You deserve to give Youmna and Banias a second chance.]
+
+No, you say. Youmna needs you, and Banias deserves a second chance to live. Where would they be, without their husband and father? It is far better to live for the living.
+
+- "I see." Yousef contemplates your words, and nods. "Thank you for your answer."
+
+He seems like he's about to say more, but Banias bounds up. "Daddy, it's time to board!" Youmna is not far behind, with her ever-present smile.
+
+"Ah, how are you, friend?" Youmna says. "I appreciate you coming today."
+
+You think about the talk you had with Youmna the other day, when she dropped her mask.
+
+* [Bring it up.]
+
+You hesitantly ask if she's alright, after her expression of rage the other day. Her smile turns a little sad.
+
+"Yes, I am alright. Thank you for asking. And to be honest... It helped. Perhaps only a little bit, but it helped. It reminded me that some things are not meant to be kept inside." She gives you a hug {First.no_hug:, and this time, you accept}.
+
+* [Don't bring it up.]
+
+You don't bring it up. Instead, you say - it's nothing. You're glad to be here to see them off. Youmna smiles, and gives you a hug. {First.no_hug:This time, you accept.}
+
+- Banias hops up and down. "Are you coming with us to New Tarnaeum? I would like that!"
+
+You smile at her and say no, you aren't.
+
+"That's okay! I'm sure I'll see you again." She goes running off towards the gate. Youmna tuts and follows her.
+
+* [Continue]
+
+- Yousef slings his bag over his shoulder. "Thank you for looking after us during these last few days. God willing, we will see each other again." He walks off without saying anything else.
+
+You watch as they all approach the gate, marked X15.
+
+* [Wait a second...]
+
+ - You look back at the departures board, the one Yousef was staring at so intently. Wasn't there another flight leaving gate X15? You quickly scan the board, and - yes, there is one.
+ 
+ A flight headed to Yisua-Falas is leaving X15, about an hour after the flight to New Tarnaeum. You swing your head back towards the gate, and you catch Yousef going through the gate... followed by a Norberian.
+
+You quickly walk up to the window looking out towards the shuttle. It's busy - you bump into a couple of folks on the way, but you finally make it to the glass, and look out towards the gangway. You catch the back of Youmna's head as she boards the shuttle, but - no one else.
+
+Perhaps Yousef went ahead of them?
+
+Or perhaps... He's planning something?
+
+* [Notify security.]
+
+You walk up to the gate agents and let them know that you think there's something suspicious happening. You explain the situation; that you suspect there might be a stowaway on the next flight. They thank you, and call security.
+
+You stand around for a moment, awkwardly, guiltily, but they quickly move on, and are back to making boarding announcements.
+
+With nothing else to do, you guess you might as well leave.
+
+* [Do nothing.]
+
+Perhaps Yousef is planning something. Let him. You won't be the one to stop him.
+
+You'll never know if Yousef was really going to return to Yisua-Falas, but...
+
+** [You hope he does.]
+
+You hope Yousef returns to Yisua-Falas. Returns to the war, the starvation, and to his home.
+
+** [You hope he does not.]
+
+You hope Yousef was not planning on returning. You hope he has a fulfilling life ahead of him, with Youmna's rage, and with Banias' joy.
+
+-
+
+* [Leave.]
+
+->->
+
+
+
 
 
 

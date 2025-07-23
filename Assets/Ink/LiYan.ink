@@ -777,7 +777,7 @@ You immediately apologize. You wish you could have done more, at every step. LiY
 
 In the background, the shuttle boarding call goes out. LiYan stands up. Their hands clench, but then relax.
 
-"No one wishes for me to exist. Not the Calanethi. Not the Galateans. I am inconvenient to exist." Something in their gaze becomes more resolute. "Well then. My existence is inconvenient for them? I will go to this eighth camp. I will be inconvenient. I will exist, and resist."
+"No one wishes for me to exist. Not the Calanethi. Not the Galateans. I am inconvenient to exist." Something in their gaze becomes more resolute. "Well then. My existence is inconvenient for them? I will go to this eighth camp. And the next. And the next. I will be inconvenient. I will exist, and resist."
 
 LiYan picks up their bag. They hold their hand to you.
 
