@@ -1,9 +1,11 @@
 
 ==== Intro ====
 
-/// Start with a musing on how traveling a distance is different when you're on foot. Segue into news where you learn about each of the conflicts, then flip to your relationship with your father and how you're volunteering.
+Something is making a rhythmic noise. [i]badunk, badunk, badunk.[\i]. It's odd, you think; you've never been on a train that's physically attached to a rail. Of course it's going to make a noise when it's physically attached to something. You muse briefly on what it might be that's making the sound. The wheels on the rail? The bouncing of the seats?
+ 
+[i]badunk, badunk, badunk.[/i] This train is so much slower than a maglev. It took you probably twenty minutes to make it out to Ring Six from the Main Station on a maglev. But from Ring Six to this out-station - it's been nearly an hour and you still haven't reached your destination.
 
-You listen to the rhythmic _badunk, badunk, badunk_ of the rail.
+[i]badunk, badunk, badunk[/i]. You shake your head. You'll have to put up with this sound on a regular basis, but you won't like it.
 
 - (choices)
  
@@ -16,42 +18,27 @@ You listen to the rhythmic _badunk, badunk, badunk_ of the rail.
  You idly wonder whether your homeworld is on this side or the other side.
  
  -> choices
- 
- * [Think about what's causing the sound.]
- 
- _badunk, badunk, badunk_.  It's odd, you think; you've never been on a train that's physically attached to a rail. The maglev trains that run in most of the station are very quiet.
- 
- Who would make a train that's attached to a rail, anyway? It's so much slower. It took you probably twenty minutes to make it out to Ring Six from the Main Station on a maglev. But from Ring Six to this out-station - it's been nearly an hour and you're still not yet there.
-
-_badunk, badunk, badunk_. You shake your head. You'll have to put up with this sound on a regular basis, but you won't like it.
-
- -> choices
-
- * [Enough reminiscing; check your wrist.]
-
-You take a look at your wrist. Instantly, your tiny projector wristband lights up, and information is projected at your eyes.
-
-"06:33 Nova Time", you see at the top-right of your vision, along with an indicator that you're connected to the Net. Looks like even this ancient railcar provides connectivity, somehow.
-
-- (choices2)
 
 * [Check time to your destination.]
 
-You rotate your wrist counterclockwise and make a gesture. An abstract map of the railway you're on comes up. "ETA: 06:45 Nova Time".
+You rotate your wrist counterclockwise and flick your fingers. An abstract map of the railway you're is projected at your eyes.
+
+"Current time: 06:33 Nova Time."
+"ETA: 06:45 Nova Time".
 
 The map displays a few stops, and then your final destination: the Barakhunian Refugee Housing Block.
 
--> choices2
+-> choices
 
 * [Check your calendar.]
 
-You touch your fingers together, and a calendar comes up. It's automatically been adjusted to match Nova Station's standard time, as well as Ring Six's particular orbit. Six days per week, twenty-four hours per day.
+You touch your forefinger and thumb together, and a calendar comes up. It matches Nova Station's standard time, as well as Ring Six's particular orbit. Nine days per week, twenty-four hours per day.
 
-Yesterday's calendar entry: "First day of the internship. Settle in, meet with mentor."
+Yesterday's calendar entry: "See father off. First day at the housing block."
 
-Today's calendar entry: "Meet with three assigned residents, then meet with mentor."
+Today's calendar entry: "Meet with one of the three assigned residents."
 
--> choices2
+-> choices
 
 * [Check your messages.]
 
@@ -59,55 +46,47 @@ You use your left hand to tap the knuckle of your first finger. A series of mess
 
 You keep a tidy inbox, so there's only a few in here, relevant to your current journey.
 
-- (messages)
+-- (messages)
 
-** [Subject: Barkhunian Internship?]
+** [Subject: Help at the Housing Block?]
 
-You read the messages with the subject "Barkhunian Internship?" It was sent, by you, three months ago.
+You read the messages with the subject "Help at the Housing Block?" It was sent by your father one week ago.
 
-This is the initial series of messages that you sent to the head of the Barakhunian Refugee Housing Block. It begins with your request for an internship, explaining that you're on your Wander, and that you'd like to know what it's like to support refugees.
+The message explains that his father needs to see to some business on Barakhun, before the Great Resettlement begins. And that you'd like to help out at the housing block while he's gone.
 
-The head of the housing block was extremely welcoming to your request, but they mentioned they'd be closing soon. Sounds like Nova Station is not renewing the lease on the housing block.
+The head of the housing block was welcoming to the idea. Seems the Great Resettlement is causing quite a bit of turmoil at the housing block, which will be closing soon without anyone left to steward it. They could use the help in its final days. And so, here you are.
 
-Still, you responded, you'd be interested, and so, here you are.
-
-*** [Continue]
-
-The message chain continues on and is mostly logistics from there, concluding just yesterday, with your arrival at Nova Station.
-
-You've read over this series of messages a few times, but... Oh no. You only just realized you mis-spelled "Barakhunian" in the title. That's monumentally embarrasing.
-
-Gosh, you're not going to get over that one for a while.
+The message chain continues on and is mostly logistics from there, concluding just yesterday, with your arrival at Ring Six of Nova Station.
 
 -> messages
 
-** [Subject: Arrived at Nova Station]
+** [Subject: Arrived at Barakhun]
 
-You read the message chain with the subject "Arrived at Nova Station". It was sent, by you, yesterday at 17:37 Nova Time.
+You read the message chain with the subject "Arrived at Barakhun". It was sent by your father yesterday at 17:37 Nova Time. 
 
-This is a message you sent just yesterday to your parents telling them you arrived safely. They want to hear from you at every stop on your Wander year. Seems they want to know that you're safe.
+The message indicates that your father arrived on Barakhun safely. He won't be available for calls most of this week, he says; he'll be busy with setting up things at home.
 
-You've transited through Nova Station before, of course, but this is the first time you've stopped in. Your message to them is full of details about the arrival hall and the magrail you took to your assigned apartment at Ring Six.
+He thanks you again for being willing to help out the housing block in its final days. Although most of its residents have already been resettled to other camps, the few folks that are left always could use some support. He expects it'll be a good experience for you. His three points of advice: actively listen to people, remember their story is different than yours, and have fun.
 
-They responded warmly, wishing you a safe and fulfulling stay, and that they can't wait to see you again.
-
-You sigh. First stop on your Wander and they already want you back.
+Finally, he says that he is eagerly awaiting you on Barakhun. The Great Resettlement begins in just a couple of weeks. He'll give you a call as soon as he can.
 
 -> messages
 
 ** [Subject: Your Duties at BRHB]
 
-The message with the subject "Your duties at BRHB" is from the head of the housing block, whom you met in person for the first time yesterday. It was sent at 05:50 Nova Time.
+The message with the subject "Your duties at BRHB" is from the head of the housing block. It was sent at 05:50 Nova Time.
+
+The message says that you should check in with one of your three assigned refugees on each day this week. Since the housing block is closing soon, all three residents will be resettled, and you should assist them with any final tasks they have before that occurs.
 
 The message describes three residents of the refugee housing block. You idly read through their bios...
 
-- (bios)
+--- (bios)
 
 *** [Read Fanias' bio.]
 
 You read through Fanias' bio.
 
-"Fanias is a member of the royal family of the Khas, from the world Nidaroen, administered by the Urun. The Khas empire has recently been toppled, and Fanias has been on the run. The Urun granted him safe haven (against the galactic community's better judgement) and he has just arrived in the housing block.
+"Fanias is a member of the royal family of the Khas, from the world Nidaroen, administered by the Urun. The Khas empire has recently been toppled, and Fanias has been on the run. The Barakhun granted him safe haven (against the Urun's wishes). He has been at the housing block for two weeks."
 
 -> bios
 
@@ -123,13 +102,15 @@ You read through Yousef's bio.
 
 You read through LiYan's bio.
 
-"LiYan from the planet Calaneth. We believe they are Calanethi (the Calanethi being the repressed majority of the planet), but we're unsure, as they seem to speak some dialect of Calanethi that our translator can't quite pick up. Not much is known about them, other than they've been moving between many different temporary refugee camps. The Barakhunian is the seventh one they've been sent to."
+"LiYan is from the planet Calaneth. We believe they are Calanethi (the Calanethi being the repressed majority of the planet), but we're unsure, as they seem to speak some dialect of Calanethi that our translator can't quite pick up. Not much is known about them, other than they've been moved between many different temporary refugee camps. The Barakhunian Housing Block is the seventh one they've been sent to."
 
 -> bios
 
-*** [Continue]
+*** ->
 
-That's all the bios in the message from your mentor. The message continues on to say that you should check in with two of them each day you're here. Since the housing block is closing soon, all three residents will be moving out, and you should assist them with any final tasks they have before that occurs.
+That's all the bios in the message.
+
+You'll be expected to check up on each of these folks until they leave the housing block, at the end of the week. After that, if all goes well, you'll be joining your father on Barakhun.
 
 ~finished_intro=true
 
@@ -137,66 +118,27 @@ That's all the bios in the message from your mentor. The message continues on to
 
 ** {finished_intro} [That's enough messages.]
 
-You're done checking your messages, and you flip back to the main page of your Wrist.
+You're done checking your messages.
 
--> choices2
-
+-> choices
 
 * [Check the weather.]
 
 You flick your wrist to the right to check the weather. "No results" is displayed.
 
-Oh, right, you think. This is a space station. There is no weather. You shake your head. Too used to routines on your homeworld.
+Oh, right, you think. No weather on Ring Six. You shake your head. You're too used to the fake weather generated by the Climate Controller on the Main Station.
 
--> choices2
+-> choices
 
-* {finished_intro} [You're almost at the station.]
-
-You look away from your wrist, and the informational screen goes away.
+* {finished_intro} [You're almost at your destination.]
 
 "Barakhunian Refugee Housing Block", the train announces, as the doors open. You stand up and exit the train. Seems you're the only one getting off at this stop.
 
-You have a choice to make; which resident of the housing block will you visit first?
+You have a choice to make; which resident of the housing block will you visit today?
 
 You're certain you will have time to visit all of the residents in your time here, so who you visit first is entirely up to you.
 
-- (visit)
-
-+ [Perhaps Faisal...]
-
-You think about Faisal, the minor lord of the Khas who comes to petition the Urun for help against his ancestral enemies.
-
-** [I'll visit Faisal first.]
-
-You decide you will pay Faisal a visit first.
-
-~next_visit=->Faisal
-
-** [Maybe someone else.] -> visit
-
-+ [Maybe Yousef...]
-
-You think about Yousef, the refugee of the Yisua-Falas conflict, who left his family in Falas to save his kids.
-
-** [I'll visit Yousef first.]
-
-You decide to see how Yousef is doing.
-
-~next_visit=->Yousef
-
-** [Maybe someone else.] -> visit
-
-+ [Or perhaps LiYan...]
-
-You think about LiYan, the Calanethi of unknown origin for whom the universal translator can't quite pick up their language.
-
-** [I'll visit LiYan first.]
-
-You decide that you should check in on LiYan.
-
-~next_visit=->LiYan
-
-** [Maybe someone else.] -> visit
+-> Visit ->
 
 - ->->
 

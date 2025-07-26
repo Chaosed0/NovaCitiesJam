@@ -1,14 +1,12 @@
 
 === LiYan ===
 
-{ LiYan_Count:
+{ LiYan:
   - 1: -> First ->
   - 2: -> Second ->
   - 3: -> Third ->
   - else: PROBLEM IN LIYAN! -> DONE
 }
-
-~ LiYan_Count += 1
 
 ->->
 
@@ -192,11 +190,15 @@ You file this info away for later.
 
 * [Move on, and promise to find a solution.]
 
-You stand up and promise that you'll think about how to solve their gravity problem. For now, it's probably best that they go to lay down.
+- You stand up and promise that you'll think about how to solve their gravity problem. For now, it's probably best that they go to lay down.
 
 LiYan shakes his head gravely. "Thank you."
 
+* [Leave.]
+
 You part ways.
+
+.....
 
 ->->
 
@@ -418,7 +420,9 @@ You bid LiYan farewell, and exit the gymnasium.
 
 You exit the maglev station to a wide plaza. You take a look at your feet, and note that the plaza is stone rather than plasteel. That must have taken some incredible structural reinforcement. And are those real trees bordering the plaza? Wow. The Galateans are clearly a wealthy species.
 
-Across the plaza is a great, forbidding cylinder of a building. Gigantic pillars stretch all the way up to a simulated sky. Archways dot the facade. At the top of the building are some words, over which your translator helpfully overlays:
+Across the plaza is a great, forbidding cylinder of a building. Gigantic pillars stretch all the way up to a simulated sky. Archways dot the facade.  It's a beautiful piece of architecture {Fanias.Second: , nothing like the Urun Embassy you visited with Fanias|}.
+
+At the top of the building are some Galatean words, over which your translator helpfully overlays:
 
 "Justice is the Highest Form of Life."
 
@@ -793,7 +797,7 @@ You clasp their hand, and apologize {apologize: again}. You're so sorry.
 
 "Do not be. Existence is a gift."
 
-- With that, LiYan straightens their back, and boards the shuttle, head held high.
+- With that, LiYan straightens their back and boards the shuttle, head held high.
 
 ->->
 

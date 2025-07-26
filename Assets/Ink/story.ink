@@ -20,11 +20,21 @@ INCLUDE LiYan.ink
 - (top)
 
  + [Full] -> FullGame ->
+ + [Fanias]
+ ++ [Fanias Full] -> LiYan ->
+ ++ [Fanias 1] -> LiYan.First ->
+ ++ [Fanias 2] -> LiYan.Second ->
+ ++ [Fanias 3] -> LiYan.Third ->
+ + [Yousef]
+ ++ [Yousef Full] -> LiYan ->
+ ++ [Yousef 1] -> LiYan.First ->
+ ++ [Yousef 2] -> LiYan.Second ->
+ ++ [Yousef 3] -> LiYan.Third ->
  + [LiYan]
- ++ [LiYan_Full] -> LiYan ->
- ++ [LiYan_1] -> LiYan.First ->
- ++ [LiYan_2] -> LiYan.Second ->
- ++ [LiYan_3] -> LiYan.Third ->
+ ++ [LiYan Full] -> LiYan ->
+ ++ [LiYan 1] -> LiYan.First ->
+ ++ [LiYan 2] -> LiYan.Second ->
+ ++ [LiYan 3] -> LiYan.Third ->
 
 - -> top
 
@@ -32,6 +42,17 @@ INCLUDE LiYan.ink
 === FullGame ===
 
 -> Intro ->
--> LiYan ->
+-> next_visit ->
+-> next_visit ->
+-> next_visit ->
+-> next_visit ->
+-> next_visit ->
+-> next_visit ->
+-> next_visit ->
+-> next_visit ->
+-> next_visit ->
+-> LiYan.Farewell ->
+-> Yousef.Farewell ->
+-> Fanias.Farewell ->
 
 -> END

@@ -1,14 +1,12 @@
 
 === Yousef ===
 
-{ Yousef_Count:
+{ Yousef:
   - 1: -> First ->
   - 2: -> Second ->
   - 3: -> Third ->
   - else: PROBLEM IN YOUSEF! -> DONE
 }
-
-~ Yousef_Count += 1
 
 ->->
 
@@ -22,9 +20,7 @@
 
 = First
 
-You cross a threshold into a brightly lit space. The glare of the overhead lights is harsh. Tables and benches are arranged in neat rows, full of people, mostly humanoid, chatting amongst themselves. At the far end of the room there is a short line along an open window. Staff spoon out servings of lukewarm food for the people in line.
-
-It's loud in here. The ceiling doesn't give anywhere for chatter to escape, and so here it stays, a clamor. You muse upon the exponential effect of a crowd; few people, and you can chat in a normal voice. But in a crowd, you have to speak louder to be heard over the other people, and now they have to speak louder, to be heard over you, until suddenly everyone is shouting.
+-> Cafeteria ->
 
 * [Look for Yousef.]
 
@@ -209,6 +205,14 @@ You suppose a little time without Banias interrupting might be a good idea.
 And I am sorry, again, to cut this short. But Youmna, well..." He smiles a little lopsidedly. "She is strong, but even strong things may break, sometimes."
 
 * [Leave.]
+
+...
+
+-> Train ->
+
+// Think about what you would do.
+
+-> Visit ->
 
 ->->
 
@@ -511,10 +515,23 @@ Yousef nods. "Very well. If your trust is the cost of relieving my family of the
 
 * [Leave.]
 
+-> Train ->
 
+...
 
+// Think about whether you're betrayed or not.
+
+-> Visit ->
 
 ->->
+
+
+
+
+
+
+
+
 
 
 = Third
@@ -760,6 +777,12 @@ As she does, she is smiling. "Banias, my love. It's time to say goodbye to our g
 Banias runs up to you and gives you a small hug. "Thank you for coming to visit! I had fun and I hope you had a good chat with mommy."
 
 * [Leave.]
+
+-> Train ->
+
+// Think about Youmna's strength.
+
+-> Visit ->
 
 ->->
 
