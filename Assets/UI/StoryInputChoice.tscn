@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://cic3axmjb00bb"]
+
+[ext_resource type="Script" uid="uid://b7w77ivpp3a0m" path="res://Assets/Scripts/StoryInputChoice.gd" id="1_irxb3"]
+
+[node name="StoryText" type="LineEdit"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "This is some story text. This is some story text. This is some story text. This is some story text. This is some story text. This is some story text. This is some story text. This is some story text. This is some story text. "
+script = ExtResource("1_irxb3")

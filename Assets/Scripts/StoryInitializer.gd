@@ -1,7 +1,7 @@
 class_name StoryInitializer
 extends Node
 
-const knot_path : String = "FullGame"
+const knot_path : String = "Main"
 
 var _storyUI : StoryUI
 

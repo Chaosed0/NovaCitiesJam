@@ -1,7 +1,9 @@
 
 ==== Intro ====
 
-Something is making a rhythmic noise. [i]badunk, badunk, badunk.[\i]. It's odd, you think; you've never been on a train that's physically attached to a rail. Of course it's going to make a noise when it's physically attached to something. You muse briefly on what it might be that's making the sound. The wheels on the rail? The bouncing of the seats?
+~ change_background("train")
+
+Something is making a rhythmic noise. [i]badunk, badunk, badunk.[/i] It's odd, you think; you've never been on a train that's physically attached to a rail. Of course it's going to make a noise when it's physically attached to something. You muse briefly on what it might be that's making the sound. The wheels on the rail? The bouncing of the seats?
  
 [i]badunk, badunk, badunk.[/i] This train is so much slower than a maglev. It took you probably twenty minutes to make it out to Ring Six from the Main Station on a maglev. But from Ring Six to this out-station - it's been nearly an hour and you still haven't reached your destination.
 

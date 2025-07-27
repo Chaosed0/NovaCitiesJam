@@ -168,7 +168,7 @@ You notice that their entire body seems a little more relaxed while they're layi
 
 You have a guess as to what LiYan is having trouble with:
 
-++ [INPUT_TEXT: LiYan_Guess_1]
+++ [INPUT_TEXT LiYan_Guess_1 Type in your guess.]
 ** {debug} [DEBUG! Guess correctly]
 
 ~LiYan_Guess_1 = "gravity"

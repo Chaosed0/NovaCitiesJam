@@ -5,7 +5,9 @@ extends Control
 
 var _textScene : PackedScene
 var _choiceScene : PackedScene
+var _inputChoiceScene : PackedScene
 var _separator : PackedScene
+var _background : TextureRect
 var _story : InkPlayer
 var _bottomSpacer : Control
 var _scrollContainer : ScrollContainer
@@ -15,15 +17,13 @@ var _container : VBoxContainer
 var _margin : float
 var _currentTween : Tween
 var _currentChoices : Array[StoryChoice]
+var _currentInputs : Array[StoryInputChoice]
 var _currentStoryText : RichTextLabel
 
 var _storyIsLoaded : bool
 var _deferredKnot : String
-var _didBeginAudio : bool
-var _deferredBeginAudio : bool
 var _randomizeNextChoices : bool
 
-signal begin_audio_signal
 signal on_story_loaded_signal
 signal on_story_tween_begin
 signal on_story_tween_complete
@@ -34,10 +34,12 @@ func _ready() -> void:
 
 	_textScene = ResourceLoader.load("res://Assets/UI/StoryText.tscn")
 	_choiceScene = ResourceLoader.load("res://Assets/UI/StoryChoice.tscn")
+	_inputChoiceScene = ResourceLoader.load("res://Assets/UI/StoryInputChoice.tscn")
 	_separator = ResourceLoader.load("res://Assets/UI/StorySeparator.tscn")
 
 	_story = get_node("%InkPlayer")
 	_bottomSpacer = get_node("%BottomSpacer")
+	_background = get_node("%StoryBackground")
 	_scrollContainer = get_node("ScrollContainer")
 	_content = _scrollContainer.get_node("MarginContainer")
 	_container = _content.get_node("VBoxContainer")
@@ -72,7 +74,7 @@ func on_story_loaded(successfully: bool) -> void:
 		print("Story loaded successfully!")
 
 	_story.bind_external_function("shuffle_next_choices", self, "randomize_next_choices")
-	_story.bind_external_function("begin_audio", self, "begin_audio")
+	_story.bind_external_function("change_background", self, "change_background")
 
 	on_story_loaded_signal.emit()
 
@@ -80,6 +82,8 @@ func on_story_loaded(successfully: bool) -> void:
 		load_story_internal(_deferredKnot)
 
 func load_story_internal(knot: String) -> void:
+	_story.set_variable("debug", debug)
+
 	if _currentTween != null:
 		skip_tween()
 
@@ -89,8 +93,6 @@ func load_story_internal(knot: String) -> void:
 
 	if knot != null:
 		_story.choose_path(knot)
-
-	_story.set_variable("debug", debug)
 
 	continue_story(true);
 
@@ -138,12 +140,25 @@ func continue_story(is_first : bool) -> void:
 
 	for index : int in indexes:
 		var choice : InkChoice = choices[index]
-		var button : StoryChoice = _choiceScene.instantiate()
-		_container.add_child(button);
-		button.initialize(choice.text, choice.index, i)
 
-		button.on_choice_chosen.connect(on_choice_pressed)
-		_currentChoices.append(button)
+		if choice.text.begins_with("INPUT_TEXT"):
+			var input : StoryInputChoice = _inputChoiceScene.instantiate()
+			_container.add_child(input)
+			var varName : String = choice.text.get_slice(" ", 1)
+			var choiceText : String = choice.text.right(choice.text.length() - "INPUT_TEXT".length() - varName.length() - 2)
+			input.initialize(varName, choiceText, choice.index, i)
+			print("init input: ", varName, choiceText, choice.index)
+
+			input.on_input.connect(on_input_submitted)
+			_currentInputs.append(input)
+		else:
+			var button : StoryChoice = _choiceScene.instantiate()
+			_container.add_child(button)
+			button.initialize(choice.text, choice.index, i)
+
+			button.on_choice_chosen.connect(on_choice_pressed)
+			_currentChoices.append(button)
+
 		i = i + 1
 
 	_container.move_child(_bottomSpacer, _container.get_child_count())
@@ -160,6 +175,9 @@ func continue_story(is_first : bool) -> void:
 
 	for button in _currentChoices:
 		additionalSize += button.size.y
+
+	for input in _currentInputs:
+		additionalSize += input.size.y
 
 	_bottomSpacer.custom_minimum_size = Vector2(0, _scrollContainer.size.y - additionalSize - _margin)
 
@@ -178,6 +196,9 @@ func continue_story(is_first : bool) -> void:
 	for button in _currentChoices:
 		button.initialize_tween(_currentTween)
 
+	for input in _currentInputs:
+		input.initialize_tween(_currentTween)
+
 	_currentTween.play()
 
 func skip_tween() -> void:
@@ -185,12 +206,23 @@ func skip_tween() -> void:
 		_currentTween.custom_step(99999)
 
 func on_choice_pressed(index : int) -> void:
+	choose_choice_index(index)
+
+func on_input_submitted(varName: String, value: String, index: int) -> void:
+	_story.set_variable(varName, value)
+	choose_choice_index(index)
+
+func choose_choice_index(index: int) -> void:
 	_story.choose_choice_index(index);
 
 	for choice in _currentChoices:
 		choice.queue_free()
 
+	for choice in _currentInputs:
+		choice.queue_free()
+
 	_currentChoices.clear()
+	_currentInputs.clear()
 	continue_story(false)
 
 func complete_story() -> void:
@@ -203,17 +235,20 @@ func on_tween_finished() -> void:
 func randomize_next_choices() -> void:
 	_randomizeNextChoices = true
 
-func begin_audio() -> void:
-	if !_didBeginAudio:
-		_deferredBeginAudio = true
+func change_background(bgName: String) -> void:
+	var bgPath : String = "res://Assets/Images/Backgrounds/%s.png" % bgName
+
+	if !ResourceLoader.exists(bgPath, "Texture2D"):
+		print("not exist")
+		bgPath = "res://Assets/Images/Backgrounds/tmp-background.png"
+
+	print("set to ", bgName, bgPath)
+	var bg : Texture2D = ResourceLoader.load(bgPath)
+
+	_background.texture = bg
 
 func on_tween_complete() -> void:
 	on_story_tween_complete.emit()
-
-	if _deferredBeginAudio:
-		begin_audio_signal.emit()
-		_deferredBeginAudio = false
-		_didBeginAudio = true
 
 func _gui_input(event : InputEvent) -> void:
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
