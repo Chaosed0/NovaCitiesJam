@@ -3,6 +3,8 @@ INCLUDE Intro.ink
 INCLUDE Fanias.ink
 INCLUDE Yousef.ink
 INCLUDE LiYan.ink
+INCLUDE Shared.ink
+
 
 
 
@@ -11,9 +13,7 @@ INCLUDE LiYan.ink
 -> Main
 
 === Main ===
-{debug:
- - false: ->FullGame
-}
+{not debug: ->FullGame }
 
 ~ SEED_RANDOM(235)
 
@@ -54,5 +54,6 @@ INCLUDE LiYan.ink
 -> LiYan.Farewell ->
 -> Yousef.Farewell ->
 -> Fanias.Farewell ->
+-> Finale ->
 
 -> END

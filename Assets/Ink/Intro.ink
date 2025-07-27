@@ -68,7 +68,7 @@ The message indicates that your father arrived on Barakhun safely. He won't be a
 
 He thanks you again for being willing to help out the housing block in its final days. Although most of its residents have already been resettled to other camps, the few folks that are left always could use some support. He expects it'll be a good experience for you. His three points of advice: actively listen to people, remember their story is different than yours, and have fun.
 
-Finally, he says that he is eagerly awaiting you on Barakhun. The Great Resettlement begins in just a couple of weeks. He'll give you a call as soon as he can.
+Finally, he says that he is eagerly awaiting you on Barakhun. The Great Resettlement begins in just a couple of weeks.
 
 -> messages
 

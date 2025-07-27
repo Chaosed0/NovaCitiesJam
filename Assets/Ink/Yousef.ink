@@ -20,15 +20,21 @@
 
 = First
 
+~ change_background("cafeteria")
+
 -> Cafeteria ->
 
 * [Look for Yousef.]
 
-- It's hard to spot anyone in this space. You shield your eyes from the overhead lights and start to scan the crowd. Just then, you feel something ram you. You stagger forward, but manage to catch your balance before you run into the people seated just in front of you.
+- It's hard to spot anyone in this space. You shield your eyes from the overhead lights and start to scan the crowd.
+
+Just then, you feel something ram into your legs. You stagger forward, but manage to catch your balance before you fall onto the people seated in front of you.
 
 "Oops!" A little voice says, followed by a gruffer one: "Banias! Now what did I tell you about running?"
 
-You turn around. A small girl gawks up at you, some ribbons in her hair. Behind her are two people. One is a man, just under middle age, with a large beard and wrapped hair. Alongside him is a woman, about the same age, with long brown hair.
+* [Continue]
+
+- You turn around. A small girl gawks up at you, some ribbons in her hair. Behind her are two people. One is a man, just under middle age, with a large beard and wrapped hair. Alongside him is a woman, about the same age, with long brown hair.
 
 "I am so sorry," the woman says to you, then to the girl: "Little Banias, say you're sorry to this person!"
 
@@ -80,11 +86,13 @@ You step back a bit. Sorry, you say, you don't know them that well.
 
 * [Continue]
 
-- "And you have already met Banias." She gestures to the empty space behind Yousef. "What - Banias!?" Banias has already run and joined the queue for food.
+- "And you have already met Banias." She gestures behind Yousef, but - there's no one there.
+
+"What - Banias!?" Youmna panicks for a moment, looking around, but then she relaxes and rolls her eyes. Banias has simply ran off to join the queue for food.
 
 // Insert one more reference to Falas, which Yousef shushes.
 
-Yousef sighs and walks over to her. He puts his large hands around her waist and picks her up, yelping, before settling her in his arms. Youmna gives a despairing laugh. "Please, join us for food."
+Yousef sighs and walks over to her. He puts his large hands around her waist and picks her up, yelping, before settling her in his arms.
 
 You grab a tray and join them in the line for food. You're offered a choice of a couple of entrees.
 
@@ -150,7 +158,7 @@ You don't say anything, instead letting the others dictate the conversation.
 
 Banias jumps in. "I like this food. I bet auntie Shireen and uncle Hamed would enjoy it too. Can we bring them some when we go back home?"
 
-Yousef and Youmna fall awkwardly silent.
+Yousef and Youmna fall silent. The two, who were so welcoming earlier, now look incredibly awkward.
 
 * [Who are her aunt and uncle?]
 
@@ -158,19 +166,29 @@ You decide to poke a little. Who are aunt Shireen and uncle Hamed?
 
 * [Best not to pry.]
 
-You decide it's best not to ask, but Banias decides to talk about it anyway.
-
-She turns to you.<>
+You decide it's best not to ask, but Banias decides to talk about it anyway. <>
 
 - "They are my mother's sister and brother," Banias declares. "They give good hugs and sometimes they bring me chocolate during the holiday. Once they gave me a stuffed bear. I can't wait to see them again."
 
-"Banias," Youmna says, haltingly. Then she stops.
+"Banias," Youmna says, haltingly. Then she stops. It looks like she's about to cry.
 
-Yousef picks up Banias. He says to Youmna, "My love, we'll be right back." He gestures at you to follow.
+Yousef says to Youmna, "My love, we'll be right back." He carries Banias with him, and gestures at you to follow.
+
+- (recheck)
+
+* [Check on Youmna first.]
+
+You say to Youmna, is everything alright?
+
+"I just..." She stops, and looks away. "No. Things are not ok. Please, leave me for a moment." She takes her tray and Yousef's, and walks away.
+
+Yousef beckons to you, somewhat insistently.
+
+-> recheck
 
 * [Follow Yousef.]
 
-- You exit the queue and follow Yousef. He doesn't go far; just a little distance.
+You follow Yousef, exiting the cafeteria and stopping just outside the door.
 
 Banias seems to have realized that she has done something, and starts sniffling. "Daddy, I want to see the rest of the family again. When can we see them?"
 
@@ -200,17 +218,33 @@ You suppose a little time without Banias interrupting might be a good idea.
 
 * [Agree. You'll meet Yousef to send the package.]
 
-- "Thank you, my friend. I'll send you the coordinates soon."
+- "Thank you, my friend. I'll send you the coordinates of the post office soon. And I am sorry, again, to have cut this meeting so short. But Youmna, well..."
 
-And I am sorry, again, to cut this short. But Youmna, well..." He smiles a little lopsidedly. "She is strong, but even strong things may break, sometimes."
+He smiles a little lopsidedly. "She is strong, but even strong things may break, sometimes."
 
 * [Leave.]
 
-...
+. . .
+
+~ change_background("train")
 
 -> Train ->
 
-// Think about what you would do.
+You sigh. You wonder if you acted properly in the meeting with Yousef and Youmna. They're clearly trying their best in a difficult situation.
+
+* [Perhaps you should have made sure Youmna was ok.]
+
+You wonder if you should have pushed yourself to stay and make sure Youmna was ok. She was clearly pretty upset when Banias mentioned their relatives.
+
+Yousef pretty clearly wanted to cut the meeting short there, but maybe you could have comforted her somewhat if you'd stayed. Well, hopefully you get a chance to ask him some questions after you help him deliver his package.
+
+* [You're glad you left when Yousef told you to.]
+
+Yousef seemed rather insistent that it's better that you left. You guess that Yousef has dealt with whatever emotions Youmna is experiencing right now, and that he probably knows what's best.
+
+Still. You wonder what's going on there. Hopefully you get a chance to ask him some questions after you help him deliver his package.
+
+-
 
 -> Visit ->
 
@@ -223,13 +257,15 @@ And I am sorry, again, to cut this short. But Youmna, well..." He smiles a littl
 
 = Second
 
+~ change_background("market")
+
 "Satna market." The PA echoes through the train. You step out into the maglev station.
 
-Not many people know how old Nova Station actually is. Of course, most of the history can be found on the 'net, but much of it is poorly translated, from the days before the universal translator existed. One thing is for sure: the station is _old_. It's been built up by a mismash of races, some new to the galactic scene, some who have disappeared altogether.
+Not many people know how old Nova Station actually is. Of course, most of the history can be found on the 'net, but much of it is poorly translated, from the days before the universal translator existed. One thing is for sure: the station is [i]old[/i]. It's been built up piecemeal by a mismash of races, some new to the galactic scene, some who have disappeared altogether.
 
-Satna Market Station looks like it could have been built a millenia ago. The walls are dirty, built of chipped plasteel tiles in a style that has long fallen out of use, layered with graffiti and gum and who knows what else.
+Satna Market Station looks like it could have been built a millenia ago. The walls are dirty, built of chipped plascrete tiles in a style that has long fallen out of use, layered with graffiti and gum and who knows what else.
 
-The elevator appears to be broken, so you take the stairs out of the station. Aluminum railings - _aluminum_? In this age? - guide you up and outwards, out into Satna Market.
+The elevator appears to be broken, so you take the stairs out of the station. Aluminum railings - [i]aluminum[/i]? In this era? - guide you up and outwards, out into Satna Market.
 
 - (market)
 
@@ -239,15 +275,15 @@ The first thing you notice is that the market is dark. There is no artificial sk
 
 And what stalls there are; you're currently standing at the corner of an intersection, and just from here, you can see clothing, notepads, toys, alcohol, power tools, transmitter chips, bioinic enhancements... the list goes on.
 
-You wonder, briefly, whether the ceiling faces anti-starwards by chance or purpose. Did the builders of this place plan for this dark atmosphere? Or did a seedy market develop as a result of the darkness?
+You wonder, briefly, whether the ceiling faces anti-starwards by chance or purpose. Did the builders of this place plan for the dark atmosphere? Or did a seedy market develop as a result of the darkness?
 
-You're broken out of your reverie by a smell, and a more important question enters your mind: Is that fried {First.doula: doula | motato}?
+You're broken out of your reverie by a delicious smell. A more important question enters your mind: Is that fried {First.doula: doula | motato}?
 
 -> market
 
 * (food) {inspect} [Get some of whatever that is.]
 
-You follow the strong scent and end up at a stall selling delicious-smelling fried spheres. You're not sure what species the seller is; they gesture at you with their tentacles. "Five chits." A gruff voice emits from a beak.
+You follow the strong scent and end up at a stall selling delicious-smelling fried spheres. The vendor gestures at you with their tentacles. A gruff voice emits from a beak. "Five chits."
 
 You pay, and the seller ladles some spheres into a container for you. "First time at the market?" they ask.
 
@@ -259,27 +295,30 @@ They hand you the box of food, and you thank them.
 
 * [Look for Yousef.]
 
+{not inspect: You take cursory note of the stalls lining the market, but it's best to stay on task. You set out looking for Yousef.}
 {inspect and not food: Best to stay on task. You ignore the smell.}
 
-You set out, walking along the multifarious stalls, {food: munching on the spheres,} keeping your eyes peeled for Yousef. It's a maze in here; the streets wind back and forth, curving this way and that. Eventually, you find the Falasi at a street corner at a bizzare seven-way intersection.
+- You set out, walking along the multifarious stalls, {food: munching on the spheres,} keeping your eyes peeled for Yousef. It's a maze in here; the streets wind back and forth, curving this way and that.
+
+Eventually, you find the Falasi at a street corner at a bizzare seven-way intersection.
 
 "Ah, hello friend!" He greets you. {First.hug or First.hug_quick: He offers you a hug, and you take it.} {no_hug: He starts to offer you a hug, but then remembers that you'd rather not, and gives you a handshake instead.} "Thank you for joining me. It's a great comfort that you're here."
 
 He starts leading the way, and you follow. "It's not much further from here. I just have to drop this off - " he shrugs his shoulders, showing the large backpack he's carrying - "to send to my relatives, back in Falas." He shakes his head. "Familiar with Falas?"
 
-* [Nod your head. You heard about it in school.]
+* [Yes. You heard about it in school.]
 
 You nod. You've heard about the complicated conflict in school. The Yisuans and the Falasi can't decide how to partition the planet.
 
-* [Shake your head. You only know what you've heard in school.]
+* [You don't know much.]
 
-You shake your head. You've heard about the conflict between the Falasi and the Yisuans over partitioning the planet, but you know that the conflict is more complicated than that.
+You shake your head. You've seen news about the conflict between the Falasi and the Yisuans over partitioning the planet, but you're guessing the conflict is more complicated than you've heard.
 
-- "Yes, well." Yousef looks somewhat discomfited by this description of the conflict. "That is true. The situation is... difficult. And as you heard, I left some family back in Falas."
+- "Yes, well." Yousef looks somewhat discomfited by this description. "That is true. The situation is... difficult. And as you heard, I left some family back in Falas."
 
-"The Yisuans are starving them," he says matter-of-factly. "There is no food, barely any water. When I can get a communication through to my family, they are always complaining about how hungry they are. And still, they are being bombed. Every day there is a siren, and -"
+"The Yisuans are starving them," he says matter-of-factly. "There is no food, barely any water. When I can get a message through to my family, they are always complaining about how hungry they are. And still, they are being bombed. Every day more Falasi are killed, and -"
 
-Yousef stops. "Anyway." He looks back at you, and smiles lopsidedly. "That is why I must send them some food." He indicates the large backpack he's wearing. "I must."
+Yousef stops. "Anyway." He looks back at you, and smiles lopsidedly. "That is why I must send them some food." He indicates the large backpack he's wearing.
 
 He falls silent for a little while.
 
@@ -289,13 +328,13 @@ He falls silent for a little while.
 
 Ask about how they left Falas-Yisua.
 
-"Luck," Yousef says. "Not everyone can read or speak as well as I can. We don't have these." He indicates the translator. "Yisua keeps them from us.
+"Luck," Yousef says. "Not everyone can read or speak as well as I can. We don't have these." He indicates your translation device. "Yisua keeps them from us."
 
-I was educated well, and have good connections from the translator job I held for many years. And so, when the call went out at the Barakhunian aid organization for the next round of refugees, I was able to sign up."
+"I was educated well, and have good connections from the translator job I held for many years. And so, when the call went out at the Barakhunian aid organization for the next round of refugees, I was able to read the message."
 
-"And even so, the process was labyrinthian. First, I had to gather a large sum of money. Then I had to take this money to a broker. Then that broker, he says, wait. Your name will appear on a list. So we waited, and waited. Then, our names appeared on the list, and it said we had to leave the very next day for the spaceport. So in a rush, we gathered our things, said goodbye to our relatives, and left."
+"Even so, the process was labyrinthian. First, I had to gather a large sum of money. Then I had to take this money to a broker. Then that broker, he says, wait. Your name will appear on a list. So we waited, and waited. Then, a month later, our names appeared on the list, and we had to leave the very next day for the spaceport. So in a rush, we gathered our things, said goodbye to our relatives, and left."
 
-He is silent for a moment. "The swiftness of that leavetaking... it took a toll on us. I wish that I could have gathered enough money for us all to leave."
+He is silent for a moment. "The swiftness of that leavetaking... it took a toll on us."
 
 -> questions
 
@@ -311,9 +350,9 @@ You say that you really would be interested to hear it. Not much of it is report
 
 "Well." Yousef sighs. "Let us start with this: these words you used earlier... 'Complicated' and 'conflict'. This is not how I would describe it."
 
-"Simple is how I would describe it. The Yisuans want our land, so they come in their ships, and make Falas unlivable for us. They bomb us, and starve us, and move us around until we can't take it anymore. We, the Falasi people, who were living there for a thousand years. There was no Yisua until three years ago. There is no Falas-Yisua, there is only Falas."
+"Simple is how I would describe it. The Yisuans want our land, so they come in their ships, and make Falas unlivable for us. They bomb us, and starve us, and issue evacuation orders until we can't take it anymore. We, the Falasi people, who were living there for a thousand years. There was no Yisua until fifty years ago. There is no Falas-Yisua, there is only Falas."
 
-"And it is not a conflict. We have not the allies nor the technology to fight back. The Yisuans, they have ships and bombs aplenty to drop on us. A conflict is a fight. This is not a fight. It is an occupation, a massacre."
+"And it is not a conflict. The Falasi don't even have space travel, did you know that? The news conveniently ignores this. The Yisuans, they have ships and bombs aplenty to drop on us. We have not the allies nor the technology to fight back. A conflict is a fight. This is not a fight. It is an occupation, a massacre."
 
 "The Yisuans see not a people in Falas. They see land, and an inconvenient problem to be solved. And so, the Falasi suffer."
 
@@ -323,13 +362,13 @@ Yousef falls silent.
 
 You decide to drop the topic.
 
-- -> questions
+-- -> questions
 
 * {got_out and conflict} [Ask about how Banias is coping.]
 
 You ask about how Banias is coping with leaving Falas.
 
-Yousef shrugs. "Mostly by asking us when she can go back. She misses our relatives dearly. But she is young. When we find stable ground, she will learn easily to accept peace."
+Yousef shrugs. "Mostly by asking us about when she can go back. She misses our relatives dearly. But she is young. When we find stable ground, she will learn easily to accept peace."
 
 -> questions
 
@@ -339,7 +378,9 @@ You ask about how Youmna is coping with leaving Falas.
 
 "Youmna..." He falls silent for a moment. "It has been difficult for her."
 
-"For a while, when we arrived at Nova Station, she stopped talking, you know." He looks away, and his shoulders tighten up. "It took her two months to say anything other than a yes or a no. And even now, well... You saw. She still cannot talk about Falas, or our relatives that have been left behind."
+"For a while, after we arrived at Nova Station, she stopped talking, you know." He looks away, and his shoulders tighten up. "It took her two months to say anything other than a yes or a no. And even now, well..."
+
+"You saw. She still cannot hear about Falas. She can't bear to think on our relatives that have been left behind."
 
 -> questions.
 
@@ -349,11 +390,11 @@ You ask you Yousef is coping with leaving Falas.
 
 "As I can." He gives the lopsided smile, the one you have come to identify as a blend of ruefulness, melancholy, and the weight of the world.
 
-"I still get messages, you know. From my relatives in Falas. 'We had nothing to eat today,' they say. 'Inshallah, you will,' I say. 'There is no aid,' they say. 'Do not worry, all will be well,' I message back."
+"I still get messages, you know. From my relatives in Falas. 'We had nothing to eat today,' they say. 'Inshallah, you will,' I say. 'There is no medicine,' they say. 'Do not worry, all will be well,' I message back."
 
-The smile has dropped away, replaced by a grim expression. "What can I say? _What can I say?_ Nothing I say can make it better."
+The smile has dropped away, replaced by a grim expression. "What can I say? [i]What can I say?[/i] Nothing I say can make it better."
 
-"To tell you the truth... I do not think I should have left. I should have stayed, and helped."
+"To tell you the truth... I do not think I should have left. I should have stayed, and helped." His fists tighten.
 
 * {got_out and conflict} [No more questions. Pay attention to where you're going.]
 
@@ -369,19 +410,23 @@ You stop asking questions and pay attention to where you're going.
 
 - (wait)
 
-Wait a second. You stop. The hustle and bustle of the market has fallen away without you noticing, so absorbed you were in asking questions. You're on a dimly-lit alley between two big buildings. A flickering lamp overhead provides the only source of illumination. Somewhere, water is dripping from a pipe.
+~ change_background("market_shady")
+
+Wait a second. You stop.
+
+The hustle and bustle of the market has fallen away without you noticing, so absorbed you were in asking questions. You're on a dimly-lit alley between two big buildings. A flickering lamp overhead provides the only source of illumination. Somewhere, water is dripping from a pipe.
 
 You didn't even know places like this existed in Nova Station. Where the hell has Yousef taken you?
 
-You're about to ask Yousef this, when two blobs detach themselves from _the wall_ nearby.
+You're about to confront Yousef when two blobs detach themselves from the wall nearby.
 
 * [Continue]
 
-- They plop down onto the street with a wet sound, and from there, rise up, forming a vague pillar of what looks like goop.
+- They plop down onto the street with a wet sound, and from there, rise up, forming a vague pillar of what looks like goop. Small eye-stalks peer at you from the goop.
 
 Are those... Norberians? What are they doing on Ring Six? You didn't know there were any here. This has gone from shady to ultra-shady.
 
-The one on the left starts vibrating rhythmically, and though no sound emits from it, words start appearing on your vision from your translator anyway. "Payment, please."
+The one on the left starts vibrating rhythmically, and though no sound emits from it, your translator helpfully starts translating. "Payment, please." The words appear across your vision.
 
 * [Ask Yousef what the hell is going on.]
 
@@ -391,7 +436,7 @@ Yousef, you say. What the hell is going on?
 
 * (cool) [Keep cool.]
 
-Whatever is happening here, it probably won't be helped by you panicking. You fold your hands in front of you and try to look like you know what you're doing.
+Whatever is happening here, you probably won't help by panicking. You fold your hands in front of you and try to look like you know what you're doing.
 
 -
 
@@ -399,23 +444,25 @@ Whatever is happening here, it probably won't be helped by you panicking. You fo
 
 {cool: You keep it cool, but internally you think: two _thousand_ chits? | You choke a little bit. Two _thousand_ chits? } That is way too much money to ship a package.
 
-The Norberian on the left vibrates, a little anxiously, you think. "We agreed on three thousand. Two thousand is not acceptable."
+* [Continue]
 
-"Well, I'm sure I could search my pockets for a little more..." He fishes around in his pockets, and holds out a large amount of money. "I have Two thousand and two hundred, right here, ready for you to take."
+- The Norberian on the left vibrates, a little anxiously, you think. "We agreed on three thousand. Two thousand is not acceptable."
+
+"Well, I'm sure I could search my pockets for a little more..." He fishes around in his pockets, and holds out a large amount of money. "Ah, here we are! Two thousand and two hundred, right here, ready for you to take."
 
 More vibration. "Not acceptable. I remind you that what is happening here is not legal and we assume all risk. Two thousand seven hundred."
 
 * [Continue.]
 
-"Well," Yousef says, "I only brought two thousand two hundred. And fifty." He finds a little bit more and holds it out. "And I will make sure to refer some friends to you."
+- "Well," Yousef says, "I only brought two thousand two hundred. And fifty." He finds a little bit more and holds it out. "And I will make sure to refer some friends to you."
 
-They go on like this for a little while, with you {cool: pretending to keep your cool behind Yousef | nervously observing from behind Yousef}.
+They go on like this for a little while. You {cool: pretend to keep your cool behind Yousef| nervously observe from behind Yousef}.
 
-You suddenly notice... Does the right Norberian have a _gun_ inside them? And... is the gun slowly exiting its body?
+You suddenly notice... Does the right Norberian have a [i]gun[/i] inside them? And... is the gun slowly exiting its body?
 
 * (you) [Fish some money out.]
 
-You jump in. You fish out what money you have, holding out two hundred chits more. Will this do?
+In a panic, you jump in. You fish out what money you have, holding out two hundred chits. Will this do?
 
 Yousef shoots you a look, a mixture of exasperation and pain. Seems like he wanted to handle this negotation his own. But he looks back, and says, "There you are. Two thousand six hundred and fifty. Final offer."
 
@@ -423,21 +470,21 @@ Yousef shoots you a look, a mixture of exasperation and pain. Seems like he want
 
 You stay silent. Clearly Yousef knows what he's doing with negotiations. And maybe that Norberian isn't getting ready to shoot you.
 
--
-
 "Final offer," Yousef shouts. "Two-thousand four hundred and fifty! Or I go and find some other smugglers to take my package. There are plenty on the station."
 
-The Norberians merge together for a moment. Minute vibrations ensue, but your translator can't pick it up. Must be how they "whisper". You nervously watch the gun, getting ready to jump at any moment {cool:, but still try to keep your cool}.
+-
+
+The Norberians merge together. Minute vibrations ensue, but your translator can't pick it up. Must be how they "whisper". You nervously watch the gun, getting ready to run at any moment{cool:, but try to keep your cool}.
 
 * [Continue]
 
-Then they separate, and the one on the right vibrates. "Very well. That is enough."
+- The Norberians separate, and the one on the right vibrates. "Very well. That is enough."
 
-A pile of goo emits from its body. It waits, seemingly expectantly. Yousef hesitantly places his backpack and his money in the pile {you:, and you follow suit with your two hundred}.
+A pile of goo emits from its body onto the floor. It waits expectantly. Yousef looks a little weirded out, but he places his backpack and his money in the pile. {you: You hesitantly follow suit with your two hundred chits.}
 
-It seems that this was the right thing to do, as the Norberians deflate both themselves and the backpack at the same time. The backpack looks like it's been vacuum-compressed, somehow. They begin slithering away.
+It seems that this was the right thing to do. The Norberians deflate themselves, the money, and the backpack at the same time. The backpack looks like it's been vacuum-compressed. They begin slithering away, like slugs, but far faster.
 
-"Expect delivery in two weeks," one of them says as it leaves. "A pleasure doing business. Remember to refer your friends."
+"Expect delivery in two weeks," one of them vibrates as it leaves. "A pleasure doing business. Remember to refer your friends."
 
 They leave behind a quickly-disappearing trail of ooze.
 
@@ -453,14 +500,6 @@ He looks at you. "Truth be told, it seems I would have been fine if I had come a
 
 - (forgive)
 
-* (just_tell) [Why didn't he just tell you?]
-
-You ask him: why not just tell you that you were meeting some smugglers from the start?
-
-"Well," he looks at you. "Truth be told, I was not sure if I could trust you."
-
--> forgive
-
 * (lie) {just_tell} [The fact remains that he lied to you.]
 
 He lied to you, and you feel that your trust has been betrayed.
@@ -469,41 +508,33 @@ He lied to you, and you feel that your trust has been betrayed.
 
 -> forgive
 
-* (law) [He's breaking the law.]
+* (opportunists) [He's allowing opportunists to make money off the war.]
+
+Those Norberians are profiting off the war, and he's facilitating it, you say. You're not sure if he should allow that.
+
+"I told you. I will do [i]anything[/i] for my sister and brother." Yousef's face is grim. "They are starving. Their children are starving. I feel it every day they message me, in my heart. I must do something to help them, even if it means that I line the pockets of those who do not deserve it."
+
+-> forgive
+
+* (just_tell) [He should have told you the truth.]
+
+You ask him: why not just tell you that you were meeting some smugglers from the start?
+
+"Well," he looks at you. "Truth be told, I was not sure if I could trust you."
+
+-> forgive
+
+* (law) [Smuggling is against the law.]
 
 He's breaking the law, and that is inherently wrong. No one is above the law.
 
-"No one? _No one?" Yousef looks furious. "How about the Yisuans? Are they not above the law? Should they not be brought to justice for starving my people, my sisters and brothers? Should -"
+"No one? [i]No one[/i]?" Yousef looks furious. "How about the Yisuans? Are they above the law? Should they not be brought to justice for starving my people, my sisters and brothers? Should -"
 
-He breaks off, pauses. "... There is no good in talking about this."
-
--> forgive
-
-* (opportunists) [He's allowing opportunists to make money off him, and the war.]
-
-Those Norberians are profiting off the war, and he's facilitating it.
-
-"I told you. I will do _anything_ for my sisters. They are starving. Their children are starving. I feel it every day they message me. I must do something to help them, even if it means that I line the pockets of those who do not deserve it." Yousef's face is grim.
+He breaks off, pauses. "... There is no use in talking about this."
 
 -> forgive
 
-* [You forgive him. You would do anything for your family too.]
-
-If your family were starving, you go to any length to help them out too.
-
-Yousef nods. "I'm glad you understand, my friend. That is exactly how I feel."
-
-"Well then," he says, clapping you on the shoulder. "No use in staying here any longer. Let us get back to the station."
-
-* [You forgive him. You would feel guilty for leaving your family behind too.]
-
-If you left your family behind like that, and they were starving, you would do anything to relieve your guilt.
-
-Yousef nods. "I'm glad you understand, my friend. The guilt... It truly is crushing. I wish I could be there to help them. I wish I had stayed."
-
-"Well then," he says, clapping you on the shoulder. "No use in staying here any longer. Let us get back to the station."
-
-* (no_forgive) {just_tell or law or opportunists} [You're still not sure you forgive him.]
+* (no_forgive) {just_tell or law or opportunists} [You're not sure you forgive him.]
 
 You don't think his explanations are good enough. You're not sure if you forgive him.
 
@@ -511,15 +542,47 @@ Yousef nods. "Very well. If your trust is the cost of relieving my family of the
 
 "Let us at least head back to the station together. If you do not wish to see my face after that, then we will part ways afterward."
 
+* [You forgive him.]
+
+You forgive him, you say. It's clear he feels an overwhelming sense of guilt. And if your family were starving, you go to any length to help them out too.
+
+Yousef nods. "I'm glad you understand, my friend. The guilt... It truly is crushing. I wish I could be there to help them. I wish I had stayed."
+
+He looks down for a moment, but then smiles his lopsided smile. "Well then," he says, clapping you on the shoulder. "No use in staying here any longer. Let us get back to the station."
+
 -
 
 * [Leave.]
 
+You accompany Yousef back to the train station, passing through the market, both lost in your own thoughts.
+
+. . .
+
+~ change_background("train")
+
 -> Train ->
 
-...
+Your thoughts turn to today's adventure in Satna Market. You didn't expect to be in a back alley, doing shady deals with smugglers.
 
-// Think about whether you're betrayed or not.
+You feel...
+
+* {forgive} [Resolved. Yousef is doing the right thing.]
+
+You feel resolved. You're actually glad you were able to help Yousef send that package. {opportunists or law or just_tell: Even though you still wish he'd told you the truth about why you were there, y|Y}ou feel really strongly that Yousef was doing the right thing in trying to get some food to his relatives.
+
+* [Conflicted. You're not certain if Yousef is doing the right thing.]
+
+You feel a little conflicted. On one hand, Yousef feels very strongly about helping his relatives. On the other hand, there are so many reasons why doing it through smugglers is the wrong way about it, no matter his convictions.
+
+* {no_forgive} [Resolved. Yousef is not doing the right thing.]
+
+You feel resolved. Yousef should not be trying to get food to his family through smugglers.
+
+* [Afraid. You hope you don't get caught.]
+
+You're just afraid for yourself. You don't care about Yousef. He embroiled you in some shady business. You hope that you don't get caught.
+
+-
 
 -> Visit ->
 
@@ -536,23 +599,25 @@ Yousef nods. "Very well. If your trust is the cost of relieving my family of the
 
 = Third
 
+~ change_background("apartment")
+
 You stand before a plain plasteel door. The door has the numbers "345" embossed on the surface. A small doorbell is to the right.
 
 * [Ring on the doorbell.]
 
-You ring the doorbell.<>
+You ring the doorbell. <>
 
 * [Knock on the door.]
 
-You ignore the doorbell and knock on the door.<>
+You ignore the doorbell and knock on the door. <>
 
-- Immediately, you hear small foosteps running on the other side of the door.
+- Immediately, you hear small foosteps running towards you.
 
-Something fiddles with the doorhandle on the other side. After a few moments, you hear Banias shout, "Mommy, help!" It's a few more moments before the door opens and Youmna stands on the other side, smiling.
+Someone fiddles with the doorhandle on the other side. After a few moments, you hear Banias shout, "Mommy, help!" It's a few more moments before the door opens and Youmna stands on the other side, smiling.
 
 "Ah, hello!" She says. "Please, come in."
 
-"Yes, please come in!" Banias repeats, standing just behind her.
+"Yes, please come in!" Banias repeats, standing behind her.
 
 * [Step inside.]
 
@@ -564,7 +629,7 @@ Banias bounces around excitedly. "Welcome to my house!" She exclaims. "Can I sho
 
 Youmna looks on indulgently.
 
-- (tour)
+- (repeat)
 
 * [Accept the tour.]
 
@@ -572,7 +637,7 @@ Youmna looks on indulgently.
 
 She walks to the left of the living room and opens the door. "This is our bathroom. It is where we get clean. I love taking baths, especially when I get to bring my favorite toys with me."
 
-She walks over to the right side and opens the door. "This is our bedroom. Mommy and daddy and I sleep in there! Sometimes it gets too hot with all of us, and daddy sleeps there on the couch."
+She walks over to the right side and opens the door. "This is our bedroom. Mommy and daddy and I sleep in there! Sometimes it gets too hot with all of us, and daddy sleeps on the couch."
 
 She throws up her hands. "And that is our house! Thank you for taking my tour."
 
@@ -582,19 +647,19 @@ You thank Banias for the lovely tour.
 
 "Of course! It was my pleasure," she says with a big smile.
 
-* [Decline.]
+* (decline) [Decline.]
 
 "Pleaaase?" Banias says. "It will be a short one, I promise."
 
--> tour
+-> repeat
 
-* (no_tour) {tour} [You really have to talk to her mom.]
+* (no_tour) {decline} [You really have to talk to her mom.]
 
 Sorry, you say, you don't really have time for the tour. You need to talk to Banias' mom.
 
 Banias just pouts and looks away, ignoring you.
 
-- You look back at Youmna, who is smiling. {no_tour: She shrugs. "All the apartments are the same, Banias. Our friend here has probably seen them many times." Banias keeps pouting and flops down on the couch. | "Thank you for showing our guest around, Banias." }
+- You look back at Youmna, who is smiling. {no_tour: She shrugs. "All the apartments are the same, Banias. Our friend here has probably seen them many times." Banias keeps pouting and flops down on the couch, arms crossed. | "Thank you for showing our guest around, Banias." }
 
 "Please, sit," Youmna says, addressing you. You take a seat on the couch. "Is there anything I can get you? A tea, perhaps? Or some melon? We brought some up from the cafeteria the other day. It's not much, I'm sure you've had both before, but still.." She trails off.
 
@@ -610,7 +675,7 @@ It is indeed bog-standard cafeteria tea, but you sip it politely.
 
 * [The melon sounds nice.]
 
-Youmna brightens up. She goes over a small refridgerator and places some melon slices on a plate. She places the plate on the side table nearby, and you take a slice.
+Youmna brightens up. She goes over a small refrigerator and places some melon slices on a plate. She puts the plate on a side table, and you take a slice.
 
 It is indeed a completely normal cafeteria melon slice, but you eat it politely. Banias takes one too, eating it with great gusto.
 
@@ -656,9 +721,11 @@ She thinks for a moment. "Well, we have not been there, of course. But from what
 
 You ask Youmna how she's feeling about permanent resettlement. Will she miss Falas?
 
-"I will miss Falas." Not Youmna - Banias. She says, with a small voice, "When will we see aunt and uncle again?"
+"I will miss Falas." Youmna is not the one who says this - it's Banias. She follows this up, with a small voice: "When will we see aunt and uncle again?"
 
-For a few moments, the room is silent. Youmna is breathing slowly. You can tell she is controlling it. Banias seems to realize that she has done something, and sits quietly on the couch, eyes down.
+- For a few moments, the room is silent.
+
+Youmna is breathing slowly. You can tell she is controlling it. Banias seems to realize that she has done something, and sits quietly on the couch, eyes down.
 
 Youmna breathes. In, and out. She closes her eyes. Then - she seems to make a decision.
 
@@ -686,13 +753,15 @@ You stay silent, and wait for Youmna to speak.
 
 She breathes in and out a few more times, then begins speaking.
 
-"I don't know if Yousef told you. About me, not speaking for several months after we got here, from Falas." She breathes. "It wasn't that I couldn't, you know. It's not like I was hysterical. I was very rational.
+"I don't know if Yousef told you. About me. I did not speak for several months after we got here, from Falas." She breathes. "It wasn't that I couldn't, you know. It's not like I was hysterical. I was very rational."
 
-"No, the reason was... I didn't want to speak. What would I speak of?"
+* [Continue]
 
-"The houses - _our_ house - reduced to rubble?
+- "No, I could speak. I could speak, but I did not wish to. What would I speak of?"
 
-"My friends who were sick and could not receive medical attention, because the hospitals had all been bombed?
+"The houses, once proud, reduced to rubble?"
+
+"My friends who were sick and could not receive medical attention, because the hospitals had all been bombed?"
 
 "The children I saw, bleeding in the street, shot by snipers?"
 
@@ -716,7 +785,7 @@ Youmna sets her jaw. "And it is bad. Because it reminds me that we will never re
 
 You ask her about her thoughts on New Tarnaeum {tarnaeum_1: again}.
 
-"New Tarnaeum." She shakes her head slowly. "Sometimes I wonder, whether it was right to leave. Did we truly give in that easily to the oppresor? Roll over, and expose our weak, soft belly? They have our land now. We will never return to that house, to that land."
+"New Tarnaeum." She shakes her head slowly. "Sometimes I wonder, whether it was right to leave. Did we truly give in that easily to the oppresor? Run away, like the dogs that they think we are? They have our land now. We will never return to that house, to that land."
 
 "Instead, we left. The Yisuans won, and they have our home."
 
@@ -730,7 +799,7 @@ You ask her about how she's feeling about permanent resettlement.
 
 She's silent. "Yousef told you about our relatives." She says it almost like an accusation. "His sisters, my brothers. Our family. All left on Falas."
 
-"Why were we chosen? Why were we lucky? I just feel an overwhelming sense of guilt. That is all I feel. Guilt, and rage. Rage at the Yisuans. Surely, they must be sub-sentient. To do such a thing to us, to put us through this, they are scum, they are lower than the lowest bacterium or fungus. How could they. How can they feel no empathy."
+"Why were we chosen? Why were we the lucky ones? I just feel an overwhelming sense of guilt. That is all I feel. Guilt, and rage. Rage at the Yisuans. Surely, they must be sub-sentient. To do such a thing to us, to put us through this, they are scum, they are lower than the lowest bacterium or fungus. How could they. How can they feel no empathy."
 
 Youmna stops. You look at her. She is not crying.
 
@@ -740,7 +809,7 @@ Youmna stops. You look at her. She is not crying.
 
 You have no {rage_questions: more} questions.
 
-- She sighs, deeply. "It does help, I tell you. It does help, sometimes, to express this rage. Express it, like one lances a boil. But it helps me, and no one else."
+- She sighs, deeply. "It not does help, I tell you. To express this rage. It does not help me, nor anyone."
 
 She looks at you sharply. "I ask you: what did we do to deserve this? What did we do to deserve losing our home? What did I do to deserve this rage?"
 
@@ -754,13 +823,13 @@ Youmna snorts. "Who will give it to us? You? The Barakhunians, who have their ow
 
 * [They may not deserve this, but they deserve the chance to start over on New Tarnaeum.]
 
-They do not deserve to be removed from their home. But they have a chance to start over, on New Tarnaeum. Surely they deserve that.
+They did not deserve to be removed from their home. But they have a chance to start over, on New Tarnaeum. Surely they deserve that.
 
-Youmna snorts. "We deserve to start over. Yes, I suppose we do. We shall forget all our family left on Falas. Banias is young. She will outgrow missing her aunts and uncles. And we will simply go on, living with their memory."
+Youmna grimaces. "We deserve to start over. Yes, I suppose we do. We shall forget all our family left on Falas. Banias is young. She will forget  her aunts and uncles. And we will simply go on, living with their memory."
 
 * [You don't know what to say. You're so sorry.]
 
-You feel this woman's hurt in the depths of your soul. You're sorry. You don't have anything to say, but that - you're so sorry.
+You feel this woman's hurt in the depths of your soul. You're sorry. You don't have anything to say, except that - you're so sorry.
 
 She sighs, a quiet scream. "I am sorry too."
 
@@ -772,15 +841,35 @@ You sit in silence for a minute, maybe two. It seems that she's run out of words
 
 - You decide it's time to leave. You say goodbye to Youmna. She holds up a hand, stands up. She opens the bedroom door.
 
-As she does, she is smiling. "Banias, my love. It's time to say goodbye to our guest."
+As she does, she is smiling. "Banias, my love. It's time to say goodbye to our guest," she says softly.
 
 Banias runs up to you and gives you a small hug. "Thank you for coming to visit! I had fun and I hope you had a good chat with mommy."
 
 * [Leave.]
 
+Youmna watches you leave the apartment.
+
+. . .
+
+~ change_background("train")
+
 -> Train ->
 
-// Think about Youmna's strength.
+As you listen to the familiar sounds of the train, you naturally start thinking about today's interaction with Youmna. You had no idea she was hiding such rage.
+
+* [You understand why she hides it.]
+
+You understand why she hides the rage. Even if it bubbles up sometimes, and overcomes her, there's no use in bringing it up. She is shielding Banias, and helping Yousef move on. It's a noble thing.
+
+* [She shouldn't hide it.]
+
+She shouldn't have to hide her rage. She should have opportunities to express it when she wishes. There is a certain catharsis that she is wrongly denying herself.
+
+* [The rage is a waste of energy.]
+
+The rage is a waste of energy, you think. There's no reason in holding on to it; she really should just let it go.
+
+-
 
 -> Visit ->
 
@@ -834,7 +923,7 @@ It's the least you could do, you say. He's been through so much suffering. You'r
 
 It's your job, you say. Not much to it. But you're glad he'll finally have a safe place to stay.
 
-"Yes, a safe place to stay..." He thinks for a moment.<>
+"Yes, a safe place to stay..." He thinks for a moment.
 
 * {Second.no_forgive} [You weren't sure if you would, after Satna market.]
 
@@ -844,9 +933,9 @@ He hears it, but doesn't really respond. He seems to be thinking about something
 
 - "Tell me, my friend. Pretend you were me. If you had a chance to go home, a slim chance, but a chance nonetheless, would you take it?"
 
-His face is elsewhere. "You could help your family find food, or at least suffer justly with them. You could hold your sisters again, see their children. And you would be home again! Home! Finally, where I never thought I would return..."
+His face is elsewhere. "You could hold your sisters again, see their children. You could help your family find food, or at least suffer alongside them.  And you would be home again! Home! Finally, where I never thought I would return..."
 
-"If you could, would you?"
+"If you could, would you return?"
 
 * [Yes. You'd go back to help your starving family.]
 
@@ -856,7 +945,7 @@ You think about it, and say - yes, it would be worth it. Your family is starving
 
 You think about it, and say - yes, you would go back. You would join the Falasi resistance, and wreak havoc on the Yisuans that made you and your family suffer so.
 
-* [No. It's too dangerous. The Yisuans aren't about to let any Falasi back.]
+* [No. It's too dangerous. The Yisuans won't let any Falasi back.]
 
 No, you say. It's too dangerous. You wouldn't even make it back. The Yisuans wouldn't let you in, and your effort would be wasted.
 
@@ -876,7 +965,7 @@ You think about the talk you had with Youmna the other day, when she dropped her
 
 You hesitantly ask if she's alright, after her expression of rage the other day. Her smile turns a little sad.
 
-"Yes, I am alright. Thank you for asking. And to be honest... It helped. Perhaps only a little bit, but it helped. It reminded me that some things are not meant to be kept inside." She gives you a hug {First.no_hug:, and this time, you accept}.
+"Yes, I am alright. Thank you for asking. And to be honest... It helped. Perhaps only a little bit, but it helped. It reminded me that some things cannot be kept inside for too long." She gives you a hug{First.no_hug:, and this time, you accept}.
 
 * [Don't bring it up.]
 
@@ -900,19 +989,11 @@ You watch as they all approach the gate, marked X15.
  
  A flight headed to Yisua-Falas is leaving X15, about an hour after the flight to New Tarnaeum. You swing your head back towards the gate, and you catch Yousef going through the gate... followed by a Norberian.
 
-You quickly walk up to the window looking out towards the shuttle. It's busy - you bump into a couple of folks on the way, but you finally make it to the glass, and look out towards the gangway. You catch the back of Youmna's head as she boards the shuttle, but - no one else.
+You quickly run up to the window looking out towards the shuttle. You bump into a couple of folks, but you finally make it to the glass, and look out towards the gangway. You catch the back of Youmna's head as she boards the shuttle, but - no one else.
 
 Perhaps Yousef went ahead of them?
 
 Or perhaps... He's planning something?
-
-* [Notify security.]
-
-You walk up to the gate agents and let them know that you think there's something suspicious happening. You explain the situation; that you suspect there might be a stowaway on the next flight. They thank you, and call security.
-
-You stand around for a moment, awkwardly, guiltily, but they quickly move on, and are back to making boarding announcements.
-
-With nothing else to do, you guess you might as well leave.
 
 * [Do nothing.]
 
@@ -927,6 +1008,14 @@ You hope Yousef returns to Yisua-Falas. Returns to the war, the starvation, and 
 ** [You hope he does not.]
 
 You hope Yousef was not planning on returning. You hope he has a fulfilling life ahead of him, with Youmna's rage, and with Banias' joy.
+
+* [Notify security.]
+
+You walk up to the gate agents and let them know that you think there's something suspicious happening. You explain the situation; that you suspect there might be a stowaway on the next flight. They thank you, and call security.
+
+You stand around for a moment, awkwardly, guiltily, but they quickly move on, and are back to making boarding announcements.
+
+With nothing else to do, you guess you might as well leave.
 
 -
 
