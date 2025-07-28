@@ -18,7 +18,8 @@ var _margin : float
 var _currentTween : Tween
 var _currentChoices : Array[StoryChoice]
 var _currentInputs : Array[StoryInputChoice]
-var _currentStoryText : RichTextLabel
+var _currentStoryText : StoryTextContainer
+var _backgroundTween : Tween
 
 var _storyIsLoaded : bool
 var _deferredKnot : String
@@ -32,7 +33,7 @@ signal on_story_complete(story : InkPlayer)
 func _ready() -> void:
 	print("StoryUI readying")
 
-	_textScene = ResourceLoader.load("res://Assets/UI/StoryText.tscn")
+	_textScene = ResourceLoader.load("res://Assets/UI/StoryTextContainer.tscn")
 	_choiceScene = ResourceLoader.load("res://Assets/UI/StoryChoice.tscn")
 	_inputChoiceScene = ResourceLoader.load("res://Assets/UI/StoryInputChoice.tscn")
 	_separator = ResourceLoader.load("res://Assets/UI/StorySeparator.tscn")
@@ -47,7 +48,7 @@ func _ready() -> void:
 	clip_contents = false
 	mouse_filter = Control.MOUSE_FILTER_PASS
 
-	_margin = _content.get_theme_constant("margin_top") + _content.get_theme_constant("margin_bottom") + 10
+	_margin = _content.get_theme_constant("margin_top") + _content.get_theme_constant("margin_bottom")
 
 	_storyIsLoaded = false
 	_story.loaded.connect(on_story_loaded)
@@ -147,7 +148,6 @@ func continue_story(is_first : bool) -> void:
 			var varName : String = choice.text.get_slice(" ", 1)
 			var choiceText : String = choice.text.right(choice.text.length() - "INPUT_TEXT".length() - varName.length() - 2)
 			input.initialize(varName, choiceText, choice.index, i)
-			print("init input: ", varName, choiceText, choice.index)
 
 			input.on_input.connect(on_input_submitted)
 			_currentInputs.append(input)
@@ -163,10 +163,10 @@ func continue_story(is_first : bool) -> void:
 
 	_container.move_child(_bottomSpacer, _container.get_child_count())
 	await get_tree().process_frame
+	await get_tree().process_frame
 	
 	_currentTween = self.create_tween()
 	_currentTween.set_parallel()
-	_currentTween.finished.connect(on_tween_finished)
 
 	var additionalSize : float = 0
 
@@ -182,16 +182,28 @@ func continue_story(is_first : bool) -> void:
 	_bottomSpacer.custom_minimum_size = Vector2(0, _scrollContainer.size.y - additionalSize - _margin)
 
 	if !is_first:
-		_currentTween.tween_property(_scrollContainer, "scroll_vertical", newSeparator.position.y, 0.5).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_IN_OUT)
+		_currentTween.tween_property(_scrollContainer, "scroll_vertical", newSeparator.position.y + 16, 0.5).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_IN_OUT)
 	else:
 		_scrollContainer.scroll_vertical = 0
 
+	if _backgroundTween != null && _backgroundTween.is_running():
+		print("waiting for background tween")
+		await _backgroundTween.finished
+		
+		if _currentTween.is_running():
+			print("waiting for current tween")
+			await _currentTween.finished
+
+		_currentTween = self.create_tween()
+		_currentTween.set_parallel()
+
+	_currentTween.finished.connect(on_tween_finished)
+
 	if _currentStoryText != null:
 		_currentStoryText.start_typeout(_currentTween)
-		_currentTween.chain().tween_callback(Callable(self, "on_tween_complete"))
 
 	if !_story.has_choices:
-		_currentTween.chain().tween_callback(self.complete_story)
+		_currentTween.chain().tween_callback(complete_story)
 
 	for button in _currentChoices:
 		button.initialize_tween(_currentTween)
@@ -199,9 +211,10 @@ func continue_story(is_first : bool) -> void:
 	for input in _currentInputs:
 		input.initialize_tween(_currentTween)
 
-	_currentTween.play()
-
 func skip_tween() -> void:
+	if _backgroundTween != null:
+		_backgroundTween.custom_step(99999)
+
 	if _currentTween != null:
 		_currentTween.custom_step(99999)
 
@@ -209,7 +222,7 @@ func on_choice_pressed(index : int) -> void:
 	choose_choice_index(index)
 
 func on_input_submitted(varName: String, value: String, index: int) -> void:
-	_story.set_variable(varName, value)
+	_story.set_variable(varName, value.to_lower())
 	choose_choice_index(index)
 
 func choose_choice_index(index: int) -> void:
@@ -223,6 +236,10 @@ func choose_choice_index(index: int) -> void:
 
 	_currentChoices.clear()
 	_currentInputs.clear()
+
+	if _currentStoryText != null:
+		_currentStoryText.destroy_last_spacer()
+
 	continue_story(false)
 
 func complete_story() -> void:
@@ -238,14 +255,34 @@ func randomize_next_choices() -> void:
 func change_background(bgName: String) -> void:
 	var bgPath : String = "res://Assets/Images/Backgrounds/%s.png" % bgName
 
+	if _backgroundTween != null:
+		_backgroundTween.kill()
+
 	if !ResourceLoader.exists(bgPath, "Texture2D"):
 		print("not exist")
 		bgPath = "res://Assets/Images/Backgrounds/tmp-background.png"
 
-	print("set to ", bgName, bgPath)
 	var bg : Texture2D = ResourceLoader.load(bgPath)
 
-	_background.texture = bg
+	if _background.texture == null:
+		print("first background ", bgName, " ", bgPath)
+		_background.texture = bg
+	else:
+		var backgroundTween : Tween = _background.create_tween()
+
+		backgroundTween.tween_property(_background, "modulate:a", 0, 0.5)
+		backgroundTween.tween_callback(func() -> void: _background.texture = bg)
+		backgroundTween.tween_interval(0.25)
+		backgroundTween.tween_property(_background, "modulate:a", 1, 0.5)
+		_backgroundTween = backgroundTween
+		print("do animation ", bgName, " ", bgPath)
+
+		if _currentTween != null && _currentTween.is_running():
+			print("pause current anim")
+			_currentTween.pause()
+			await _backgroundTween.finished
+			print("play current anim")
+			_currentTween.play()
 
 func on_tween_complete() -> void:
 	on_story_tween_complete.emit()

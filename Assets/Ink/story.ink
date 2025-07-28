@@ -15,6 +15,8 @@ INCLUDE Shared.ink
 === Main ===
 {not debug: ->FullGame }
 
+~ change_background("tmp-background")
+
 ~ SEED_RANDOM(235)
 
 - (top)

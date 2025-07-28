@@ -224,7 +224,7 @@ He smiles a little lopsidedly. "She is strong, but even strong things may break,
 
 * [Leave.]
 
-. . .
+- . . .
 
 ~ change_background("train")
 
@@ -257,7 +257,7 @@ Still. You wonder what's going on there. Hopefully you get a chance to ask him s
 
 = Second
 
-~ change_background("market")
+~ change_background("market_station")
 
 "Satna market." The PA echoes through the train. You step out into the maglev station.
 
@@ -265,11 +265,13 @@ Not many people know how old Nova Station actually is. Of course, most of the hi
 
 Satna Market Station looks like it could have been built a millenia ago. The walls are dirty, built of chipped plascrete tiles in a style that has long fallen out of use, layered with graffiti and gum and who knows what else.
 
-The elevator appears to be broken, so you take the stairs out of the station. Aluminum railings - [i]aluminum[/i]? In this era? - guide you up and outwards, out into Satna Market.
+The elevator appears to be broken, so you take the stairs out of the station. Aluminum railings - [i]aluminum[/i]? In this era? - guide you up and outwards.
 
-- (market)
+* [Enter Satna market.]
 
-* (inspect) [Inspect the market.]
+-
+
+~ change_background("market")
 
 The first thing you notice is that the market is dark. There is no artificial sky; the ceiling above simply displays the emptiness of space. Instead, lanterns, candles, lamps, and floodlights illuminate the space, individually placed by the owners of each stall.
 
@@ -279,9 +281,9 @@ You wonder, briefly, whether the ceiling faces anti-starwards by chance or purpo
 
 You're broken out of your reverie by a delicious smell. A more important question enters your mind: Is that fried {First.doula: doula | motato}?
 
--> market
+- (market)
 
-* (food) {inspect} [Get some of whatever that is.]
+* (food) [Get some of whatever that is.]
 
 You follow the strong scent and end up at a stall selling delicious-smelling fried spheres. The vendor gestures at you with their tentacles. A gruff voice emits from a beak. "Five chits."
 
@@ -295,8 +297,7 @@ They hand you the box of food, and you thank them.
 
 * [Look for Yousef.]
 
-{not inspect: You take cursory note of the stalls lining the market, but it's best to stay on task. You set out looking for Yousef.}
-{inspect and not food: Best to stay on task. You ignore the smell.}
+{not food: Best to stay on task. You ignore the smell.}
 
 - You set out, walking along the multifarious stalls, {food: munching on the spheres,} keeping your eyes peeled for Yousef. It's a maze in here; the streets wind back and forth, curving this way and that.
 
@@ -396,6 +397,8 @@ The smile has dropped away, replaced by a grim expression. "What can I say? [i]W
 
 "To tell you the truth... I do not think I should have left. I should have stayed, and helped." His fists tighten.
 
+-> questions
+
 * {got_out and conflict} [No more questions. Pay attention to where you're going.]
 
 You stop asking questions and pay attention to where you're going.
@@ -436,7 +439,7 @@ Yousef, you say. What the hell is going on?
 
 * (cool) [Keep cool.]
 
-Whatever is happening here, you probably won't help by panicking. You fold your hands in front of you and try to look like you know what you're doing.
+Whatever is happening here, you probably won't help by panicking. You {food: fold your hands in front of you|have another of your fried spheres} and try to look like you know what you're doing.
 
 -
 
@@ -466,7 +469,13 @@ In a panic, you jump in. You fish out what money you have, holding out two hundr
 
 Yousef shoots you a look, a mixture of exasperation and pain. Seems like he wanted to handle this negotation his own. But he looks back, and says, "There you are. Two thousand six hundred and fifty. Final offer."
 
-* [Stay silent.]
+* (you_food) {food} [Offer them some fried spheres.]
+
+In a panic, you jump in. You hold out the half-eaten box of fried spheres. Do they want some?
+
+Yousef shoots you a look, a mixture of exasperation and pain. Seems like he wanted to handle this negotation his own. But he looks back, and says, "There you are. Two thousand four hundred and fifty chits, and four fried spheres. Final offer."
+
+* [Stay cool.]
 
 You stay silent. Clearly Yousef knows what he's doing with negotiations. And maybe that Norberian isn't getting ready to shoot you.
 
@@ -480,7 +489,7 @@ The Norberians merge together. Minute vibrations ensue, but your translator can'
 
 - The Norberians separate, and the one on the right vibrates. "Very well. That is enough."
 
-A pile of goo emits from its body onto the floor. It waits expectantly. Yousef looks a little weirded out, but he places his backpack and his money in the pile. {you: You hesitantly follow suit with your two hundred chits.}
+A pile of goo emits from its body onto the floor. It waits expectantly. Yousef looks a little weirded out, but he places his backpack and his money in the pile. {you: You hesitantly follow suit with your two hundred chits.} {you_food: You hesitantly follow suit with your fried spheres.}
 
 It seems that this was the right thing to do. The Norberians deflate themselves, the money, and the backpack at the same time. The backpack looks like it's been vacuum-compressed. They begin slithering away, like slugs, but far faster.
 
@@ -500,13 +509,6 @@ He looks at you. "Truth be told, it seems I would have been fine if I had come a
 
 - (forgive)
 
-* (lie) {just_tell} [The fact remains that he lied to you.]
-
-He lied to you, and you feel that your trust has been betrayed.
-
-"I never lied to you. I said I was delivering a package, and I was." Yousef looks apologetic. "Perhaps I omitted some things. But I do not believe you would have come if I had told you. If I was wrong about that, then I am sorry."
-
--> forgive
 
 * (opportunists) [He's allowing opportunists to make money off the war.]
 
@@ -522,7 +524,17 @@ You ask him: why not just tell you that you were meeting some smugglers from the
 
 "Well," he looks at you. "Truth be told, I was not sure if I could trust you."
 
--> forgive
+** (lie) [The fact remains that he lied to you.]
+
+He lied to you, and you feel that your trust has been betrayed.
+
+"I never lied to you. I said I was delivering a package, and I was." Yousef looks apologetic. "Perhaps I omitted some things. But I do not believe you would have come if I had told you. If I was wrong about that, then I am sorry."
+
+** [Let it go.]
+
+You let it go.
+
+-- -> forgive
 
 * (law) [Smuggling is against the law.]
 
@@ -554,7 +566,7 @@ He looks down for a moment, but then smiles his lopsided smile. "Well then," he 
 
 * [Leave.]
 
-You accompany Yousef back to the train station, passing through the market, both lost in your own thoughts.
+- You accompany Yousef back to the train station, passing through the market, both lost in your own thoughts.
 
 . . .
 
@@ -671,7 +683,7 @@ Youmna brightens up. She goes over to big jug and pours some tea out of it into 
 
 It is indeed bog-standard cafeteria tea, but you sip it politely.
 
-"And for you too, my love," Youmna says, offering Banias a cup with a very small amount of tea so she doesn't spill it. She - rather uncharacteristically - blows it and waits for it to cool. Seems she's burned her tongue before.
+"And for you too, my love," Youmna says, offering Banias a cup with a very small amount of tea so she doesn't spill it. Banias rather uncharacteristically blows it and waits for it to cool. Seems she's burned her tongue before.
 
 * [The melon sounds nice.]
 
@@ -725,7 +737,7 @@ You ask Youmna how she's feeling about permanent resettlement. Will she miss Fal
 
 - For a few moments, the room is silent.
 
-Youmna is breathing slowly. You can tell she is controlling it. Banias seems to realize that she has done something, and sits quietly on the couch, eyes down.
+Youmna is breathing slowly. You can tell she is controlling it. Banias knows what she is doing, and sits quietly on the couch, eyes down.
 
 Youmna breathes. In, and out. She closes her eyes. Then - she seems to make a decision.
 
@@ -847,7 +859,7 @@ Banias runs up to you and gives you a small hug. "Thank you for coming to visit!
 
 * [Leave.]
 
-Youmna watches you leave the apartment.
+- Youmna watches you leave the apartment.
 
 . . .
 

@@ -20,7 +20,7 @@
 
 = First
 
-~ change_background("barakhun_office")
+~ change_background("barakhun_office_hallway")
 
 You walk through a plasteel corridor, dimly lit from the overhead lights. Doors, in an old style, line the corridor. People, mostly humanoid, walk in small groups, chatting about something or other. It reminds you a little of your old school.
 
@@ -33,6 +33,8 @@ It seems someone is arguing very loudly on the other side.
 * [Open the door.]
 
 - You enter the office of Mr. Breet.
+
+~ change_background("barakhun_office")
 
 It's overflowing with books in here; books are on every surface, in stacks on the floor, lining the bookshelves, and threatening the stability of the chair and the desk in the back of the room.
 
@@ -159,7 +161,7 @@ Mr. Breet sighs and wipes some sweat off his face. He waves you out of the offic
 
 * [Leave.]
 
-You leave Mr. Breet's office, Fanias still complaining behind you.
+- You leave Mr. Breet's office, Fanias still complaining behind you.
 
 . . .
 
@@ -561,7 +563,7 @@ Tress shrugs. "Sure, why not. Might be fun."
 
 * [Leave.]
 
-. . .
+- . . .
 
 ~ change_background("train")
 

@@ -1,9 +1,8 @@
-[gd_scene load_steps=17 format=3 uid="uid://rx5mrmc2csae"]
+[gd_scene load_steps=13 format=3 uid="uid://rx5mrmc2csae"]
 
 [ext_resource type="Script" uid="uid://cuudgo2jqf1q4" path="res://Assets/Scripts/StoryInitializer.gd" id="1_0s24k"]
 [ext_resource type="Theme" uid="uid://dspuh7p7f5rfg" path="res://Assets/UI/StoryTheme.tres" id="1_x8d7b"]
 [ext_resource type="Script" uid="uid://ccydxhn2l62r" path="res://Assets/Scripts/StoryUI.gd" id="3_b2tde"]
-[ext_resource type="Texture2D" uid="uid://ckvt2nrwsajdb" path="res://Assets/Images/Backgrounds/tmp-background.png" id="3_e53c4"]
 [ext_resource type="PackedScene" uid="uid://l8fr2ijwelce" path="res://Assets/UI/StoryText.tscn" id="4_14l7b"]
 [ext_resource type="Texture2D" uid="uid://o3ip7m5q3dmp" path="res://Assets/Images/fade-to-black.png" id="4_b2tde"]
 [ext_resource type="Texture2D" uid="uid://coynjeooc8578" path="res://Assets/Images/vignette.png" id="4_l53bg"]
@@ -14,26 +13,7 @@
 [ext_resource type="Resource" uid="uid://bobnu5o0rqmj2" path="res://Assets/Ink/story.ink.json" id="47_y62fx"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wl40i"]
-bg_color = Color(0.14902, 0.14902, 0.168627, 1)
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_bpilk"]
-bg_color = Color(0.12549, 0.12549, 0.219608, 1)
-border_width_left = 4
-border_width_top = 4
-border_width_right = 4
-border_width_bottom = 4
-
-[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_t3ae4"]
-bg_color = Color(0.12549, 0.12549, 0.219608, 1)
-border_width_left = 2
-border_width_top = 2
-border_width_right = 2
-border_width_bottom = 2
-
-[sub_resource type="Theme" id="Theme_bpilk"]
-LineEdit/font_sizes/font_size = 20
-LineEdit/styles/focus = SubResource("StyleBoxFlat_bpilk")
-LineEdit/styles/normal = SubResource("StyleBoxFlat_t3ae4")
+bg_color = Color(0.0392157, 0.0392157, 0.0588235, 1)
 
 [node name="Story" type="Node"]
 script = ExtResource("1_0s24k")
@@ -65,7 +45,6 @@ anchor_bottom = 1.0
 offset_right = -455.0
 grow_horizontal = 2
 grow_vertical = 2
-texture = ExtResource("3_e53c4")
 expand_mode = 1
 stretch_mode = 6
 
@@ -91,7 +70,6 @@ offset_right = 56.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("3_b2tde")
-debug = true
 
 [node name="Background" type="TextureRect" parent="HUD/StoryUI"]
 modulate = Color(0.0392157, 0.0392157, 0.0588235, 1)
@@ -130,28 +108,16 @@ theme_override_constants/margin_bottom = 5
 layout_mode = 2
 size_flags_horizontal = 3
 size_flags_vertical = 3
+theme_override_constants/separation = 0
 
 [node name="StoryText" parent="HUD/StoryUI/ScrollContainer/MarginContainer/VBoxContainer" instance=ExtResource("4_14l7b")]
 layout_mode = 2
-scroll_active = false
 script = null
 
 [node name="StorySeparator" parent="HUD/StoryUI/ScrollContainer/MarginContainer/VBoxContainer" instance=ExtResource("6_3m0a7")]
 layout_mode = 2
 
-[node name="StoryText5" parent="HUD/StoryUI/ScrollContainer/MarginContainer/VBoxContainer" instance=ExtResource("4_14l7b")]
-layout_mode = 2
-script = null
-
-[node name="StoryText6" parent="HUD/StoryUI/ScrollContainer/MarginContainer/VBoxContainer" instance=ExtResource("4_14l7b")]
-layout_mode = 2
-script = null
-
-[node name="StoryText7" parent="HUD/StoryUI/ScrollContainer/MarginContainer/VBoxContainer" instance=ExtResource("4_14l7b")]
-layout_mode = 2
-script = null
-
-[node name="StoryText8" parent="HUD/StoryUI/ScrollContainer/MarginContainer/VBoxContainer" instance=ExtResource("4_14l7b")]
+[node name="StoryText1" parent="HUD/StoryUI/ScrollContainer/MarginContainer/VBoxContainer" instance=ExtResource("4_14l7b")]
 layout_mode = 2
 script = null
 
@@ -169,12 +135,12 @@ script = null
 
 [node name="StoryText2" parent="HUD/StoryUI/ScrollContainer/MarginContainer/VBoxContainer" instance=ExtResource("10_bpilk")]
 layout_mode = 2
-theme = SubResource("Theme_bpilk")
 text = ""
 
 [node name="BottomSpacer" type="Control" parent="HUD/StoryUI/ScrollContainer/MarginContainer/VBoxContainer"]
 unique_name_in_owner = true
 layout_mode = 2
+mouse_filter = 1
 
 [node name="InkPlayer" type="Node" parent="."]
 unique_name_in_owner = true

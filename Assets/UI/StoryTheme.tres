@@ -1,15 +1,72 @@
-[gd_resource type="Theme" load_steps=5 format=3 uid="uid://dspuh7p7f5rfg"]
+[gd_resource type="Theme" load_steps=13 format=3 uid="uid://dspuh7p7f5rfg"]
 
-[ext_resource type="FontFile" uid="uid://dwkoioc4y3m2v" path="res://Assets/Game/Fonts/JosefinSans-Bold.ttf" id="1_nq4bn"]
-[ext_resource type="FontFile" uid="uid://b6kj23mh2arln" path="res://Assets/Game/Fonts/JosefinSans-Regular.ttf" id="1_u0f2y"]
-[ext_resource type="FontFile" uid="uid://grmcix53xo6k" path="res://Assets/Game/Fonts/JosefinSans-Italic.ttf" id="2_2ph14"]
-[ext_resource type="FontFile" uid="uid://dpm5o6ci6sq1n" path="res://Assets/Game/Fonts/JosefinSans-BoldItalic.ttf" id="2_w6yvt"]
+[ext_resource type="FontFile" uid="uid://dwkoioc4y3m2v" path="res://Assets/Fonts/JosefinSans-Bold.ttf" id="1_nq4bn"]
+[ext_resource type="FontFile" uid="uid://b6kj23mh2arln" path="res://Assets/Fonts/JosefinSans-Regular.ttf" id="1_u0f2y"]
+[ext_resource type="FontFile" uid="uid://grmcix53xo6k" path="res://Assets/Fonts/JosefinSans-Italic.ttf" id="2_2ph14"]
+[ext_resource type="FontFile" uid="uid://dpm5o6ci6sq1n" path="res://Assets/Fonts/JosefinSans-BoldItalic.ttf" id="2_w6yvt"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jq6oh"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_kc7oa"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xe7oy"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_qflek"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_jlkqp"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kc7oa"]
+bg_color = Color(0.2, 0.0966667, 0, 1)
+border_width_left = 4
+border_width_top = 4
+border_width_right = 4
+border_width_bottom = 4
+border_color = Color(0.470076, 0.470076, 0.470076, 1)
+border_blend = true
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_jq6oh"]
+bg_color = Color(0.2, 0.0966667, 0, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.470076, 0.470076, 0.470076, 1)
+border_blend = true
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_xe7oy"]
+bg_color = Color(0.2, 0.0966667, 0, 1)
+border_width_left = 1
+border_width_top = 1
+border_width_right = 1
+border_width_bottom = 1
+border_color = Color(0.470076, 0.470076, 0.470076, 1)
+border_blend = true
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
 
 [resource]
 default_base_scale = 1.0
 default_font = ExtResource("1_u0f2y")
 default_font_size = 18
-RichTextLabel/constants/line_separation = 3
+Button/styles/disabled = SubResource("StyleBoxEmpty_jq6oh")
+Button/styles/focus = SubResource("StyleBoxEmpty_kc7oa")
+Button/styles/hover = SubResource("StyleBoxEmpty_xe7oy")
+Button/styles/normal = SubResource("StyleBoxEmpty_qflek")
+Button/styles/pressed = SubResource("StyleBoxEmpty_jlkqp")
+LineEdit/styles/focus = SubResource("StyleBoxFlat_kc7oa")
+LineEdit/styles/normal = SubResource("StyleBoxFlat_jq6oh")
+LineEdit/styles/read_only = SubResource("StyleBoxFlat_xe7oy")
+RichTextLabel/constants/line_separation = 1
 RichTextLabel/fonts/bold_font = ExtResource("1_nq4bn")
 RichTextLabel/fonts/bold_italics_font = ExtResource("2_w6yvt")
 RichTextLabel/fonts/italics_font = ExtResource("2_2ph14")

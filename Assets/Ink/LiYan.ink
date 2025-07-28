@@ -217,7 +217,7 @@ LiYan shakes his head gravely. "Thank you."
 
 * [Leave.]
 
-You part ways.
+- You part ways.
 
 . . .
 
@@ -579,7 +579,7 @@ Before you can do anything else, they stalk down the hallway towards the exit. P
 
 * [Leave.]
 
-You exit the courthouse.
+- You exit the courthouse.
 
 . . .
 

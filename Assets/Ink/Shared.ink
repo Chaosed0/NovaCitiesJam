@@ -32,7 +32,7 @@ It's loud in here. The ceiling doesn't give anywhere for chatter to escape, and 
 ->->
 }
 
-{You lean back in your train seat and think about who you'll visit tomorrow...|You think about stopping by a friend's place to hang out, but first, you think about who you'll visit tomorrow.|You bring up your calendar. Six days left before you leave for Barakhun. Who will you check in on tomorrow?|You lean forward in your seat. Who will you visit tomorrow?|You think about what to have for dinner tonight, but first thing's first. Who will you see tomorrow?|You're almost back to your apartment. You should decide who you'll visit tomorrow.|The train reaches your stop. You stand up, and think about who you'll visit tomorrow.|Your head is a little heavy from the week. One last check-in, and you'll be done for the week.}
+{You lean back in your train seat and think about who you'll visit tomorrow...|Your thoughts move on. You think about who you'll visit tomorrow.|You bring up your calendar. Six days left before you leave for Barakhun. Who will you check in on tomorrow?|You lean forward in your seat. Now then - who will you visit tomorrow?|Your thoughts move on. Who will you see tomorrow?|You're almost back to your apartment. You should decide who you'll visit tomorrow.|The train reaches your stop. You stand up, and think about who you'll visit tomorrow.|Your head is a little heavy from the week. One last check-in, and you'll be done for the week.}
 
 
 {Fanias >= 3: You've spoken to Fanias {Yousef >= 3: and Yousef} {LiYan >=3: and LiYan} enough this week.} <>
@@ -45,7 +45,7 @@ It's loud in here. The ceiling doesn't give anywhere for chatter to escape, and 
 
 - (visit)
 
-+ {Fanias < 3 and next_visit != ->Fanias} [Perhaps Fanias...]
++ {Fanias < 3 and (next_visit != ->Fanias or (Yousef >=3 and LiYan >=3))} [Perhaps Fanias...]
 
 {Fanias == 0: You think about checking in on Fanias, the minor lord of the Khas who comes to petition the Urun for help against his ancestral enemies.}
 {Fanias == 1: Your father came through. His connection with the Urun set up a meeting at the Urunian Embassy, and you promised to meet Fanias there.}
@@ -66,7 +66,7 @@ You put aside the thought of visiting Fanias.
 
 -> visit
 
-+ {Yousef < 3 and next_visit != ->Yousef} [Maybe Yousef...]
++ {Yousef < 3 and (next_visit != ->Yousef or (Fanias >=3 and LiYan >=3))} [Maybe Yousef...]
 
 {Yousef == 0: You think about checking in on Yousef, the refugee of the Yisua-Falas conflict, who left his family in Falas to save his wife and daughter.}
 {Yousef == 1: Last time you met, Yousef wanted help delivering a package to his sisters in Falas. He asked to meet at Satna Market.}
@@ -87,7 +87,7 @@ Perhaps you'll visit Yousef another time.
 
 -> visit
 
-+ {LiYan < 3 and next_visit != ->LiYan} [Consider LiYan...]
++ {LiYan < 3 and (next_visit != ->LiYan or (Fanias >=3 and Yousef >=3))} [Consider LiYan...]
 
 {LiYan == 0: You consider visiting LiYan, the Calanethi of unknown origin who is having trouble with the universal translator.}
 {LiYan == 1: LiYan was having gravity problems, but the head of the housing block was able to find a temporary solution for them.}

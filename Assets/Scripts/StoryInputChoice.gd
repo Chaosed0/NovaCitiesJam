@@ -14,6 +14,9 @@ func initialize(varName: String, choiceText: String, index: int, displayIndex: i
 	_varName = varName
 	_index = index
 	_displayIndex = displayIndex
+
+	mouse_filter = Control.MOUSE_FILTER_IGNORE
+	focus_mode = Control.FOCUS_NONE
 	self.modulate.a = 0
 
 	placeholder_text = choiceText
@@ -35,4 +38,6 @@ func on_text_submitted(submitted: String) -> void:
 	on_input.emit(_varName, submitted, _index)
 
 func set_enabled() -> void:
+	mouse_filter = Control.MOUSE_FILTER_STOP
+	focus_mode = Control.FOCUS_ALL
 	editable = true
