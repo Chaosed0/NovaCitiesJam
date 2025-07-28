@@ -152,23 +152,23 @@ With millions of travelers passing through the station at any given time, Nova S
 
 ~ change_background("car")
 
-Four weeks later, after a long space travel, you find yourself on Barakhun, in a small atmosphere-bound shuttle. Outside the window, you see the newly terraformed plains of Barakhun. Across from you sits your father.
+Four weeks later, after a long space travel, you find yourself on Barakhun, in a small ground-based vehicle. Outside the window, you see the newly terraformed plains of Barakhun. The lake is placid. The grass waves in the soft breeze. The sky - a [i]real[/i] sky - is a shade of blue you've never seen.
 
-You've already gotten the hugs and the pleasantries out of the way, and your father looks you in the eye. He says, "So, how was your time at the refugee housing block?" He smiles softly. "Thank you for covering for me. I hope it wasn't too difficult."
+Your father drives the vehicle. You've already gotten the hugs and the pleasantries out of the way earlier.
+
+Your father glances at you and asks, "So, how was your time at the refugee housing block? Tell me about it."
 
 * [It was difficult.]
 
-It was difficult, you say. You have no idea how your father does this kind of work on a daily basis.
+It was difficult, you say. You have no idea how the folks there do that kind of work on a regular basis.
 
-He laughs. "It was difficult for me, too. It doesn't really get much easier, over time."
-
-"Tell me about the people you met," he says.
+He smiles softly. "I imagine it doesn't really get much easier, over time. Tell me about the people you met."
 
 * [You handled it.]
 
 You handled it, you say. It was nothing.
 
-"Oh really?" He arches one eyebrow. "Tell me about the people you met."
+"Oh really?" He arches one eyebrow. "That easy, huh? Tell me about the people you met."
 
 - (people)
 
@@ -206,11 +206,11 @@ They were spiteful when you saw them off at the spaceport. It seemed that they w
 
 * [Talk about Fanias, the prince of the Khas.]
 
-You met Fanias, prince of the Khas.
+You met Fanias, prince of the Khas, of Nidaroen.
 
 ** [He was attempting to save his people.]
 
--- Fanias tried to save his people from their enemies, who took his lands, captured his family. But the enemies weren't who he thought they were.
+-- Fanias tried to save his people from their enemies, who took his lands, captured his family. But the enemy wasn't who he thought they were.
 
 ** [He petitioned the Urun.]
 
@@ -226,7 +226,7 @@ You think that Fanias, in the end, is an admirable figure. That he would follow 
 
 ** [That was a foolish thing to do.]
 
-You think that Fanias is rather foolish. That he should have given up the fight when he saw that the odds were stacked against him. Or at least, to have chosen a different way to fight, than direct confrontation. 
+You think that Fanias made a foolish choice. That he should have given up the fight when he saw that the odds were stacked against him. Or perhaps that he should have found a different way to fight, rather than direct confrontation. 
 
 -- TODO: Your father nods. Sometimes direct confrontation is useful. When is it necessary? When is it justified?
 
@@ -286,7 +286,31 @@ And your father says: whatever choice he made, was the right one for him. We don
 
 -
 
-As you look out the window at the Barakhun, and the rapidly-approaching capitol, you feel...
+You ride in silence for a minute. Then, your father asks:
+
+"Do you wish you could have done more for them?"
+
+* [You should have done more.]
+
+Yes, you say. You should have done more. There simply wasn't enough time to really help. You did good, you think you had an impact, but you think - there was so much more you wish you could have done.
+
+Your father nods. "Keep that feeling burning. The fight is never over. There will be more opportunities in the future."
+
+* [You're relieved that it's over.]
+
+Sure, perhaps you could have done more, but... You're mainly relieved that it's over. Absorbing their stories, trying to help - it took a toll on you. You a break from the heavy stuff for a while.
+
+Your father nods. "There's no shame in that. Take a break. Reflect on the experience. Perhaps you'll return to the work again, or perhaps you'll find a different way to help those in need."
+
+-
+
+He looks over at you briefly, and smiles. "I'm proud of you. You did a good job."
+
+You smile back at him. Thanks, dad, you say.
+
+You look back out the window, and see the towers of the Barakhunian capitol approaching. You're almost home.
+
+You feel...
 
 * [Hopeful.]
 
@@ -294,7 +318,7 @@ You feel hopeful for the future. You're confident things can get better, if you 
 
 * [At peace.]
 
-You feel at peace. You've done what you can, for now. That isn't to say you can't do more in the future.
+Perhaps you will do more in the future, but for now, you feel at peace. You've done what you can.
 
 * [Anxious.]
 
@@ -307,6 +331,16 @@ Despite your peaceful surroundings, you can't help but feel angry at the world. 
 - It is with this feeling that you approach your new home.
 
 * [Fin.]
+
+-
+
+~ change_background("tmp-background")
+
+. . . . . . . .
+
+The below button will take you back to the main menu.
+
+* [Thank you for playing.]
 
 -> DONE
 

@@ -52,11 +52,11 @@ You keep a tidy inbox, so there's only a few in here, relevant to your current j
 
 ** [Subject: Help at the Housing Block?]
 
-You read the messages with the subject "Help at the Housing Block?" It was sent by your father one week ago.
+You read the messages with the subject "Help at the Housing Block?" You sent this, one week ago.
 
-The message explains that his father needs to see to some business on Barakhun, before the Great Resettlement begins. And that you'd like to help out at the housing block while he's gone.
+The message explains that you'd heard that the housing block could use some help. Seems the Great Resettlement to Barakhun is causing quite a bit of turmoil. Although the housing block will be closing soon without anyone left to steward it, and most of its residents have already been resettled to other camps, the few folks that are left always could use some support.
 
-The head of the housing block was welcoming to the idea. Seems the Great Resettlement is causing quite a bit of turmoil at the housing block, which will be closing soon without anyone left to steward it. They could use the help in its final days. And so, here you are.
+They put out a call for help, and so, you wrote this message to offer help before you move with your family to Barakhun. The head of the housing block responded very warmly to your inquiry.
 
 The message chain continues on and is mostly logistics from there, concluding just yesterday, with your arrival at Ring Six of Nova Station.
 
@@ -66,9 +66,9 @@ The message chain continues on and is mostly logistics from there, concluding ju
 
 You read the message chain with the subject "Arrived at Barakhun". It was sent by your father yesterday at 17:37 Nova Time. 
 
-The message indicates that your father arrived on Barakhun safely. He won't be available for calls most of this week, he says; he'll be busy with setting up things at home.
+The message indicates that your father arrived on Barakhun safely. He says it's a beautiful place, and he can't wait for you to see it.
 
-He thanks you again for being willing to help out the housing block in its final days. Although most of its residents have already been resettled to other camps, the few folks that are left always could use some support. He expects it'll be a good experience for you. His three points of advice: actively listen to people, remember their story is different than yours, and have fun.
+He continues, saying you're doing a noble thing, helping out the housing block in its final days. He expects it'll be a good experience for you. His three points of advice: actively listen to people, remember their story is different than yours, and have fun.
 
 Finally, he says that he is eagerly awaiting you on Barakhun. The Great Resettlement begins in just a couple of weeks.
 

@@ -24,9 +24,9 @@
 
 You walk through a plasteel corridor, dimly lit from the overhead lights. Doors, in an old style, line the corridor. People, mostly humanoid, walk in small groups, chatting about something or other. It reminds you a little of your old school.
 
-The doors you pass have small plaques on them; "L. Sequim, Notary"; "J. Brakar, Housing Deputy"; "M. Pith, Placement Authority". You suppose your father probably has an office here somewhere, too.
+The doors you pass have small plaques on them; "L. Sequim, Notary"; "J. Brakar, Housing Deputy"; "M. Pith, Placement Authority".
 
-As you reach the end of the hallway, you stop in front of a door: "B. Breet, Interspecies Relations".
+As you reach the end of the hallway, you stop in front of one particular door: "B. Breet, Interspecies Relations".
 
 It seems someone is arguing very loudly on the other side.
 
@@ -264,7 +264,7 @@ You ask what the Weld people did to the Khas.
 
 Fanias continues, "The negotiation was going incredibly well, too. We had them on the ropes! A transfer of technology to us in exchange for just 10% of the harvest, what a deal! Ah, but then, the Welds attacked. We were so close."
 
-"My father..." Fanias looks down. This is the first time you've seen him look sad. "And my mother... They were captured. Not seen since the attack. The Welds likely have them in their dungeons. I shudder to think on it."
+"My father..." Fanias looks down. This is the first time you've seen him look sad. "And my mother... Will I ever have vengeance for them?"
 
 -> questions
 
@@ -288,7 +288,7 @@ Fanias goes on at length. Eventually, he runs out of insults.
 
 "Those toads somehow snuck into the Khas' keep, under the cover of night. Inside sabotage seems the most likely culprit, but who can know with such meddlesome curs? We have no idea how they got there, either! We are always ready for the spectre of war, and we heard no reports of troop movement." Fanias is fuming.
 
-"I will see my father and mother released, or avenged. I must! The honor of the Khas depends on it!"
+"I will see my mother released, my father avenged. I must! The honor of the Khas depends on it!"
 
 -> questions
 
@@ -338,7 +338,7 @@ When the bubble is fully outside, it pops, and he is deposited on the floor. He 
 
 - {reason: He | Fanias} shakes his head and sits down on the steps outside. "I don't understand. Things were not supposed to turn out like this. The Urun are the very species that is meant to guide our way. They should be helping me! Do they not see the righteousness of my cause?"
 
-For the first time since you've met him, he looks utterly despondent. "My mother and father, captured or dead. My brother, in hiding. My closest advisors, slain, by the Weld. And it seems, the Urun are utterly unhelpful. Our family name... The burden is all mine."
+For the first time since you've met him, he looks utterly despondent. "My brother, in hiding. My mother, captured. My father, slain, by the Weld. And it seems the Urun are utterly unhelpful. Our family name... The burden is all mine."
 
 He looks at you desperately. "You are my only hope. I know we have only just met a few days ago, but I feel utterly alone. Where else can I turn? What should I do?"
 
