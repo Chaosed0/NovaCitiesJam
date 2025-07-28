@@ -6,6 +6,7 @@ func _ready() -> void:
 	var startButton: Button = get_node("%StartButton/Button")
 	var creditsButton: Button = get_node("%CreditsButton/Button")
 	var quitButton: Button = get_node("%QuitButton/Button")
+	var backButton: Button = get_node("%BackButton/Button")
 
 	continueButton.get_parent().visible = FileAccess.file_exists(StoryUI.storySavePath)
 
@@ -13,6 +14,10 @@ func _ready() -> void:
 	startButton.pressed.connect(on_start_pressed)
 	creditsButton.pressed.connect(on_credits_pressed)
 	quitButton.pressed.connect(on_quit_pressed)
+	backButton.pressed.connect(on_back_pressed)
+
+	get_node("%Main").visible = true
+	get_node("%Credits").visible = false
 
 func on_continue_pressed() -> void:
 	var initializer : StoryInitializer = LoadStory()
@@ -25,8 +30,12 @@ func on_start_pressed() -> void:
 	self.queue_free()
 
 func on_credits_pressed() -> void:
-	# TODO
-	pass
+	get_node("%Main").visible = false
+	get_node("%Credits").visible = true
+
+func on_back_pressed() -> void:
+	get_node("%Main").visible = true
+	get_node("%Credits").visible = false
 
 func on_quit_pressed() -> void:
 	get_tree().quit()

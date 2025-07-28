@@ -18,7 +18,7 @@ theme = ExtResource("1_gv2pb")
 script = ExtResource("2_iiwam")
 
 [node name="Background" type="TextureRect" parent="."]
-modulate = Color(0.49, 0.49, 0.49, 1)
+modulate = Color(0.24, 0.24, 0.24, 1)
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
@@ -39,7 +39,16 @@ grow_vertical = 2
 texture = ExtResource("2_er5gv")
 expand_mode = 1
 
-[node name="Title" type="Label" parent="."]
+[node name="Main" type="Control" parent="."]
+unique_name_in_owner = true
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Title" type="Label" parent="Main"]
 layout_mode = 1
 anchors_preset = 5
 anchor_left = 0.5
@@ -59,7 +68,7 @@ theme_override_fonts/font = ExtResource("3_32s44")
 theme_override_font_sizes/font_size = 72
 text = "Refugees of Nova Station"
 
-[node name="Progress" type="Label" parent="."]
+[node name="Progress" type="Label" parent="Main"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -83,7 +92,7 @@ text = "Progress will automatically be saved."
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="ButtonsContainer" type="VBoxContainer" parent="."]
+[node name="ButtonsContainer" type="VBoxContainer" parent="Main"]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -98,7 +107,7 @@ grow_horizontal = 2
 grow_vertical = 2
 alignment = 1
 
-[node name="ContinueButton" type="MarginContainer" parent="ButtonsContainer"]
+[node name="ContinueButton" type="MarginContainer" parent="Main/ButtonsContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
@@ -108,12 +117,12 @@ theme_override_constants/margin_right = 0
 theme_override_constants/margin_bottom = -1
 script = ExtResource("5_rvab4")
 
-[node name="Button" type="Button" parent="ButtonsContainer/ContinueButton"]
+[node name="Button" type="Button" parent="Main/ButtonsContainer/ContinueButton"]
 layout_mode = 2
 flat = true
 alignment = 0
 
-[node name="Label" type="RichTextLabel" parent="ButtonsContainer/ContinueButton"]
+[node name="Label" type="RichTextLabel" parent="Main/ButtonsContainer/ContinueButton"]
 modulate = Color(1, 0.490196, 0, 1)
 layout_mode = 2
 mouse_filter = 2
@@ -126,7 +135,7 @@ fit_content = true
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="StartButton" type="MarginContainer" parent="ButtonsContainer"]
+[node name="StartButton" type="MarginContainer" parent="Main/ButtonsContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
@@ -136,12 +145,12 @@ theme_override_constants/margin_right = 0
 theme_override_constants/margin_bottom = -1
 script = ExtResource("5_rvab4")
 
-[node name="Button" type="Button" parent="ButtonsContainer/StartButton"]
+[node name="Button" type="Button" parent="Main/ButtonsContainer/StartButton"]
 layout_mode = 2
 flat = true
 alignment = 0
 
-[node name="Label" type="RichTextLabel" parent="ButtonsContainer/StartButton"]
+[node name="Label" type="RichTextLabel" parent="Main/ButtonsContainer/StartButton"]
 modulate = Color(1, 0.490196, 0, 1)
 layout_mode = 2
 mouse_filter = 2
@@ -154,7 +163,7 @@ fit_content = true
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="CreditsButton" type="MarginContainer" parent="ButtonsContainer"]
+[node name="CreditsButton" type="MarginContainer" parent="Main/ButtonsContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
@@ -164,12 +173,12 @@ theme_override_constants/margin_right = 0
 theme_override_constants/margin_bottom = -1
 script = ExtResource("5_rvab4")
 
-[node name="Button" type="Button" parent="ButtonsContainer/CreditsButton"]
+[node name="Button" type="Button" parent="Main/ButtonsContainer/CreditsButton"]
 layout_mode = 2
 flat = true
 alignment = 0
 
-[node name="Label" type="RichTextLabel" parent="ButtonsContainer/CreditsButton"]
+[node name="Label" type="RichTextLabel" parent="Main/ButtonsContainer/CreditsButton"]
 modulate = Color(1, 0.490196, 0, 1)
 layout_mode = 2
 mouse_filter = 2
@@ -182,7 +191,7 @@ fit_content = true
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="QuitButton" type="MarginContainer" parent="ButtonsContainer"]
+[node name="QuitButton" type="MarginContainer" parent="Main/ButtonsContainer"]
 unique_name_in_owner = true
 layout_mode = 2
 size_flags_horizontal = 3
@@ -192,12 +201,12 @@ theme_override_constants/margin_right = 0
 theme_override_constants/margin_bottom = -1
 script = ExtResource("5_rvab4")
 
-[node name="Button" type="Button" parent="ButtonsContainer/QuitButton"]
+[node name="Button" type="Button" parent="Main/ButtonsContainer/QuitButton"]
 layout_mode = 2
 flat = true
 alignment = 0
 
-[node name="Label" type="RichTextLabel" parent="ButtonsContainer/QuitButton"]
+[node name="Label" type="RichTextLabel" parent="Main/ButtonsContainer/QuitButton"]
 modulate = Color(1, 0.490196, 0, 1)
 layout_mode = 2
 mouse_filter = 2
@@ -206,6 +215,87 @@ theme_override_constants/shadow_offset_y = 2
 theme_override_constants/shadow_offset_x = 2
 theme_override_font_sizes/normal_font_size = 36
 text = "Quit"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Credits" type="Control" parent="."]
+unique_name_in_owner = true
+visible = false
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Label" type="RichTextLabel" parent="Credits"]
+layout_mode = 0
+offset_left = 72.0
+offset_top = 36.0
+offset_right = 1191.0
+offset_bottom = 662.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 1
+theme_override_constants/shadow_offset_x = 1
+theme_override_font_sizes/normal_font_size = 24
+bbcode_enabled = true
+text = "Writing, Programming: Edward Lu
+
+Written using Ink by Inkle
+Sound from Sonniss GDC Packs
+Implemented with Godot
+
+Background Images:
+[font_size=16]
+train: Photo by Pixabay from Pexels: https://www.pexels.com/photo/empty-subway-train-302428/
+cafeteria: Photo by Vincent Tan: https://www.pexels.com/photo/vibrant-nightlife-at-an-outdoor-asian-street-food-restaurant-33125088/
+barakhun_office_hallway: Photo by cottonbro studio: https://www.pexels.com/photo/empty-modern-school-corridor-6345058/
+barakhun_office:Photo by Chengxin Zhao: https://www.pexels.com/photo/piles-of-documents-in-paper-office-4277209/
+urun_outdoor:Photo by Arseniy Kulik: https://www.pexels.com/photo/grayscale-photo-of-a-concrete-building-12973858/
+urun_indoor:Photo by wutthichai charoenburi: https://www.pexels.com/photo/empty-seats-in-corridor-19921278/
+apartment: Photo by Vecislavas Popa: https://www.pexels.com/photo/interior-design-of-home-1643383/
+market: Photo by Dương Nhân: https://www.pexels.com/photo/aerial-photography-of-people-walking-on-street-near-buildings-during-night-time-3413327/
+market_shady:Photo by Ibrahim Boran from Pexels: https://www.pexels.com/photo/lighted-hallway-263789/
+courtyard: Photo by DAIPI: https://www.pexels.com/photo/sunlit-urban-courtyard-tree-surrounded-by-walls-31814108/
+gymnasium_outdoor: Photo by Mary Taylor: https://www.pexels.com/photo/empty-sports-ground-near-school-5896843/
+pool: Photo by Tima Miroshnichenko: https://www.pexels.com/photo/person-swimming-in-a-pool-6011892/
+courthouse_outdoor:Photo by Nicolas Postiglioni: https://www.pexels.com/photo/people-walking-near-brown-building-947177/
+courthouse_indoor:Photo by Pixabay from Pexels: https://www.pexels.com/photo/brown-concrete-hallway-415585/
+courthouse_room: Photo by Marcelo  Jaboo: https://www.pexels.com/photo/brown-wooden-armchair-on-brown-wooden-floor-696407/
+spaceport: Photo by Amien: https://www.pexels.com/photo/grey-waiting-chairs-and-a-man-63991/
+market_station: Photo by Daniel Frese from Pexels: https://www.pexels.com/photo/posters-on-the-wall-569416/
+car: Photo by Valeriia Miller: https://www.pexels.com/photo/cars-on-a-country-road-10911941/
+[/font_size]"
+vertical_alignment = 1
+
+[node name="BackButton" type="MarginContainer" parent="Credits"]
+unique_name_in_owner = true
+offset_left = 1028.0
+offset_top = 622.0
+offset_right = 1223.0
+offset_bottom = 678.0
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = -1
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = -1
+script = ExtResource("5_rvab4")
+
+[node name="Button" type="Button" parent="Credits/BackButton"]
+layout_mode = 2
+flat = true
+alignment = 0
+
+[node name="Label" type="RichTextLabel" parent="Credits/BackButton"]
+modulate = Color(1, 0.490196, 0, 1)
+layout_mode = 2
+mouse_filter = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_offset_x = 2
+theme_override_font_sizes/normal_font_size = 36
+text = "Back"
 fit_content = true
 horizontal_alignment = 1
 vertical_alignment = 1
