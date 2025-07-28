@@ -1,0 +1,211 @@
+[gd_scene load_steps=7 format=3 uid="uid://ojn8x43hlm14"]
+
+[ext_resource type="Texture2D" uid="uid://x22c7g0lhh7j" path="res://Assets/Images/BG_NovaStation.png" id="1_eulpe"]
+[ext_resource type="Theme" uid="uid://dspuh7p7f5rfg" path="res://Assets/UI/StoryTheme.tres" id="1_gv2pb"]
+[ext_resource type="Texture2D" uid="uid://coynjeooc8578" path="res://Assets/Images/vignette.png" id="2_er5gv"]
+[ext_resource type="Script" uid="uid://c0j62678dnbyy" path="res://Assets/Scripts/MainMenu.gd" id="2_iiwam"]
+[ext_resource type="FontFile" uid="uid://dwkoioc4y3m2v" path="res://Assets/Fonts/JosefinSans-Bold.ttf" id="3_32s44"]
+[ext_resource type="Script" uid="uid://de7js8xe6modt" path="res://Assets/Scripts/MainMenuButton.gd" id="5_rvab4"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("1_gv2pb")
+script = ExtResource("2_iiwam")
+
+[node name="Background" type="TextureRect" parent="."]
+modulate = Color(0.49, 0.49, 0.49, 1)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_eulpe")
+expand_mode = 1
+stretch_mode = 6
+
+[node name="Vignette" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("2_er5gv")
+expand_mode = 1
+
+[node name="Title" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -446.0
+offset_top = 145.0
+offset_right = 446.0
+offset_bottom = 217.0
+grow_horizontal = 2
+theme_override_colors/font_color = Color(1, 0.937255, 0.796078, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 0
+theme_override_fonts/font = ExtResource("3_32s44")
+theme_override_font_sizes/font_size = 72
+text = "Refugees of Nova Station"
+
+[node name="Progress" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -175.0
+offset_top = 294.0
+offset_right = 176.0
+offset_bottom = 314.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_colors/font_color = Color(1, 0.937255, 0.796078, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_x = 2
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/outline_size = 0
+theme_override_font_sizes/font_size = 20
+text = "Progress will automatically be saved."
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ButtonsContainer" type="VBoxContainer" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -128.0
+offset_top = -41.0
+offset_right = 129.0
+offset_bottom = 168.0
+grow_horizontal = 2
+grow_vertical = 2
+alignment = 1
+
+[node name="ContinueButton" type="MarginContainer" parent="ButtonsContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = -1
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = -1
+script = ExtResource("5_rvab4")
+
+[node name="Button" type="Button" parent="ButtonsContainer/ContinueButton"]
+layout_mode = 2
+flat = true
+alignment = 0
+
+[node name="Label" type="RichTextLabel" parent="ButtonsContainer/ContinueButton"]
+modulate = Color(1, 0.490196, 0, 1)
+layout_mode = 2
+mouse_filter = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_offset_x = 2
+theme_override_font_sizes/normal_font_size = 36
+text = "Continue"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="StartButton" type="MarginContainer" parent="ButtonsContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = -1
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = -1
+script = ExtResource("5_rvab4")
+
+[node name="Button" type="Button" parent="ButtonsContainer/StartButton"]
+layout_mode = 2
+flat = true
+alignment = 0
+
+[node name="Label" type="RichTextLabel" parent="ButtonsContainer/StartButton"]
+modulate = Color(1, 0.490196, 0, 1)
+layout_mode = 2
+mouse_filter = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_offset_x = 2
+theme_override_font_sizes/normal_font_size = 36
+text = "Start"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="CreditsButton" type="MarginContainer" parent="ButtonsContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = -1
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = -1
+script = ExtResource("5_rvab4")
+
+[node name="Button" type="Button" parent="ButtonsContainer/CreditsButton"]
+layout_mode = 2
+flat = true
+alignment = 0
+
+[node name="Label" type="RichTextLabel" parent="ButtonsContainer/CreditsButton"]
+modulate = Color(1, 0.490196, 0, 1)
+layout_mode = 2
+mouse_filter = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_offset_x = 2
+theme_override_font_sizes/normal_font_size = 36
+text = "Credits"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="QuitButton" type="MarginContainer" parent="ButtonsContainer"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/margin_left = 0
+theme_override_constants/margin_top = -1
+theme_override_constants/margin_right = 0
+theme_override_constants/margin_bottom = -1
+script = ExtResource("5_rvab4")
+
+[node name="Button" type="Button" parent="ButtonsContainer/QuitButton"]
+layout_mode = 2
+flat = true
+alignment = 0
+
+[node name="Label" type="RichTextLabel" parent="ButtonsContainer/QuitButton"]
+modulate = Color(1, 0.490196, 0, 1)
+layout_mode = 2
+mouse_filter = 2
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_constants/shadow_offset_y = 2
+theme_override_constants/shadow_offset_x = 2
+theme_override_font_sizes/normal_font_size = 36
+text = "Quit"
+fit_content = true
+horizontal_alignment = 1
+vertical_alignment = 1

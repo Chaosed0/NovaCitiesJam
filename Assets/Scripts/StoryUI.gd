@@ -1,6 +1,8 @@
 class_name StoryUI
 extends Control
 
+const storySavePath: String = "user://story.save"
+
 @export var debug : bool
 
 var _textScene : PackedScene
@@ -21,8 +23,7 @@ var _currentInputs : Array[StoryInputChoice]
 var _currentStoryText : StoryTextContainer
 var _backgroundTween : Tween
 
-var _storyIsLoaded : bool
-var _deferredKnot : String
+var storyIsLoaded : bool
 var _randomizeNextChoices : bool
 
 signal on_story_loaded_signal
@@ -50,7 +51,7 @@ func _ready() -> void:
 
 	_margin = _content.get_theme_constant("margin_top") + _content.get_theme_constant("margin_bottom")
 
-	_storyIsLoaded = false
+	storyIsLoaded = false
 	_story.loaded.connect(on_story_loaded)
 	_story.create_story()
 
@@ -58,16 +59,23 @@ func _ready() -> void:
 		if child != _bottomSpacer:
 			child.queue_free()
 
-func load_story(knot: String) -> void:
-	if !_storyIsLoaded:
-		print("Deferred knot set to ", knot)
-		_deferredKnot = knot
-	else:
-		print("Directly loading knot ", knot)
-		load_story_internal(knot)
+func start_story(knot: String) -> void:
+	setup_story()
+
+	if knot != null:
+		_story.choose_path(knot)
+
+	continue_story(true);
+
+func load_story() -> void:
+	setup_story()
+
+	_story.load_state_from_path(storySavePath)
+	change_background(_story.get_variable("last_background"))
+	continue_story(true)
 
 func on_story_loaded(successfully: bool) -> void:
-	_storyIsLoaded = successfully
+	storyIsLoaded = successfully
 
 	if !successfully:
 		print("Story was not loaded successfully!")
@@ -75,14 +83,11 @@ func on_story_loaded(successfully: bool) -> void:
 		print("Story loaded successfully!")
 
 	_story.bind_external_function("shuffle_next_choices", self, "randomize_next_choices")
-	_story.bind_external_function("change_background", self, "change_background")
+	_story.bind_external_function("change_background_ext", self, "change_background")
 
 	on_story_loaded_signal.emit()
 
-	if _deferredKnot != null:
-		load_story_internal(_deferredKnot)
-
-func load_story_internal(knot: String) -> void:
+func setup_story() -> void:
 	_story.set_variable("debug", debug)
 
 	if _currentTween != null:
@@ -91,11 +96,6 @@ func load_story_internal(knot: String) -> void:
 	for child in _container.get_children():
 		if child != _bottomSpacer:
 			child.queue_free()
-
-	if knot != null:
-		_story.choose_path(knot)
-
-	continue_story(true);
 
 func continue_story(is_first : bool) -> void:
 	var text : String = ""
@@ -226,7 +226,7 @@ func on_input_submitted(varName: String, value: String, index: int) -> void:
 	choose_choice_index(index)
 
 func choose_choice_index(index: int) -> void:
-	_story.choose_choice_index(index);
+	_story.choose_choice_index(index)
 
 	for choice in _currentChoices:
 		choice.queue_free()
@@ -240,6 +240,7 @@ func choose_choice_index(index: int) -> void:
 	if _currentStoryText != null:
 		_currentStoryText.destroy_last_spacer()
 
+	save_story()
 	continue_story(false)
 
 func complete_story() -> void:
@@ -291,3 +292,6 @@ func _gui_input(event : InputEvent) -> void:
 	if event is InputEventMouseButton and event.button_index == MOUSE_BUTTON_LEFT and event.pressed:
 		skip_tween()
 		accept_event()
+
+func save_story() -> void:
+	_story.save_state_to_path(storySavePath)
