@@ -9,8 +9,8 @@ func _ready() -> void:
 	_storyUI = get_node("%StoryUI")
 	_storyUI.on_story_loaded_signal.connect(on_story_loaded)
 
-	print(ProjectSettings.get_setting("application/run/main_scene"), " ", ResourceLoader.get_resource_uid(self.scene_file_path))
-	if get_parent() == get_tree().root && ProjectSettings.get_setting("application/run/main_scene") == ResourceUID.id_to_text(ResourceLoader.get_resource_uid(self.scene_file_path)):
+	if get_tree().current_scene == self:
+		print("starting from story scene")
 		initialize_as_new()
 
 func initialize_as_new() -> void:
