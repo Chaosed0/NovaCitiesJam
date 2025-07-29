@@ -202,7 +202,9 @@ They were angry when you saw them off at the spaceport. It seemed that they woul
 
 They were spiteful when you saw them off at the spaceport. It seemed that they would try to use that spite to fuel them for the rest of their life, to get revenge, in a way, on those who wronged them. You hope that they can keep it up.
 
-- TODO: Your father nods. Strength in anger.
+-- Your father thinks about the story you've told. "There is strength in anger," he says, a little hesitantly. His voice gets stronger as he goes on. "It can motivate you to do terrible, horrible things, but used properly, it can also drive you to keep going, to fight for a just cause."
+
+-> people
 
 * [Talk about Fanias, the prince of the Khas.]
 
@@ -214,21 +216,23 @@ You met Fanias, prince of the Khas, of Nidaroen.
 
 ** [He petitioned the Urun.]
 
--- He went to petition the Urun, who were supposed to take care of his people. They wouldn't meet with him. It turns out that they were the betrayers all along, that they had chosen profit over justice.
+-- He went to petition the Urun, who were supposed to take care of his people. They wouldn't meet with him. It turns out that they were the betrayers all along, that they had chosen profit over justice. Despite knowing this, Fanias wouldn't give up the fight.
 
-But despite knowing this, Fanias wouldn't give up the fight. He chose to become more radical, than to give up. And you think...
+Earlier, you told Tress that {Fanias.Third.people: Fanias should fight for the people that he loves.} {Fanias.Third.wrong: That he should fight the Urun because it is the right thing to do.} {Fanias.Third.give_up: That Fanias should give up.}
 
-TODO: Use choices
+Fanias chose to become more radical, than to give up. And you think that was...
 
-** [That was an admirable thing to do.]
+** [An admirable thing to do.]
 
 You think that Fanias, in the end, is an admirable figure. That he would follow his moral compass to its logical conclusion, rather than to give up the fight.
 
-** [That was a foolish thing to do.]
+** [A foolish thing to do.]
 
 You think that Fanias made a foolish choice. That he should have given up the fight when he saw that the odds were stacked against him. Or perhaps that he should have found a different way to fight, rather than direct confrontation. 
 
--- TODO: Your father nods. Sometimes direct confrontation is useful. When is it necessary? When is it justified?
+-- Your father sighs, and looks sad. "As much as we want to believe that peaceful means can always prevail, I don't think it's always the case. Sometimes direct resistance is warranted, and necessary. It seems that Fanias is on his way to learning that."
+
+"But he won't get anywhere by himself." He shakes his head. "I hope he learns, too, to find the allies he needs to properly fight the Urun."
 
 * [Talk about Yousef, Youmna, and Banias.]
 
@@ -242,11 +246,13 @@ You met a Falasi family. Their names were Yousef, Youmna, and Banias.
 
 ** [Yousef tried to find a way to help.]
 
-Yousef paid some smugglers to try to send food to their family. 
+Yousef paid some smugglers to try to send food to their family. He tricked you into coming with him for safety, <>
 
-TODO: What do you think about that from choices before?
+{Yousef.Second.forgive:
+{not (Yousef.Second.just_tell or Yousef.Second.law or Yousef.Second.opportunists):but you forgave him immediately, because you saw the depth of his grief.|and you forgave him, after investigating his motives.}
+}
 
-TODO: Your father shakes his head. Yousef: The incredible guilt he felt.
+{not Yousef.Second.forgive: and you could not bring yourself to forgive him, despite the depths of his grief.}
 
 -> repeat
 
@@ -254,15 +260,11 @@ TODO: Your father shakes his head. Yousef: The incredible guilt he felt.
 
 Youmna was filled with rage. Rage that she felt she could not let out, lest she upset those around her. She wanted to move on, to let go of it, but instead, she couldn't keep it from spilling out.
 
-TODO: Youmna's rage. Understandable. And there's nothing good to be done about it. The cycle.
-
 -> repeat
 
 ** [Banias wanted to see her family.]
 
 Banias just wanted to see her aunts and uncles again. But, you suspect, she never will. Yisua has denied her that chance. Eventually, she will grow up, and that hole in her heart will never fill.
-
-TODO: Banias. What will she fill that hole with? She has many choices; perhaps she'll forget them. Perhaps she will fill it with sorrow, anger, or vengeance. The cycle may continue, perpetuated by Yisua.
 
 -> repeat
 
@@ -280,9 +282,7 @@ You think that Yousef tried to go back to Falas. That overwhelming guilt he expr
 
 --
 
-TODO: What you think he should have done.
-
-And your father says: whatever choice he made, was the right one for him. We don't know how it would turn out.
+Your father's face looks stricken. He cannot imagine having to make that choice. "The amount of suffering in this world... I wonder which choice he made. I don't think there was a right one."
 
 -
 
@@ -314,19 +314,27 @@ You feel...
 
 * [Hopeful.]
 
-You feel hopeful for the future. You're confident things can get better, if you keep working towards a brighter future.
+You feel hopeful. You're confident things can will get better, and that the future is bright.
+
+Only you can say whether this hope energizes you to do more in the future, or if it will keep you complacent.
 
 * [At peace.]
 
-Perhaps you will do more in the future, but for now, you feel at peace. You've done what you can.
+For now, you feel at peace. You've done what you can; helped those in need.
+
+Only you can say whether being at peace energizes you to do more in the future, or if it will keep you complacent.
 
 * [Anxious.]
 
-You feel anxious. You wonder how many more untold refugee stories there are, how much suffering there is in the world. You wonder how much you can truly affect.
+You feel anxious. You wonder how many more untold refugee stories there are, how much more suffering there is in this universe.
+
+Only you can say whether this anxiety fuels you, or whether it paralyzes you.
 
 * [Angry.]
 
-Despite your peaceful surroundings, you can't help but feel angry at the world. How can these two things be true at the same time: for you to be coming home when so many people do not have a home?
+Despite your peaceful surroundings, you can't help but feel angry at the world. How can you be coming home when so many people do not have a home?
+
+Only you can say whether this anger fuels you, or whether it paralyzes you.
 
 - It is with this feeling that you approach your new home.
 

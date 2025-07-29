@@ -271,6 +271,7 @@ vertical_alignment = 1
 
 [node name="BackButton" type="MarginContainer" parent="Credits"]
 unique_name_in_owner = true
+layout_mode = 0
 offset_left = 1028.0
 offset_top = 622.0
 offset_right = 1223.0

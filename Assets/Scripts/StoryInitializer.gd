@@ -1,5 +1,5 @@
 class_name StoryInitializer
-extends Node
+extends Control
 
 const knot_path : String = "Main"
 
@@ -8,6 +8,7 @@ var _storyUI : StoryUI
 func _ready() -> void:
 	_storyUI = get_node("%StoryUI")
 	_storyUI.on_story_loaded_signal.connect(on_story_loaded)
+	_storyUI.on_story_complete.connect(on_story_complete)
 
 	if get_tree().current_scene == self:
 		print("starting from story scene")
@@ -30,3 +31,6 @@ func on_story_loaded() -> void:
 
 func quit() -> void:
 	get_tree().quit()
+
+func on_story_complete() -> void:
+	await Game.instance.load_scene(ResourceLoader.load("res://Assets/MainMenu.tscn").instantiate())
