@@ -893,6 +893,8 @@ The rage is a waste of energy, you think. There's no reason in holding on to it;
 
 = Farewell
 
+~change_background("spaceport_departures")
+
 Yousef is staring at a departures board intently, boring holes into it with his eyes, as you walk up to him.
 
 He turns his head slightly and notices you. "Ah, my friend, hello. Please, sit."
@@ -929,7 +931,7 @@ Ah, perhaps it's the flight to Yisua-Falas that he's staring at? It's likely got
 
 It's the least you could do, you say. He's been through so much suffering. You're glad to see him go to a place where he can finally settle down.
 
-"Yes, a place where we can finally settle down..." He thinks for a moment.<>
+"Yes, a place where we can finally settle down..." He thinks for a moment.
 
 * [It's your job.]
 
@@ -941,9 +943,9 @@ It's your job, you say. Not much to it. But you're glad he'll finally have a saf
 
 You weren't sure if you would come, you say, after what happened at Satna market. But you thought you might as well, seeing as this will be the last time you see him.
 
-He hears it, but doesn't really respond. He seems to be thinking about something.
+He merely says, "It is no trouble, my friend. We all have our hangups." He seems distracted.
 
-- "Tell me, my friend. Pretend you were me. If you had a chance to go home, a slim chance, but a chance nonetheless, would you take it?"
+- "Tell me, my friend," Yousef says. "Pretend you were me. If you had a chance to go home, a slim chance, but a chance nonetheless, would you take it?"
 
 His face is elsewhere. "You could hold your sisters again, see their children. You could help your family find food, or at least suffer alongside them.  And you would be home again! Home! Finally, where I never thought I would return..."
 
@@ -967,7 +969,9 @@ No, you say. Youmna needs you, and Banias deserves a second chance to live. Wher
 
 - "I see." Yousef contemplates your words, and nods. "Thank you for your answer."
 
-He seems like he's about to say more, but Banias bounds up. "Daddy, it's time to board!" Youmna is not far behind, with her ever-present smile.
+* [Continue]
+
+- He seems like he's about to say more, but Banias bounds up. "Daddy, it's time to board!" Youmna is not far behind, with her ever-present smile.
 
 "Ah, how are you, friend?" Youmna says. "I appreciate you coming today."
 
@@ -981,13 +985,13 @@ You hesitantly ask if she's alright, after her expression of rage the other day.
 
 * [Don't bring it up.]
 
-You don't bring it up. Instead, you say - it's nothing. You're glad to be here to see them off. Youmna smiles, and gives you a hug. {First.no_hug:This time, you accept.}
+You don't bring it up. Instead, you say - it's nothing. You're glad to be here to see them off. Youmna gives you a warm hug. {First.no_hug:This time, you accept.}
 
 - Banias hops up and down. "Are you coming with us to New Tarnaeum? I would like that!"
 
 You smile at her and say no, you aren't.
 
-"That's okay! I'm sure I'll see you again." She goes running off towards the gate. Youmna tuts and follows her.
+"That's okay! I'm sure I'll see you again." She goes running off towards the gate. Youmna tuts. "Come visit us, sometime. You will be welcome," she says as she leaves.
 
 * [Continue]
 
@@ -1001,7 +1005,9 @@ You watch as they all approach the gate, marked X15.
  
  A flight headed to Yisua-Falas is leaving X15, about an hour after the flight to New Tarnaeum. You swing your head back towards the gate, and you catch Yousef going through the gate... followed by a Norberian.
 
-You quickly run up to the window looking out towards the shuttle. You bump into a couple of folks, but you finally make it to the glass, and look out towards the gangway. You catch the back of Youmna's head as she boards the shuttle, but - no one else.
+You walk quickly up to the window looking out towards the shuttle. You bump into a couple of folks and apologize - it's busy in here.
+
+Eventually, make it to the glass, and look out towards the gangway. You catch the back of Youmna's head as she shepherds Banias onto the shuttle, but... You don't see Yousef.
 
 Perhaps Yousef went ahead of them?
 
@@ -1010,16 +1016,6 @@ Or perhaps... He's planning something?
 * [Do nothing.]
 
 Perhaps Yousef is planning something. Let him. You won't be the one to stop him.
-
-You'll never know if Yousef was really going to return to Yisua-Falas, but...
-
-** [You hope he does.]
-
-You hope Yousef returns to Yisua-Falas. Returns to the war, the starvation, and to his home.
-
-** [You hope he does not.]
-
-You hope Yousef was not planning on returning. You hope he has a fulfilling life ahead of him, with Youmna's rage, and with Banias' joy.
 
 * [Notify security.]
 

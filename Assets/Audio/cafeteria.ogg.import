@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/cafeteria.ogg-a77dd02cb6a260673d0b2fa92bcd5d7
 
 [params]
 
-loop=false
+loop=true
 loop_offset=0
 bpm=0
 beat_count=0

@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/courthouse_room.ogg-e2e2d05258c99a955ae449092
 
 [params]
 
-loop=false
+loop=true
 loop_offset=0
 bpm=0
 beat_count=0

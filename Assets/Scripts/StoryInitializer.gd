@@ -33,4 +33,5 @@ func quit() -> void:
 	get_tree().quit()
 
 func on_story_complete() -> void:
-	await Game.instance.load_scene(ResourceLoader.load("res://Assets/MainMenu.tscn").instantiate())
+	DirAccess.remove_absolute(StoryUI.storySavePath)
+	await Game.instance.load_scene(ResourceLoader.load("res://Assets/MainMenu.tscn"))

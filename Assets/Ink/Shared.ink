@@ -56,7 +56,7 @@ It's loud in here. The ceiling doesn't give anywhere for chatter to escape, and 
 {Visit == 1: You decide you will pay Fanias a visit first.}
 {Visit > 1 and Fanias == 0: You decide it's time to visit Fanias.}
 {Visit > 1 and Fanias == 1: You realize that Fanias' appointment at the Urunian embassy is tomorrow. You'll meet him there.}
-{Visit > 1 and Fanias == 2: You message Fanias, telling him you'll see him at the housing block's cafeteria in a few minutes.}
+{Visit > 1 and Fanias == 2: You message Fanias, telling him you'll see him at the housing block's cafeteria tomorrow.}
 
 ~next_visit=->Fanias
 
@@ -76,8 +76,8 @@ You put aside the thought of visiting Fanias.
 
 {Visit == 1: You decide to visit Yousef first.}
 {Visit > 1 and Yousef == 0: You decide it's time to visit Yousef.}
-{Visit > 1 and Yousef == 1: You message Yousef. You'll be at Satna market in a few minutes.}
-{Visit > 1 and Yousef == 2: You decide to drop in on Yousef and Youmna at their apartment in the housing block.}
+{Visit > 1 and Yousef == 1: You message Yousef. You'll meet him at Satna Market tomorrow.}
+{Visit > 1 and Yousef == 2: You decide to drop in on Yousef and Youmna at their apartment in the housing block tomorrow.}
 
 ~next_visit=->Yousef
 
@@ -97,8 +97,8 @@ Perhaps you'll visit Yousef another time.
 
 {Visit == 1: You decide to visit LiYan first.}
 {Visit > 1 and LiYan == 0: You decide it's time to check in on LiYan.}
-{Visit > 1 and LiYan == 1: You message LiYan. You'll meet them in a few minutes.}
-{Visit > 1 and LiYan == 2: It's nearly time for LiYan's permanent resettlement meeting, so you'll head that way and meet them there.}
+{Visit > 1 and LiYan == 1: You message LiYan. You'll meet them tomorrow.}
+{Visit > 1 and LiYan == 2: LiYan's permanent resettlement meeting is tomorrow, so you'll meet them there.}
 
 ~next_visit=->LiYan
 
@@ -121,7 +121,7 @@ You decide to visit someone other than LiYan.
 
 === Train ===
 
-{"Barakhunian Refugee Housing Block." The train doors slide open, and you board, taking a seat. [i]Badunk, badunk, badunk.[/i] The rhythmic sound of the railcar starts up as the train leaves from the housing block station.|[i]Badunk, badunk, badunk.[/i] You find yourself annoyed by the sound of the train. You really wish that they'd replaced this thing with a maglev.|[i]Badunk, badunk, badunk.[/i] You sniff. The interior of the railcar smells like fried food today. You wonder who would be so rude as to eat on the train.|[i]Badunk, badunk, badunk.[/i] You look out the window of the railcar back to your apartment, mesmerized by the flames of Nova Station's dying star.|[i]Badunk, badunk, badunk.[/i] Train's full to bursting today, for some reason. Must be the construction on maglev line 4. No matter; you stay standing, holding onto a handle.|[i]Badunk, badunk, badunk.[/i] You find that you're no longer annoyed by the sound of the train on the rail. It's almost nostalgic to you, at this point.|[i]Badunk, badunk, badunk.[/i] You wonder idly about what is causing that sound. You resolve to ask the assistant at the station before you board next time.|[i]Badunk, badunk, badunk.[/i] You sit on the train, head bowed. You find yourself a little sad, worn down from all the support you've given this week. It's almost over, and you're not sure how much good you've done.}
+{"Barakhunian Refugee Housing Block." The train doors slide open, and you board, taking a seat. [i]Badunk, badunk, badunk.[/i] The rhythmic sound of the railcar starts up as the train leaves from the housing block station.|[i]Badunk, badunk, badunk.[/i] You find yourself annoyed by the sound of the train. You really wish that they'd replaced this thing with a maglev.|[i]Badunk, badunk, badunk.[/i] You sniff. The interior of the railcar smells like fried food today. You wonder who would be so rude as to eat on the train.|[i]Badunk, badunk, badunk.[/i] Another day, another check-in. Who's next?|[i]Badunk, badunk, badunk.[/i] You look out the window of the railcar back to your apartment, mesmerized by the flames of Nova Station's dying star.|[i]Badunk, badunk, badunk.[/i] Train's full to bursting today, for some reason. Must be the construction on maglev line 4. You stand, holding onto a handle.|[i]Badunk, badunk, badunk.[/i] You find that you're no longer annoyed by the sound of the train on the rail. It's almost nostalgic to you, at this point.|[i]Badunk, badunk, badunk.[/i] You wonder idly about what is causing that sound. You resolve to ask the assistant at the station before you board next time.|[i]Badunk, badunk, badunk.[/i] You sit on the train, head bowed. You find yourself a little sad, worn down from all the support you've given this week. It's almost over, and you're not sure how much good you've done.}
 
 ->->
 
@@ -129,13 +129,33 @@ You decide to visit someone other than LiYan.
 
 === Spaceport_Intro ===
 
-You lean back, and put your head on the window of the railcar. That's it, then. That was your last meeting. Only one thing left to do. Tomorrow morning, you'll see each of the residents off at the spaceport, and then - it's off to Barakhun, to finally reunite with your father.
+You lean back, and put your head on the window of the railcar.
 
-* [Continue.]
+* [That was your last meeting.]
+
+- That's it, then. That was your last meeting with the residents of the housing block. Only one thing left to do.
+
+Tomorrow morning, you'll see each of them off at the spaceport, and then - it's off to Barakhun, to finally reunite with your father.
+
+* [You're nervous about the residents.]
+
+Did you do enough? Will they be okay? You feel nervous about the fate of each of the residents. You owe it to them to see them off.
+
+* [You're eager to get home.]
+
+You think about Barakhun, and your father. You can't wait to see them again.
+
+-
+
+* [One last thing to do.]
+
+-
 
 ~ change_background("spaceport")
 
-With millions of travelers passing through the station at any given time, Nova Station's spaceport is busy at all times of the day, and right now is no exception. The crowd is like a living thing, pushing you this way and that.
+The next day, you enter the Nova Station spaceport.
+
+With millions of travelers passing through the station at any given time, the port is busy at all times of the day. Right now is no exception. The crowd is like a living thing, pushing you this way and that.
 
 ->->
 
@@ -152,11 +172,15 @@ With millions of travelers passing through the station at any given time, Nova S
 
 ~ change_background("car")
 
-Four weeks later, after a long space travel, you find yourself on Barakhun, in a small ground-based vehicle. Outside the window, you see the newly terraformed plains of Barakhun. The lake is placid. The grass waves in the soft breeze. The sky - a [i]real[/i] sky - is a shade of blue you've never seen.
+* [Four weeks later...]
 
-Your father drives the vehicle. You've already gotten the hugs and the pleasantries out of the way earlier.
+- Four weeks later, after some packing and a long space journey, you find yourself on Barakhun.
 
-Your father glances at you and asks, "So, how was your time at the refugee housing block? Tell me about it."
+You're in a small ground-based vehicle. Outside the window, you see the newly terraformed plains of Barakhun. The lake is placid. The grass waves in the soft breeze. The sky - a [i]real[/i] sky - is a shade of blue you've never seen.
+
+Your father drives the vehicle. You've already gotten the hugs and the pleasantries out of the way earlier. He keeps his eyes on the road, and asks:
+
+"So, how was your time at the refugee housing block? Tell me about it."
 
 * [It was difficult.]
 
@@ -190,19 +214,17 @@ You tried to find someone to translate for them at their resettlement hearing. U
 
 -- When you saw them off at the spaceport, they were...
 
-** [Strong.]
-
-They were strong when you saw them off at the spaceport. They walked onto the shuttle, head held high. They refused to back down in the face of great adversity, and you doubt they ever will, no matter how much life grinds them down.
-
 ** [Angry.]
 
-They were angry when you saw them off at the spaceport. It seemed that they would use that anger to fuel them for the rest of their life, to get revenge, in a way, on those who wronged them. You hope that they can keep it up.
+They were angry when you saw them off at the spaceport. It seemed that they would use that anger to fuel them for the rest of their life, to get a kind of revenge on those who wronged them.
 
 ** [Spiteful.]
 
-They were spiteful when you saw them off at the spaceport. It seemed that they would try to use that spite to fuel them for the rest of their life, to get revenge, in a way, on those who wronged them. You hope that they can keep it up.
+They were spiteful when you saw them off at the spaceport. It seemed that they would try to use that spite to fuel them for the rest of their life, to get a kind of revenge on those who wronged them.
 
 -- Your father thinks about the story you've told. "There is strength in anger," he says, a little hesitantly. His voice gets stronger as he goes on. "It can motivate you to do terrible, horrible things, but used properly, it can also drive you to keep going, to fight for a just cause."
+
+"It's to be seen whether they can continue using it as a fuel, or if it burns them out."
 
 -> people
 
@@ -218,9 +240,9 @@ You met Fanias, prince of the Khas, of Nidaroen.
 
 -- He went to petition the Urun, who were supposed to take care of his people. They wouldn't meet with him. It turns out that they were the betrayers all along, that they had chosen profit over justice. Despite knowing this, Fanias wouldn't give up the fight.
 
-Earlier, you told Tress that {Fanias.Third.people: Fanias should fight for the people that he loves.} {Fanias.Third.wrong: That he should fight the Urun because it is the right thing to do.} {Fanias.Third.give_up: That Fanias should give up.}
+Earlier, you told Tress that {Fanias.Third.people:Fanias should fight for the people that he loves.} {Fanias.Third.wrong:Fanias should fight the Urun because it is the right thing to do.} {Fanias.Third.give_up:Fanias should give up, and begin a new life.}
 
-Fanias chose to become more radical, than to give up. And you think that was...
+He chose to become more radical instead of giving up. And you think that was...
 
 ** [An admirable thing to do.]
 
@@ -233,6 +255,8 @@ You think that Fanias made a foolish choice. That he should have given up the fi
 -- Your father sighs, and looks sad. "As much as we want to believe that peaceful means can always prevail, I don't think it's always the case. Sometimes direct resistance is warranted, and necessary. It seems that Fanias is on his way to learning that."
 
 "But he won't get anywhere by himself." He shakes his head. "I hope he learns, too, to find the allies he needs to properly fight the Urun."
+
+-> people
 
 * [Talk about Yousef, Youmna, and Banias.]
 
@@ -264,25 +288,25 @@ Youmna was filled with rage. Rage that she felt she could not let out, lest she 
 
 ** [Banias wanted to see her family.]
 
-Banias just wanted to see her aunts and uncles again. But, you suspect, she never will. Yisua has denied her that chance. Eventually, she will grow up, and that hole in her heart will never fill.
+Banias was just a child. She understood what was happening, but denied it. She wanted to see her aunts and uncles again. You suspect she never will; Yisua has denied her that chance. Eventually, she will grow up, and she will fill that hole in her heart with sorrow, or regret, or perhaps - rage, like her mother.
 
 -> repeat
 
 ** ->
 
--- In the end, you're not sure if Yousef boarded the shuttle to New Tarnaeum.
+-- You wonder, in the end, whether Yousef boarded the shuttle to New Tarnaeum, or whether he tried to return to Falas.
 
-** [You think Yousef went with Youmna and Banias to New Tarnaeum.]
+** [You think Yousef moved on.]
 
 You think that Yousef went with Youmna and Banias to New Tarnaeum. Surely he would have seen that they needed him. Surely he would have looked forward, to the future, rather than back, to his past.
 
-** [You think Yousef tried to go back to Falas.]
+** [You think Yousef went back.]
 
 You think that Yousef tried to go back to Falas. That overwhelming guilt he expressed, at not being able to help his family - you think that was eating him up inside, so much so that he had to go back and do what he could.
 
 --
 
-Your father's face looks stricken. He cannot imagine having to make that choice. "The amount of suffering in this world... I wonder which choice he made. I don't think there was a right one."
+Your father's face looks stricken. He cannot imagine having to make that choice. "I wonder which choice he made. I wonder which choice I would make."
 
 -
 
@@ -298,7 +322,7 @@ Your father nods. "Keep that feeling burning. The fight is never over. There wil
 
 * [You're relieved that it's over.]
 
-Sure, perhaps you could have done more, but... You're mainly relieved that it's over. Absorbing their stories, trying to help - it took a toll on you. You a break from the heavy stuff for a while.
+Sure, perhaps you could have done more, but... You're mainly relieved that it's over. Absorbing their stories, trying to help - it took a toll on you. It was good that you stopped when you did.
 
 Your father nods. "There's no shame in that. Take a break. Reflect on the experience. Perhaps you'll return to the work again, or perhaps you'll find a different way to help those in need."
 
@@ -306,7 +330,7 @@ Your father nods. "There's no shame in that. Take a break. Reflect on the experi
 
 He looks over at you briefly, and smiles. "I'm proud of you. You did a good job."
 
-You smile back at him. Thanks, dad, you say.
+You smile back at him. You say, thanks, Dad.
 
 You look back out the window, and see the towers of the Barakhunian capitol approaching. You're almost home.
 
@@ -318,17 +342,17 @@ You feel hopeful. You're confident things can will get better, and that the futu
 
 Only you can say whether this hope energizes you to do more in the future, or if it will keep you complacent.
 
-* [At peace.]
-
-For now, you feel at peace. You've done what you can; helped those in need.
-
-Only you can say whether being at peace energizes you to do more in the future, or if it will keep you complacent.
-
 * [Anxious.]
 
 You feel anxious. You wonder how many more untold refugee stories there are, how much more suffering there is in this universe.
 
 Only you can say whether this anxiety fuels you, or whether it paralyzes you.
+
+* [At peace.]
+
+For now, you feel at peace. You've done what you can; helped those in need.
+
+Only you can say whether being at peace energizes you to do more in the future, or if it will keep you complacent.
 
 * [Angry.]
 
@@ -346,11 +370,11 @@ Only you can say whether this anger fuels you, or whether it paralyzes you.
 
 . . . . . . . .
 
-The below button will take you back to the main menu.
+Thank you for playing. The below button will take you back to the main menu.
 
-* [Thank you for playing.]
+* [Main Menu]
 
--> DONE
+- -> DONE
 
 
 

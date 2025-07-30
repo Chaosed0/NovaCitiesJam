@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=3 uid="uid://rx5mrmc2csae"]
+[gd_scene load_steps=14 format=3 uid="uid://rx5mrmc2csae"]
 
 [ext_resource type="Script" uid="uid://cuudgo2jqf1q4" path="res://Assets/Scripts/StoryInitializer.gd" id="1_0s24k"]
 [ext_resource type="Theme" uid="uid://dspuh7p7f5rfg" path="res://Assets/UI/StoryTheme.tres" id="1_x8d7b"]
@@ -9,6 +9,7 @@
 [ext_resource type="PackedScene" uid="uid://468bgu5ql3da" path="res://Assets/UI/StoryChoice.tscn" id="5_21upg"]
 [ext_resource type="PackedScene" uid="uid://ddr4ip2rrsuk8" path="res://Assets/UI/StorySeparator.tscn" id="6_3m0a7"]
 [ext_resource type="PackedScene" uid="uid://cic3axmjb00bb" path="res://Assets/UI/StoryInputChoice.tscn" id="10_bpilk"]
+[ext_resource type="Script" uid="uid://dky0ukbrrgiud" path="res://Assets/Scripts/StoryAudioPlayer.gd" id="12_bpilk"]
 [ext_resource type="Script" uid="uid://m21pffbi0ll2" path="res://addons/inkgd/ink_player.gd" id="46_57prh"]
 [ext_resource type="Resource" uid="uid://bobnu5o0rqmj2" path="res://Assets/Ink/story.ink.json" id="47_y62fx"]
 
@@ -153,3 +154,13 @@ unique_name_in_owner = true
 script = ExtResource("46_57prh")
 ink_file = ExtResource("47_y62fx")
 loads_in_background = false
+
+[node name="AmbiencePlayer" type="Node" parent="."]
+unique_name_in_owner = true
+script = ExtResource("12_bpilk")
+
+[node name="AudioPlayer1" type="AudioStreamPlayer" parent="AmbiencePlayer"]
+unique_name_in_owner = true
+
+[node name="AudioPlayer2" type="AudioStreamPlayer" parent="AmbiencePlayer"]
+unique_name_in_owner = true

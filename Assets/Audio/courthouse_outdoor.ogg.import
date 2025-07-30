@@ -12,7 +12,7 @@ dest_files=["res://.godot/imported/courthouse_outdoor.ogg-b4748bd2339c124c121f6e
 
 [params]
 
-loop=false
+loop=true
 loop_offset=0
 bpm=0
 beat_count=0

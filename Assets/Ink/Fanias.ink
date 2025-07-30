@@ -320,6 +320,8 @@ The receptionist waves their hand, and the bubble pops. Fanias grits their teeth
 
 ** [Exit the embassy.]
 
+~ change_background("urun_outdoor")
+
 You exit the embassy, Fanias in tow, muttering under his breath. The receptionist makes sure you exit the building, then shuts the doors behind you.
 
 * [You're satisfied too.]
@@ -328,15 +330,17 @@ Honestly... Fanias could do with a bit of humility. You don't protest.
 
 The bubble rises off the floor a little bit and then starts heading for the door with Fanias inside. He starts yelling anew. You can't quite make out any words, but you're sure he's saying a lot of stuff about "injustice" and "dastards".
 
+** [Continue.]
+
+-- ~ change_background("urun_outdoor")
+
 When the bubble is fully outside, it pops, and he is deposited on the floor. He staggers and manages to catch himself, falling to one knee.
 
 "Those... blackguards..." His voice is hoarse from yelling. "I can... not believe this utter rudeness."
 
-** [Continue.]
+He takes a moment to regain his balance, and then <>
 
-~ change_background("urun_outdoor")
-
-- {reason: He | Fanias} shakes his head and sits down on the steps outside. "I don't understand. Things were not supposed to turn out like this. The Urun are the very species that is meant to guide our way. They should be helping me! Do they not see the righteousness of my cause?"
+- {reason: Fanias looks bewildered. He|} sits down on the steps outside. "I don't understand. Things were not supposed to turn out like this. The Urun are the very species that is meant to guide our way. They should be helping me! Do they not see the righteousness of my cause?"
 
 For the first time since you've met him, he looks utterly despondent. "My brother, in hiding. My mother, captured. My father, slain, by the Weld. And it seems the Urun are utterly unhelpful. Our family name... The burden is all mine."
 
@@ -364,7 +368,7 @@ Fanias looks a little shocked by the suggestion. "That... Is that truly your adv
 
 Fanias looks down, and is silent for a moment. He seems to gather resolve from somewhere, his gaze hardening.
 
-"{harsh:Perhaps you're right, but - no. I will not stand by idly. I will find a way to rescue my family. Justice will be done. I will continue fighting.} {realistic: I will wait for the Urun, but not for long. I must keep fighting for what I know is right.} Please." He looks at you sharply. "Help me find justice. I know it is not much, in the grand scheme of things. But I know you agree. It is not right for one's people to simply cease to be. Please help me, in whatever way you can."
+"{harsh:Perhaps you're right, but - no. I will not stand by idly. I will find a way to rescue my family. Justice will be done. I will continue fighting. }{realistic: I will wait for the Urun, but not for long. I must keep fighting for what I know is right. }Please." He looks at you sharply. "Help me find justice. I know it is not much, in the grand scheme of things. But I know you agree. It is not right for one's people to simply cease to be. Please help me, in whatever way you can."
 
 * [Accept.]
 
@@ -505,7 +509,7 @@ She shrugs. "Not my problem. I left long ago. I barely even count myself as Khas
 
 "But you know what?" She stretches her arms. "I almost pity him, bound by concepts like 'duty' and 'honor'. Way better to just forget about all of that. Make your own connections. Choose your own family."
 
-** [That's irresponsible.]
+** (irresponsible) [That's irresponsible.]
 
 That's irresponsible, you say. If you take care of your family, they will take care of you, unconditionally. Your friends will only carry you so far before you become too heavy of a burden.
 
@@ -544,6 +548,12 @@ Tress shrugs. "Sure, I support his crusade, nominally. But the more you study hi
 Hm, you muse. Perhaps it wouldn't be such a thing if Fanias gave up the fight. That maybe it's better for him to find his own way, separate from his people, like Tress did.
 
 Tress spreads her arms. "And now you are enlightened."
+
+** {irresponsible} [Apologize to Tress before expressing your thoughts.]
+
+Before you express your thoughts on Fanias, you apologize to Tress. You shouldn't have called her irresponsible before knowing her situation.
+
+She looks thoughtful. "A lot of people treat family as this immutable thing, an unbreakable bond. It's just... not like that, for a lot of people. For most, sure. But not everyone." She sighs. "I accept your apology. And thanks."
 
 -- -> questions
 
@@ -681,7 +691,7 @@ As you're leaving the station, you see Tress standing at a desk, paying Fanias' 
 
 - You ask, how did Fanias talk her into this? She seemed rather unsympathetic to him earlier.
 
-Tress shrugs. "{Third.people or Third.wrong: To be honest... wasn't him. It was you. Earlier, at the cafeteria.} {Third.people: What you said about our situations being different - you're right. I can't judge him too harshly. I have people who I care about, and that I am willing to fight for. He should be able to care for his, too.} {Third.wrong: You were right. The Urun are in the wrong, and he should be fighting against them. I doubt I'll join him -" she shrugs - "but, hey, I can contribute.} {Third.give_up: I think he's probably going to give up the fight soon. He'll need people around who can get him through that process.}"
+Tress shrugs. "{Third.people or Third.wrong:To be honest... wasn't him. It was you. Earlier, at the cafeteria.} {Third.people:What you said about our situations being different - you're right. I can't judge him too harshly. I have people who I care about, and that I am willing to fight for. He should be able to care for his, too.} {Third.wrong:You were right. The Urun are in the wrong, and he should be fighting against them. I doubt I'll join him -" she shrugs - "but, hey, I can contribute.} {Third.give_up: I think he's probably going to give up the fight soon. He'll need people around who can get him through that process.}"
 
 "Plus," she smiles bemusedly, "He's just kind of an amusing person to keep around. It's kind of endearing how fast he went from 'spoiled prince' to 'radical window-breaker'."
 

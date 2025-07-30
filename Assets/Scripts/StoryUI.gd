@@ -9,10 +9,13 @@ var _textScene : PackedScene
 var _choiceScene : PackedScene
 var _inputChoiceScene : PackedScene
 var _separator : PackedScene
+
+var _ambiencePlayer : StoryAudioPlayer
 var _background : TextureRect
 var _story : InkPlayer
 var _bottomSpacer : Control
 var _scrollContainer : ScrollContainer
+
 var _content : MarginContainer
 var _container : VBoxContainer
 
@@ -21,6 +24,7 @@ var _currentTween : Tween
 var _currentChoices : Array[StoryChoice]
 var _currentInputs : Array[StoryInputChoice]
 var _currentStoryText : StoryTextContainer
+
 var _backgroundTween : Tween
 
 var storyIsLoaded : bool
@@ -29,7 +33,7 @@ var _randomizeNextChoices : bool
 signal on_story_loaded_signal
 signal on_story_tween_begin
 signal on_story_tween_complete
-signal on_story_complete(story : InkPlayer)
+signal on_story_complete()
 
 func _ready() -> void:
 	print("StoryUI readying")
@@ -42,6 +46,7 @@ func _ready() -> void:
 	_story = get_node("%InkPlayer")
 	_bottomSpacer = get_node("%BottomSpacer")
 	_background = get_node("%StoryBackground")
+	_ambiencePlayer = get_node("%AmbiencePlayer")
 	_scrollContainer = get_node("ScrollContainer")
 	_content = _scrollContainer.get_node("MarginContainer")
 	_container = _content.get_node("VBoxContainer")
@@ -185,6 +190,7 @@ func continue_story(is_first : bool) -> void:
 		_currentTween.tween_property(_scrollContainer, "scroll_vertical", newSeparator.position.y + 16, 0.5).set_trans(Tween.TRANS_QUAD).set_ease(Tween.EASE_IN_OUT)
 	else:
 		_scrollContainer.scroll_vertical = 0
+		_currentTween.tween_interval(0.01)
 
 	if _backgroundTween != null && _backgroundTween.is_running():
 		print("waiting for background tween")
@@ -244,8 +250,8 @@ func choose_choice_index(index: int) -> void:
 	continue_story(false)
 
 func complete_story() -> void:
-	print("_story is completed")
-	on_story_complete.emit(_story)
+	print("story is completed")
+	on_story_complete.emit()
 
 func on_tween_finished() -> void:
 	_currentTween = null
@@ -262,6 +268,8 @@ func change_background(bgName: String) -> void:
 	if !ResourceLoader.exists(bgPath, "Texture2D"):
 		print("not exist")
 		bgPath = "res://Assets/Images/Backgrounds/tmp-background.png"
+
+	_ambiencePlayer.play_ambience_for_background(bgName)
 
 	var bg : Texture2D = ResourceLoader.load(bgPath)
 

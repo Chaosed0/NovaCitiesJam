@@ -510,7 +510,7 @@ You exit the maglev station to a wide plaza. You take a look at your feet, and n
 
 * [Continue]
 
-- Across the plaza is a great, forbidding cylinder of a building. Gigantic pillars stretch all the way up to a simulated sky. Archways dot the facade.  It's a beautiful piece of architecture{Fanias.Second:, nothing like the Urun Embassy you visited with Fanias|}.
+- Across the plaza is a great, severe cylinder of a building. Gigantic pillars stretch all the way up to a simulated sky. Elaborate carvings, murals and archways dot the facade. It's a beautiful piece of architecture{Fanias.Second:, nothing like the Urun Embassy you visited with Fanias|}.
 
 At the top of the building are some Galatean words, over which your translator helpfully overlays:
 
@@ -526,9 +526,9 @@ You reach the massive door to the courthouse, and ignore it, instead entering th
 
 ~ change_background("courthouse_indoor")
 
-- You find yourself in a cavernous space. It's not as busy in here as it was out in the plaza, but there are still some people inside, speaking in groups.
+- You find yourself in a cavernous space. The interior is just as elaborate as the exterior; the Galateans really spared no expense.
 
-The interior is brutalist bare stone. There is no comfortable surface; the seats, the desks, everything is stone. Though the wide open space hushes the voices of those speaking, the stone surfaces produce echoes, giving the whole space an eerie, liminal quality.
+It's not as busy in here as it was out in the plaza, but there are still some people inside, speaking in groups. Though the wide open space hushes the voices of those speaking, the stone surfaces produce echoes, giving the whole space an eerie, liminal quality.
 
 You check in at the front desk and allow yourself to be scanned for security. Then you step in, and follow the directions to the room where LiYan's resettlement meeting {LiYan_Translate: will take | should be taking} place.
 
@@ -791,7 +791,15 @@ You're incredibly nervous, but clearly you have to jump in. You say you're here 
 
 The judge looks down at her podium {podium == 0: again} {podium == 1: once more}. {assistant: She looks at her assistant, and they confer once more. | She calls her assistant up, and they confer in hushed tones. }
 
-They finish talking, and judge looks up at {you_spotlight: you | LiYan}. "You did not request or record any translator. Unfortunately, we must delay this hearing until another time, when an official translator can be found. Hearing adjourned." They close their notes and make to stand up.
+* [Wait.]
+
+You wait for them to finish speaking.
+
+* [Give LiYan a smile.]
+
+You turn around and give LiYan a quick smile. Everything will be fine.
+
+- They finish talking, and judge looks up at {you_spotlight:you|LiYan}. "You did not request or record any translator. Unfortunately, we must delay this hearing until another time, when an official translator can be found. Hearing adjourned." They close their notes and make to stand up.
 
 LiYan looks at you, confused. They're tense, hunched over, and their hand is twisting. This clearly isn't okay.
 
@@ -874,7 +882,7 @@ The assistant shoos you off, and you hurry out of the room.
 
 = Farewell
 
-You head towards the far end of the spaceport, at gate X-8, where LiYan should be waiting for their shuttle.
+You head towards the far end of the spaceport, for gate X8, where LiYan will board their shuttle.
 
 Given how your last encounter with LiYan ended, with them stalking off, you're pretty sure they were angry. You're feeling...
 
@@ -890,7 +898,7 @@ You're resolute. You might not be sure what to expect, but you know you shouldn'
 
 * [Say hello.]
 
-- You walk up and say hello. You brace yourself a little bit.
+- You walk up and say hello. You brace yourself for anger.
 
 LiYan shakes their head. They don't look at you, but they say, "Hello, my friend. It is good to see you."
 
@@ -910,7 +918,7 @@ You figure you might as well ask directly. Are they still feeling angry with you
 
 LiYan nods. "Not you... Not you. Angry at system."
 
-{not LiYan_Translate: "With you... Disappointment. For not helping translate." They shake their hand. "Disappointed. But I know you felt there was no good choice.}
+{not LiYan_Translate: "With you... Disappointment. For not helping translate." They shake their hand. "Disappointed. I know you felt there was no good choice.}
 
 * (apologize) [Apologize that you couldn't have done more.]
 
@@ -918,7 +926,7 @@ You immediately apologize. You wish you could have done more, at every step. LiY
 
 {not LiYan_Translate: LiYan shakes their head. "You could have. You could have translated." They shake their hand. "Disappointed. But I have thought. I know you felt there was no good choice.}
 
-- Finally, they look up at you.
+- Finally, they look you.
 
 * [Continue]
 
@@ -928,7 +936,11 @@ In the background, the shuttle boarding call goes out. LiYan stands up. Their ha
 
 "No one wishes for me to exist. Not the Calanethi. Not the Galateans. I am inconvenient to exist." Something in their gaze becomes more resolute. "Well then. My existence is inconvenient for them? I will go to this eighth camp. And the next. And the next. I will be inconvenient. I will exist, and resist."
 
-LiYan picks up their bag. They hold their hand to you.
+* [Continue]
+
+The boarding call for their shuttle goes out. LiYan stands up, picking up their bag.
+
+"I am unsure if see each other again. I am still angry, inside, but I will not say farewell with anger. I would call you a friend." They hold their hand to you.
 
 * [Grasp their hand.]
 

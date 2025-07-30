@@ -6,6 +6,7 @@ var _startButton : Button
 var _creditsButton : Button
 var _quitButton : Button
 var _backButton : Button
+var _music : AudioStreamPlayer
 
 var _storyScene : PackedScene
 
@@ -15,6 +16,7 @@ func _ready() -> void:
 	_creditsButton = get_node("%CreditsButton/Button")
 	_quitButton = get_node("%QuitButton/Button")
 	_backButton = get_node("%BackButton/Button")
+	_music = get_node("Music")
 
 	_storyScene = ResourceLoader.load("res://Assets/Story.tscn")
 
@@ -52,3 +54,6 @@ func _before_disabled() -> void:
 	_creditsButton.disabled = true
 	_quitButton.disabled = true
 	_backButton.disabled = true
+
+	var tween : Tween = create_tween()
+	tween.tween_property(_music, "volume_linear", 0, 0.5)
