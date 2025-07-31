@@ -46,7 +46,7 @@ Hopefully this allows you to understand each other.
 
 You approach slowly, without saying anything. You scuff your feet a bit on the plasteel to announce your arrival.
 
-The person looks up. Their facial features are somewhat elongated - matching their height - at least compared with your human features.
+The person looks up. Their facial features are somewhat elongated, matching their height.
 
 'LiYan?" you ask softly.
 

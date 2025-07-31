@@ -185,7 +185,7 @@ Fanias is an interesting fellow. He could stand to be quieter, but he clearly ha
 
 Fanias is admirable. Sure, he could stand to be more humble, but he is fighting for a just cause - one that he believes in passionately.
 
-- You recall Fanias' request for help. You sigh and bring your messages up. You shoot a message to your father to see if he can set up any kind of meeting with the Urunian connections that he had at his old job. Hopefully he'll be able to help.
+- You recall Fanias' request for help, and bring your messages up. You shoot a message to your father to see if he can set up any kind of meeting with the Urunian connections that he had at his old job. Hopefully he'll be able to help.
 
 -> Visit ->
 
@@ -228,7 +228,7 @@ It's crowded in by other buildings nearby. People walk the narrow streets and ta
 
 ~ change_background("urun_indoor")
 
-- The space is mostly empty, save for a receptionist's desk and a few perfunctory benches. Chipped engravings and faded murals give an impression of old splendor, long gone. Everything is just a little dirty.
+- The space is mostly empty, save for a receptionist's desk and a few perfunctory chairs. Chipped engravings and faded murals give an impression of old splendor, long gone. Everything is just a little dirty.
 
 Fanias looks a little dismayed, but he is trying not to let it show.
 
@@ -236,7 +236,7 @@ Fanias looks a little dismayed, but he is trying not to let it show.
 
 - He walks up to the receptionist. "Hello good sir, or, madam, or, ah..." He stops for a moment, attempting to discern the gender of the androgynous-looking humanoid in front of him. "Ah, or, person. We have an appointment with one Mr. Girun. I am here to petition the Urun, our mentor species, on behalf of all the Khas."
 
-The receptionist looks down and taps on their screen. "Girun, confirmed. Wait, you will." They gesture to the benches on the other side of the sparse room.
+The receptionist looks down and taps on their screen. "Girun, confirmed. Wait, you will." They gesture to the chairs.
 
 "Thank you, good, eh, person." Fanias turns about uncertainly and goes to sit down. You follow suit.
 
@@ -248,11 +248,11 @@ Seems like you'll be waiting here for a little while. You've been wondering...
 
 You've been wondering - what exactly is a mentor species? What makes Urun the Khas' mentor species?
 
-Fanias frowns. "We are... How would you put it... somewhat, less developed, than many of the other species in the galaxy. Whereas you all have space travel, we are still playing with our iron weapons and trying to figure out how you make this 'plas creet'." He taps the bench you're sitting on.
+Fanias frowns. "We are... How would you put it... somewhat, less developed, than many of the other species in the galaxy. Whereas you all have space travel, we are still playing with our iron weapons and trying to figure out how you make this 'plas creet'." He taps the wall nearby.
 
-"That isn't to say we are any less noble than you lot, of course. Our knights are the finest in all the realm! Honorable both in and out of combat. And our ladies, oh, our fair ladies, the most courteous and well-mannered of any you may meet." He loses himself in thought for a moment, but then brings himself back.
+"That isn't to say we are any less noble than you lot, of course. Our knights are the finest in all the realm! Honorable both in and out of combat. And our ladies, oh, our fair ladies, the most courteous and well-mannered of any you may meet." He loses himself in thought for a moment.
 
-"The Urun are there to help us along on our journey!  They keep watch over all that happens on our fair world, Nidaroen, and ensure that we are treated fairly. And of course, they teach us things, when they feel the time is right. Such was the case just before the Welds attacked! Ahh, and we were so close to having the upper hand..." He shakes his fist.
+"The Urun are there to help us along on our journey!  They keep watch over all that happens on our world, Nidaroen, and ensure that we are treated fairly in the galaxy. And of course, they teach us things, when they feel the time is right. Such was the case just before the Welds attacked! Ahh, and we were so close to having the upper hand..." He shakes his fist.
 
 -> questions
 
@@ -260,11 +260,17 @@ Fanias frowns. "We are... How would you put it... somewhat, less developed, than
 
 You ask what the Weld people did to the Khas.
 
-"Those scoundrels!" Fanias looks instantly angry thinking about them. "They attacked us, without warning, in the middle of the night. In the midst of some negotiations with the Urun over our fruit harvest, no less! What utter boors, interrupting a meeting with our mentor species. No doubt this information will also help our case."
+"Those scoundrels!" Fanias looks instantly angry. "They attacked us, without warning, in the middle of the night. In the midst of some negotiations with the Urun over our fruit harvest, no less! What utter boors, interrupting a meeting with our mentor species. No doubt this information will also help our case."
 
 Fanias continues, "The negotiation was going incredibly well, too. We had them on the ropes! A transfer of technology to us in exchange for just 10% of the harvest, what a deal! Ah, but then, the Welds attacked. We were so close."
 
 "My father..." Fanias looks down. This is the first time you've seen him look sad. "And my mother... Will I ever have vengeance for them?"
+
+-> questions
+
+* [Was Fanias' family harmed in the attack?]
+
+"Yes, that's right. My mother was captured, and my father is missing, likely killed." Fanias face contorts in dramatic anguish. "I will see my mother released, my father avenged. I must! The honor of the Khas depends on it!"
 
 -> questions
 
@@ -288,8 +294,6 @@ Fanias goes on at length. Eventually, he runs out of insults.
 
 "Those toads somehow snuck into the Khas' keep, under the cover of night. Inside sabotage seems the most likely culprit, but who can know with such meddlesome curs? We have no idea how they got there, either! We are always ready for the spectre of war, and we heard no reports of troop movement." Fanias is fuming.
 
-"I will see my mother released, my father avenged. I must! The honor of the Khas depends on it!"
-
 -> questions
 
 * {welds} [You have no more questions.]
@@ -300,11 +304,11 @@ After a few moments, the receptionist walks over. Fanias jumps out of his seat. 
 
 "No Girun." The receptionist shakes their head. "Girun, busy. Reschedule, we shall."
 
+"Reschedule!?" Fanias looks about ready to explode. "Listen here, you, you, fat-head! I have waited two weeks already for the chance for an audience, and you tell me Girun wishes to reschedule? This must be a misunderstanding! I am a prince! Justice cannot wait! This is an outrage! This is -"
+
 * [Continue]
 
-- "Reschedule!?" Fanias looks about ready to explode. "Listen here, you, you, fat-head! I have waited two weeks already for the chance for an audience, and you tell me Girun wishes to reschedule? This must be a misunderstanding! I am a prince! Justice cannot wait! This is an outrage! This is -"
-
-Suddenly, a bubble pops into existence around Fanias. His yelling is muffled. He pounds his hand on the bubble, and winces, expression pained. This stops him from yelling for a moment.
+- Suddenly, a bubble pops into existence around Fanias. His yelling is muffled. He pounds his hand on the bubble, and winces, expression pained. This stops him from yelling for a moment.
 
 "Quiet, necessary in the lobby." You catch a satisfied look on the receptionist's face.
 
@@ -340,9 +344,9 @@ When the bubble is fully outside, it pops, and he is deposited on the floor. He 
 
 He takes a moment to regain his balance, and then <>
 
-- {reason: Fanias looks bewildered. He|} sits down on the steps outside. "I don't understand. Things were not supposed to turn out like this. The Urun are the very species that is meant to guide our way. They should be helping me! Do they not see the righteousness of my cause?"
+- {reason:He|} sits down on the steps outside. "I don't understand. Things were not supposed to turn out like this. The Urun are the very species that is meant to guide our way. They should be helping me! Do they not see the righteousness of my cause?"
 
-For the first time since you've met him, he looks utterly despondent. "My brother, in hiding. My mother, captured. My father, slain, by the Weld. And it seems the Urun are utterly unhelpful. Our family name... The burden is all mine."
+Fanias looks utterly despondent. "My brother, in hiding. My mother, captured. My father, slain, by the Weld. And it seems the Urun are utterly unhelpful. Our family name... The burden is all mine."
 
 He looks at you desperately. "You are my only hope. I know we have only just met a few days ago, but I feel utterly alone. Where else can I turn? What should I do?"
 
@@ -390,7 +394,7 @@ Fine, you say. You may not like the guy very much, but this plea seems heartfelt
 
 -> Train ->
 
-You muse on the way the Urunian embassy treated you and Fanias. What is happening there? You thought for sure that they'd make time to see the prince of one of their client species. You didn't expect them to treat him with such disrespect.
+You muse on the way the Urunian embassy treated you and Fanias. What is happening there? You thought for sure that they'd make time to see the prince of their client species. You didn't expect them to treat him with such disrespect.
 
 * [You feel bad for Fanias.]
 
@@ -402,7 +406,7 @@ Fanias is just getting what he deserves. He needs to learn to be more humble. Th
 
 And, admittedly, he was a little more humble there, at the end, asking you for help.
 
-- You think about how you might help. You're not sure if messaging your father will yield much more. Instead, you send a message to the head of the housing block, asking him if he has any thoughts on how Fanias might find some aid. Hopefully that yields some results.
+- You think about how you might help. You're not sure if messaging your father's friend again will get you anywhere. Instead, you send a message to the head of the housing block, asking him if he has any thoughts on how Fanias might find some aid. Hopefully that yields some results.
 
 -> Visit ->
 
@@ -421,15 +425,15 @@ And, admittedly, he was a little more humble there, at the end, asking you for h
 
 - Shading your eyes from the overhead lights, you scan the crowd. Ah - there's Fanias. It looks like he's speaking enthusiastically with another person.
 
-You make your way over and greet Fanias. "Ah, there you are, friend!" He exclaims to you.
+You make your way over and greet Fanias. "There you are, friend!" He exclaims to you.
 
-"Greetings," the other person says, rising. They're slim, with a narrow face and a ponytail. "I am named Tress. You may address me as she."
+"Greetings," the other person says, rising. They're slim, with a narrow face and a ponytail. "I am named Tress. Please use she when referring to me."
+
+Tress gestures. "Please, sit down. Fanias was just regaling me with tales of how things are, back home on Nidaroen." At this last bit, Tress has a slightly ironic smile on. You're not sure what to make of that.
 
 * [Continue]
 
-- "Please, sit down. Fanias was just regaling me with tales of how things are, back home on Nidaroen." At this last bit, Tress has a slightly ironic smile on. You're not sure what to make of that.
-
-Fanias is beaming. "I must tell you again, it is so good to run into someone from our home planet! Even if you have been... long estranged."
+- Fanias is beaming. "I must tell you again, it is so good to run into someone from our home planet! Even if you have been... long estranged."
 
 "By choice, I remind you." Tress nods. "I found my way to Nova Station long ago."
 
@@ -437,7 +441,7 @@ Fanias frowns. "Yes well, I understand, but still, home is home! Surely you will
 
 * [Cut Fanias off.]
 
-Okay, you think, enough of that. You cut in - earning a glare from Fanias - and ask Tress: Why did she leave Nidaroen?
+Okay, enough of that. You cut in - earning a glare from Fanias - and ask Tress: Why did she leave Nidaroen?
 
 "Oh," she says, waving her hand, "a bit of wanderlust, I suppose. I never much was for staying in one place. But I still occasionally pay attention to the news coming from Nidaroen, and I think I know what's going on with the Khas."
 
@@ -463,11 +467,11 @@ Tress nods. "The story only seems simple if you ignore the greater galactic cont
 
 Ah, you knew there was something suspicious about all this. The Welds, attacking in the middle of the night from an unknown vector, right as the Urunian negotiation over the fruit harvest was taking place... What is going on down on Nidaroen?
 
-Tress smiles and raises her eyebrows. "Smart. So you have been paying attention."
+Tress raises her eyebrows. "Smart. You've have been paying attention."
 
 - "Just to be clear... All of this is speculation. Officially, anyway." Tress leans forward, placing her elbows on the table. "You know that fruit that the Khas grows? That aphrodesiac that, mysteriously, can only grow on Khas? Well, it's... rather in demand right now. A passing fad, if you will, among many of the younger generation around the galaxy."
 
-"With the galactic statues on primitive species, the fruit has to be smuggled out, which limits the export rate. Hence, the negotations you were involved in." She gestures at Fanias. "The Urun wanted a piece of the market."
+"With the galactic statues on primitive species, the fruit has to be smuggled out. The Urun see an opportunity here. Hence, the negotations you were involved in." She gestures at Fanias.
 
 * [So the Welds attacked for the fruit?]
 
@@ -485,7 +489,9 @@ Tress nods, once, decisively. "And that is where we get into the heavy speculati
 
 "So -" she raises her eyebrows. "The Welds conduct a surprise attack, using technology they shouldn't have, during a negotiation that wasn't going well for the Urun. Where did they get the technology, or the information on the negotation?"
 
-"Well - one might suspect that they did it at the Urun's request, using their technology. Perhaps the Welds even expect a cut of the new exports. Oh, the Urun vehemently deny all accusations of course, but what other conclusion can one draw?"
+"Well - one might suspect that they did it at the Urun's request. One might suspect the Urun gave them some help with the ambush. Perhaps the Welds even expect a cut of the new exports."
+
+She spreads her arms. "The Urun vehemently deny all accusations of course, but what other conclusion can one draw?"
 
 * [So that's why the Urun haven't wanted to meet with Fanias.]
 
@@ -507,7 +513,7 @@ Tress is from Khas, too. Why wouldn't she be trying to stop this blatant abuse o
 
 She shrugs. "Not my problem. I left long ago. I barely even count myself as Khas anymore." She gestures at Fanias. "Not like him. You'd think he'd be more free than I, coming from money and privilege and all that."
 
-"But you know what?" She stretches her arms. "I almost pity him, bound by concepts like 'duty' and 'honor'. Way better to just forget about all of that. Make your own connections. Choose your own family."
+"But you know what?" She stretches her arms over her head. "I almost pity him, bound by concepts like 'duty' and 'honor'. Way better to just forget about all of that. Make your own connections. Choose your own family."
 
 ** (irresponsible) [That's irresponsible.]
 
@@ -525,7 +531,9 @@ She nods decisively again. "That's right. You can't trust family just because th
 
 -- "I get it. Fanias feels duty-bound to defend his family and his people. He can do what he wants, but I think he should give it up."
 
-Hm. Tress has clearly been through a lot. Fanias' situation is clearly different, though. Shouldn't he still fight?
+Hm. Tress has clearly been through a lot. Is Fanias' situation different?
+
+-- (situation)
 
 ** (people) [It's more than duty. Fanias cares for his family.]
 
@@ -555,9 +563,11 @@ Before you express your thoughts on Fanias, you apologize to Tress. You shouldn'
 
 She looks thoughtful. "A lot of people treat family as this immutable thing, an unbreakable bond. It's just... not like that, for a lot of people. For most, sure. But not everyone." She sighs. "I accept your apology. And thanks."
 
--- -> questions
+-> situation
 
-* {people or wrong or give_up} [Continue]
+-
+
+* [Continue]
 
 - Fanias returns to the table. He looks a little calmer.
 

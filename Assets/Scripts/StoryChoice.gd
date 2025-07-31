@@ -9,6 +9,7 @@ var _label : RichTextLabel
 
 var _index : int
 var _displayIndex : int
+var _focused : bool
 
 signal on_choice_chosen(index : int)
 
@@ -45,6 +46,7 @@ func start_fade_in() -> void:
 
 func on_pressed() -> void:
 	on_choice_chosen.emit(_index)
+	AudioManager.instance.play_stream(ResourceLoader.load("res://Assets/Audio/UI/choice_confirm.ogg"))
 
 func set_enabled() -> void:
 	_button.mouse_filter = Control.MOUSE_FILTER_STOP
@@ -52,10 +54,14 @@ func set_enabled() -> void:
 	_button.disabled = false
 
 func on_focus() -> void:
+	if _focused: return
+	_focused = true
 	_label.modulate = Color("ffd630")
+	AudioManager.instance.play_stream(ResourceLoader.load("res://Assets/Audio/UI/choice_select.ogg"))
 
 func on_unfocus() -> void:
 	_label.modulate = Color("ff7d00")
+	_focused = false
 
 func on_down() -> void:
 	_label.modulate = Color("ffe600")

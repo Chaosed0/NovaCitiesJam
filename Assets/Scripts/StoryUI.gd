@@ -11,6 +11,7 @@ var _inputChoiceScene : PackedScene
 var _separator : PackedScene
 
 var _ambiencePlayer : StoryAudioPlayer
+var _typingAudio : AudioStreamPlayer
 var _background : TextureRect
 var _story : InkPlayer
 var _bottomSpacer : Control
@@ -33,7 +34,7 @@ var _randomizeNextChoices : bool
 signal on_story_loaded_signal
 signal on_story_tween_begin
 signal on_story_tween_complete
-signal on_story_complete()
+signal on_story_complete
 
 func _ready() -> void:
 	print("StoryUI readying")
@@ -47,6 +48,7 @@ func _ready() -> void:
 	_bottomSpacer = get_node("%BottomSpacer")
 	_background = get_node("%StoryBackground")
 	_ambiencePlayer = get_node("%AmbiencePlayer")
+	_typingAudio = get_node("%TypingAudio")
 	_scrollContainer = get_node("ScrollContainer")
 	_content = _scrollContainer.get_node("MarginContainer")
 	_container = _content.get_node("VBoxContainer")
@@ -206,6 +208,7 @@ func continue_story(is_first : bool) -> void:
 	_currentTween.finished.connect(on_tween_finished)
 
 	if _currentStoryText != null:
+		_currentTween.chain().tween_callback(func() -> void: _typingAudio.play())
 		_currentStoryText.start_typeout(_currentTween)
 
 	if !_story.has_choices:
@@ -254,6 +257,7 @@ func complete_story() -> void:
 	on_story_complete.emit()
 
 func on_tween_finished() -> void:
+	_typingAudio.stop()
 	_currentTween = null
 
 func randomize_next_choices() -> void:

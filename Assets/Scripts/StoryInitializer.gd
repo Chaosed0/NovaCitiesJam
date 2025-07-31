@@ -8,7 +8,6 @@ var _storyUI : StoryUI
 func _ready() -> void:
 	_storyUI = get_node("%StoryUI")
 	_storyUI.on_story_loaded_signal.connect(on_story_loaded)
-	_storyUI.on_story_complete.connect(on_story_complete)
 
 	if get_tree().current_scene == self:
 		print("starting from story scene")
@@ -28,10 +27,11 @@ func initialize_from_load() -> void:
 
 func on_story_loaded() -> void:
 	_storyUI._story.bind_external_function("quit_game", self, "quit")
+	_storyUI._story.bind_external_function("finish", self, "finish")
 
 func quit() -> void:
 	get_tree().quit()
 
-func on_story_complete() -> void:
+func finish() -> void:
 	DirAccess.remove_absolute(StoryUI.storySavePath)
 	await Game.instance.load_scene(ResourceLoader.load("res://Assets/MainMenu.tscn"))

@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://dptui1gahx6a1"]
+[gd_scene load_steps=4 format=3 uid="uid://dptui1gahx6a1"]
 
 [ext_resource type="Script" uid="uid://j8wjh0kx7rsh" path="res://Assets/Scripts/Game.gd" id="1_ig326"]
+[ext_resource type="Script" uid="uid://dmykew4b7h7ny" path="res://Assets/Scripts/AudioManager.gd" id="2_aqlpw"]
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ig326"]
 bg_color = Color(0, 0, 0, 1)
@@ -22,3 +23,6 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_ig326")
+
+[node name="AudioManager" type="Node" parent="."]
+script = ExtResource("2_aqlpw")

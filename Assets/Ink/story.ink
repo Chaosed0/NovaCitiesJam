@@ -23,15 +23,15 @@ INCLUDE Shared.ink
 
  + [Full] -> FullGame ->
  + [Fanias]
- ++ [Fanias Full] -> LiYan ->
- ++ [Fanias 1] -> LiYan.First ->
- ++ [Fanias 2] -> LiYan.Second ->
- ++ [Fanias 3] -> LiYan.Third ->
+ ++ [Fanias Full] -> Fanias ->
+ ++ [Fanias 1] -> Fanias.First ->
+ ++ [Fanias 2] -> Fanias.Second ->
+ ++ [Fanias 3] -> Fanias.Third ->
  + [Yousef]
- ++ [Yousef Full] -> LiYan ->
- ++ [Yousef 1] -> LiYan.First ->
- ++ [Yousef 2] -> LiYan.Second ->
- ++ [Yousef 3] -> LiYan.Third ->
+ ++ [Yousef Full] -> Yousef ->
+ ++ [Yousef 1] -> Yousef.First ->
+ ++ [Yousef 2] -> Yousef.Second ->
+ ++ [Yousef 3] -> Yousef.Third ->
  + [LiYan]
  ++ [LiYan Full] -> LiYan ->
  ++ [LiYan 1] -> LiYan.First ->

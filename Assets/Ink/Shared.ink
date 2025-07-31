@@ -9,7 +9,7 @@
 
 {Cafeteria == 1:
 
-You cross a threshold into a brightly lit space. The glare of the overhead lights is harsh. Tables and benches are arranged in neat rows. The benches are full of people - mostly humanoids - chatting amongst themselves. At the far end of the room there is a short line along an open window. Staff spoon out servings of lukewarm food for the people in line.
+You cross a threshold into a brightly lit space. The glare of the overhead lights is harsh. Tables and benches are arranged messily, filled with of people - mostly humanoids - chatting amongst themselves. At the far end of the room there is a short line along an open window. Staff spoon out servings of lukewarm food for the people in line.
 
 It's loud in here. The ceiling doesn't give anywhere for chatter to escape, and so here it stays, a clamor. You muse upon the exponential effect of a crowd; few people, and you can chat in a normal voice. But in a crowd, you speak more loudly to be heard over others, and they speak more loudly to be heard over you, until suddenly everyone is shouting.
 }
@@ -32,7 +32,7 @@ It's loud in here. The ceiling doesn't give anywhere for chatter to escape, and 
 ->->
 }
 
-{You lean back in your train seat and think about who you'll visit tomorrow...|Your thoughts move on. You think about who you'll visit tomorrow.|You bring up your calendar. Six days left before you leave for Barakhun. Who will you check in on tomorrow?|You lean forward in your seat. Now then - who will you visit tomorrow?|Your thoughts move on. Who will you see tomorrow?|You're almost back to your apartment. You should decide who you'll visit tomorrow.|The train reaches your stop. You stand up, and think about who you'll visit tomorrow.|Your head is a little heavy from the week. One last check-in, and you'll be done for the week.}
+{|You lean back in your train seat and think about who you'll visit tomorrow...|Your thoughts move on. You think about who you'll visit tomorrow.|You bring up your calendar. Six days left before you leave for Barakhun. Who will you check in on tomorrow?|You lean forward in your seat. Now then - who will you visit tomorrow?|A PA announcement for the station breaks you out of your reverie. Who to visit next?|Your thoughts move on. Who will you see tomorrow?|You're almost back to your apartment. You should decide who you'll visit tomorrow.|The train reaches your stop. You stand up, and think about who you'll visit tomorrow.|Your head is a little heavy from the week. One last check-in, and you'll be done for the week.}
 
 
 {Fanias >= 3: You've spoken to Fanias {Yousef >= 3: and Yousef} {LiYan >=3: and LiYan} enough this week.} <>
@@ -55,7 +55,7 @@ It's loud in here. The ceiling doesn't give anywhere for chatter to escape, and 
 
 {Visit == 1: You decide you will pay Fanias a visit first.}
 {Visit > 1 and Fanias == 0: You decide it's time to visit Fanias.}
-{Visit > 1 and Fanias == 1: You realize that Fanias' appointment at the Urunian embassy is tomorrow. You'll meet him there.}
+{Visit > 1 and Fanias == 1: Fanias' appointment at the Urunian embassy is tomorrow. You'll meet him there.}
 {Visit > 1 and Fanias == 2: You message Fanias, telling him you'll see him at the housing block's cafeteria tomorrow.}
 
 ~next_visit=->Fanias
@@ -70,7 +70,7 @@ You put aside the thought of visiting Fanias.
 
 {Yousef == 0: You think about checking in on Yousef, the refugee of the Yisua-Falas conflict, who left his family in Falas to save his wife and daughter.}
 {Yousef == 1: Last time you met, Yousef wanted help delivering a package to his sisters in Falas. He asked to meet at Satna Market.}
-{Yousef == 2: You don't have any specific reason to check in with Yousef, but you're sure he and the rest of the family would appreciate you checking in on them at their apartment in the housing block.}
+{Yousef == 2: It might be a good idea to check in on Yousef after your adventure at Satna Market. You can drop by his family's apartment.}
 
 ++ [I'll visit Yousef.]
 
@@ -121,7 +121,7 @@ You decide to visit someone other than LiYan.
 
 === Train ===
 
-{"Barakhunian Refugee Housing Block." The train doors slide open, and you board, taking a seat. [i]Badunk, badunk, badunk.[/i] The rhythmic sound of the railcar starts up as the train leaves from the housing block station.|[i]Badunk, badunk, badunk.[/i] You find yourself annoyed by the sound of the train. You really wish that they'd replaced this thing with a maglev.|[i]Badunk, badunk, badunk.[/i] You sniff. The interior of the railcar smells like fried food today. You wonder who would be so rude as to eat on the train.|[i]Badunk, badunk, badunk.[/i] Another day, another check-in. Who's next?|[i]Badunk, badunk, badunk.[/i] You look out the window of the railcar back to your apartment, mesmerized by the flames of Nova Station's dying star.|[i]Badunk, badunk, badunk.[/i] Train's full to bursting today, for some reason. Must be the construction on maglev line 4. You stand, holding onto a handle.|[i]Badunk, badunk, badunk.[/i] You find that you're no longer annoyed by the sound of the train on the rail. It's almost nostalgic to you, at this point.|[i]Badunk, badunk, badunk.[/i] You wonder idly about what is causing that sound. You resolve to ask the assistant at the station before you board next time.|[i]Badunk, badunk, badunk.[/i] You sit on the train, head bowed. You find yourself a little sad, worn down from all the support you've given this week. It's almost over, and you're not sure how much good you've done.}
+{"Barakhunian Refugee Housing Block." The train doors slide open, and you board, taking a seat. [i]Badunk, badunk, badunk.[/i] The rhythmic sound of the railcar starts up as the train leaves from the housing block station.|[i]Badunk, badunk, badunk.[/i] You find yourself annoyed by the sound of the train. You really wish that they'd replaced this thing with a maglev.|[i]Badunk, badunk, badunk.[/i] You sniff. The interior of the railcar smells like fried food today. You wonder who would be so rude as to eat on the train.|[i]Badunk, badunk, badunk.[/i] Another day, another check-in.|[i]Badunk, badunk, badunk.[/i] You look out the window of the railcar, mesmerized by the flames of Nova Station's dying star.|[i]Badunk, badunk, badunk.[/i] Train's full to bursting today, for some reason. Must be the construction on maglev line 4. You stand, holding onto a handle.|[i]Badunk, badunk, badunk.[/i] You find that you're no longer annoyed by the sound of the train on the rail. It's almost nostalgic to you, at this point.|[i]Badunk, badunk, badunk.[/i] You wonder idly about what is causing that sound. You resolve to ask the assistant at the station before you board next time.|[i]Badunk, badunk, badunk.[/i] You sit on the train, head bowed. You find yourself a little sad, worn down from all the support you've given this week. It's almost over, and you're not sure how much good you've done.}
 
 ->->
 
@@ -374,7 +374,13 @@ Thank you for playing. The below button will take you back to the main menu.
 
 * [Main Menu]
 
-- -> DONE
+-
+
+~ finish()
+
+The end...
+
+-> END
 
 
 

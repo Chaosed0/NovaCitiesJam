@@ -20,7 +20,7 @@ func play_ambience_for_background(background_name: String) -> void:
 	if background_name == "tmp-background":
 		pass
 
-	play_ambience(ResourceLoader.load("res://Assets/Audio/%s.ogg" % background_name))
+	play_ambience(ResourceLoader.load("res://Assets/Audio/Ambience/%s.ogg" % background_name))
 
 func play_ambience(stream: AudioStream) -> void:
 	if _tween != null:

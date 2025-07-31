@@ -13,7 +13,11 @@ EXTERNAL shuffle_next_choices()
         
 EXTERNAL quit_game()
 === function quit_game() ===
-    < DEBUG > GAME SHOULD QUIT
+    < DEBUG > GAME SHOULD QUIT      
+    
+EXTERNAL finish()
+=== function finish() ===
+    < DEBUG > RETURN TO MAIN MENU
         
 EXTERNAL change_background_ext(bg)
 === function change_background_ext(bg) ===

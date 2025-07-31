@@ -28,6 +28,8 @@ func _ready() -> void:
 	_quitButton.pressed.connect(on_quit_pressed)
 	_backButton.pressed.connect(on_back_pressed)
 
+	_quitButton.visible = !OS.has_feature("web")
+
 	get_node("%Main").visible = true
 	get_node("%Credits").visible = false
 
