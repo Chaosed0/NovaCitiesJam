@@ -1004,9 +1004,7 @@ You watch as they all approach the gate, marked X15.
  
  A flight headed to Yisua-Falas is leaving X15, about an hour after the flight to New Tarnaeum. You swing your head back towards the gate, and you catch Yousef going through the gate... followed by a Norberian.
 
-You walk quickly up to the window looking out towards the shuttle. You bump into a couple of folks and apologize - it's busy in here.
-
-Eventually, make it to the glass, and look out towards the gangway. You catch the back of Youmna's head as she shepherds Banias onto the shuttle, but... You don't see Yousef.
+You walk quickly up to the window looking out towards the shuttle. You bump into a couple of folks and apologize. Eventually, make it to the glass, and look out towards the gangway. You catch the back of Youmna's head as she shepherds Banias onto the shuttle, but... You don't see Yousef.
 
 Perhaps Yousef went ahead of them?
 

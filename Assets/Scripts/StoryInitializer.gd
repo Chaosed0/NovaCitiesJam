@@ -34,4 +34,4 @@ func quit() -> void:
 
 func finish() -> void:
 	DirAccess.remove_absolute(StoryUI.storySavePath)
-	await Game.instance.load_scene(ResourceLoader.load("res://Assets/MainMenu.tscn"))
+	Game.instance.load_scene(ResourceLoader.load("res://Assets/MainMenu.tscn"))

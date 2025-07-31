@@ -170,9 +170,9 @@ With millions of travelers passing through the station at any given time, the po
 
 . . .
 
-~ change_background("car")
-
 * [Four weeks later...]
+
+~ change_background("car")
 
 - Four weeks later, after some packing and a long space journey, you find yourself on Barakhun.
 
@@ -206,11 +206,11 @@ You met a person named LiYan.
 
 ** {LiYan_Translate} [You translated for them, or tried.]
 
-You attempted to translate for them at their resettlement hearing, but the judge wouldn't have any of it.
+You attempted to translate for them at their resettlement hearing, but the judge wouldn't allow it.
 
 ** {not LiYan_Translate} [They had to fend for themselves at their resettlement hearing.]
 
-You tried to find someone to translate for them at their resettlement hearing. Unfortunately, no translator could be found, and they had to try to translate for themselves.
+You tried to find someone to translate for them at their resettlement hearing. Unfortunately, no translator could be found, and they had to try to translate for themselves. The judge wouldn't allow it.
 
 -- When you saw them off at the spaceport, they were...
 

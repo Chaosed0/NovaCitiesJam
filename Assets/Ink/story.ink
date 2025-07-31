@@ -37,6 +37,8 @@ INCLUDE Shared.ink
  ++ [LiYan 1] -> LiYan.First ->
  ++ [LiYan 2] -> LiYan.Second ->
  ++ [LiYan 3] -> LiYan.Third ->
+ + [Farewell] -> Spaceport_Intro ->
+ + [Finale] -> Finale ->
 
 - -> top
 

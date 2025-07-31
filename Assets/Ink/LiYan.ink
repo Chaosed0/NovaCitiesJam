@@ -66,7 +66,7 @@ They look at you stoically. You're not entirely sure if Calanethi facial express
 
 LiYan nods, and remain silent.
 
-You stand there, awkwardly, for a few moments. LiYan stares at you stoically.
+You stand there, awkwardly, for a few moments. LiYan stares at you, expressionless.
 
 * (repeat_yourself) [Repeat yourself.]
 
@@ -76,7 +76,7 @@ You stand there, awkwardly, for a few moments. LiYan stares at you stoically.
 
 You stay silent. Maybe LiYan is thinking?
 
-- LiYan slaps their chest with their hand, and then tap their wrist. Ah - their translator must not have been on. Though you're not sure what the hand to the chest was about - a Calanethi gesture, perhaps?
+- LiYan slaps their chest with their hand, and then taps their wrist. Ah - their translator must not have been on. Though you're not sure what the hand to the chest was about - a Calanethi gesture, perhaps?
 
 "Please repeat yourself," LiYan says, text flashing across your eyes.
 
@@ -361,13 +361,13 @@ For the first time, you see LiYan wearing an expression of something other than 
 
 * {why_leave} [If {malakethi:they|the Malakethi} didn't have spacecraft, how did LiYan leave?]
 
-LiYan nods. "Luck."
+How did LiYan leave without a spacecraft, you ask?
 
 LiYan explains that their family stayed in a refugee camp on Calaneth run by a different species - they don't know the name. Conditions at the camp were horrible; they had to eat moldy food, and shivered every night from the cold, never getting the extra blankets they requested.
 
 "Not the camp owners' fault," they say. "I believe Calanethi were oppressing us. The camp did their best."
 
-Eventually, that camp was shut down by the Calanethi for no reason. They were shuttled to another refugee camp, and then another, and they have been in limbo ever since.
+Eventually, that camp was shut down by the Calanethi for no reason. They were able to join the camp runners' shuttle, bound for another refugee camp. They stayed there for a time, and have been in limbo ever since.
 
 -> questions
 
@@ -429,7 +429,7 @@ LiYan twists their hand. "I cannot think of any other alternative. You took the 
 
 * {sure} [Say yes, but with hesitance.]
 
-You're not sure if you can do this properly, but with how much LiYan needs someone dependable... You might as well try. You say as much.
+You're not sure if you can properly translate for LiYan, but if they need someone dependable... You might as well try. You say as much.
 
 LiYan shakes their head. "That is all I ask. For you to try."
 
@@ -451,9 +451,9 @@ LiYan shakes their head. "Thank you."
 
 "Thank you for coming to check on me. I will see you {someone_else: after | at} the meeting."
 
-* [Leave.]
-
 - You bid LiYan farewell, and exit the gymnasium.
+
+* [Leave.]
 
 . . .
 
@@ -506,7 +506,7 @@ You sigh. Hopefully they can find someone.
 
 "Galatean Courthouse," the PA announces, as the doors open. You step off the maglev train. [i]So[/i] much faster and smoother than the old railcar they have at the housing block.
 
-You exit the maglev station to a wide plaza. You take a look at your feet, and note that the plaza is stone rather than plasteel. Usually, stone is unused on the station because of the weight, and the impracticalness of building with it. The plaza must have some incredible structural reinforcement. And are those real trees bordering the plaza? Wow. The Galateans are clearly a wealthy species.
+You exit the maglev station to a wide plaza. You take a look at your feet, and note that the plaza is stone rather than plasteel. Usually, stone is impractical on the station because of the weight. The plaza must have some incredible structural reinforcement. And are those real trees bordering the plaza? Wow. The Galateans are clearly a wealthy species.
 
 * [Continue]
 
@@ -578,8 +578,6 @@ Before you can do anything else, they stalk down the hallway towards the exit. P
 -> choices
 
 * [Leave.]
-
-- You exit the courthouse.
 
 . . .
 
@@ -657,7 +655,7 @@ LiYan nods their head. They hold out their hand, seemingly expectantly. You're u
 
 * [You're excited. This meeting has been a long time coming.]
 
-You're excited for LiYan. You're sure that the Galatean Mediator will see LiYan's side of it, and you'll do everything in your power to help them through this meeting.
+You're excited for LiYan. You're sure that the Galatean judge will see LiYan's side of it, and you'll do everything in your power to help them through this meeting.
 
 LiYan shakes their head. They hold out their hand, seemingly expectantly. You're unsure of what is expected, so you hold your hand out too. They grab it, and hold it hard. "I am glad of your trust in me. ----- willing, they will be on our side."
 
@@ -669,7 +667,7 @@ LiYan shakes their head. They hold out their hand, seemingly expectantly. You're
 
 - You enter the room first, and LiYan follows.
 
-The interior of the room, just like the outside, is entirely stone, with one main difference - it's a black stone. Onyx, or obsidian. As the door shuts behind you, you realize just how dark the space is. Just two spotlights illuminate the room. One shines onto the short Galatean atop a podium at the back of the room. They must be the mediator.
+The interior of the room, just like the outside, is entirely stone, with one main difference - it's a black stone. Onyx, or obsidian. As the door shuts behind you, you realize just how dark the space is. Just two spotlights illuminate the room. One shines onto the short Galatean atop a podium at the back of the room. They must be the judge.
 
 The other spotlight shines down on an empty space on the floor. The attendant directs you to stand in the spotlight.
 
@@ -681,7 +679,7 @@ You take the initiative, moving forward into the spotlight.
 
 You direct LiYan to stand in the spotlight. They do so.
 
-- The Galatean judge glares down at {you_spotlight: you | LiYan}. "Name?"
+- The Galatean judge glares down at {you_spotlight:you|LiYan}. "Name?"
 
 * {you_spotlight} [Give your name.]
 
@@ -815,7 +813,9 @@ You call out, wait! The judge stops. You ask...
 
 The assistant shoos you out. You walk out, frustrated.
 
+-> continue_hack ->
 ->->
+
 }
 
 * (translator) [Why does LiYan need an official translator?]
@@ -866,7 +866,7 @@ You decide it's best not to push the issue any further, and you shake your head.
 
 The assistant shoos you off, and you hurry out of the room.
 
-->->
+** [Continue] ->->
 
 = Judge_Da_Law
 
@@ -874,6 +874,11 @@ The assistant shoos you off, and you hurry out of the room.
 
 ->->
 
+= continue_hack
+
+* [Continue]
+
+- ->->
 
 
 
@@ -938,9 +943,9 @@ In the background, the shuttle boarding call goes out. LiYan stands up. Their ha
 
 * [Continue]
 
-The boarding call for their shuttle goes out. LiYan stands up, picking up their bag.
+- LiYan stands up, picking up their bag.
 
-"I am unsure if see each other again. I am still angry, inside, but I will not say farewell with anger. I would call you a friend." They hold their hand to you.
+"I am unsure if see each other again. I am still angry, inside, but I will not part with anger. I would call you a friend." They hold their hand to you.
 
 * [Grasp their hand.]
 

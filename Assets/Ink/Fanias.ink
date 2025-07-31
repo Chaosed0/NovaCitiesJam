@@ -687,7 +687,7 @@ Fanias looks hurt. "Violence? Never! I did not hurt any person! I merely attempt
 
 - "Do not worry about me. I have already contacted Tress. She has agreed to help me. I have my doubts that she will help me with the fight against the Urun, but that is no matter." He looks serious. "I will find allies. And I will carry on the fight."
 
-The police officer behind you taps you on the shoulder. Your time is up. That was absurdly short. But the officer looks serious, and gestures for you to get out.
+The police officer behind you taps you on the shoulder. Your time is up. That was absurdly short. But the officer looks stern, and gestures for you to get out.
 
 Fanias sees this, and thumps his chest with a fist. "Remember me, my friend! Remember Fanias, of the Khas. Remember that I did not give up, and never shall, as long as justice remains unserved!"
 
@@ -705,17 +705,23 @@ Tress shrugs. "{Third.people or Third.wrong:To be honest... wasn't him. It was y
 
 "Plus," she smiles bemusedly, "He's just kind of an amusing person to keep around. It's kind of endearing how fast he went from 'spoiled prince' to 'radical window-breaker'."
 
-* [You agree.]
+* [He's kind of amusing.]
 
 You admit, he's kind of amusing.
 
 She gives you a smile. "Dunno if we'll be good friends or anything, but hey, hopefully he can keep it up."
 
-* [You disagree.]
+* [He's kind of annoying.]
 
 You shrug. Fanias is kind of annoying.
 
 She laughs. "Yeah, but that's what makes him amusing."
+
+* [He's a good person.]
+
+Fanias... despite all the odds, is actually a good person.
+
+She laughs. "Yeah, maybe you're right. Trying to break into a courthouse is a good start to being a good person."
 
 - Tress gives you a wave. "Take care of yourself. Don't go breaking any windows, you hear?"
 
